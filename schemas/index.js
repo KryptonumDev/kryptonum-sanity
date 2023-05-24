@@ -15,6 +15,7 @@ import blog_categories from './collectionTypes/blog/categories'
 import cta from './components/cta'
 import img from './components/img'
 import link from './components/link'
+import titleAndDescription from './components/titleAndDescription'
 
 export const schemaTypes = [
   blog_entries,
@@ -29,4 +30,5 @@ export const schemaTypes = [
   cta,
   img,
   link,
+  titleAndDescription,
 ]

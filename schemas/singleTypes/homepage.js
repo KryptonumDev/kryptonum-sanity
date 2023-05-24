@@ -92,18 +92,8 @@ export default {
       title: 'Services List',
       of: [
         {
-          type: 'object',
-          fields: [
-            {
-              name: 'title',
-              type: 'string',
-            },
-            {
-              name: 'description',
-              type: 'string',
-            },
-          ]
-        },
+          type: 'titleAndDescription',
+        }
       ],
       validation: Rule => Rule.max(4),
       group: 'services',
@@ -139,18 +129,8 @@ export default {
       title: 'Roadmap Process',
       of: [
         {
-          type: 'object',
-          fields: [
-            {
-              name: 'title',
-              type: 'string',
-            },
-            {
-              name: 'description',
-              type: 'string',
-            },
-          ]
-        },
+          type: 'titleAndDescription',
+        }
       ],
       validation: Rule => Rule.max(5),
       group: 'roadmap',
