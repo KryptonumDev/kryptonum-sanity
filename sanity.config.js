@@ -7,8 +7,9 @@ import {markdownSchema} from 'sanity-plugin-markdown'
 import {CustomMarkdownInput} from './components/CustomInput'
 
 import homepage from './schemas/singleTypes/homepage'
+import notFound from './schemas/singleTypes/404'
 import footer from './schemas/singleTypes/footer'
-const singletonTypes = new Set(["homepage", "footer"])
+const singletonTypes = new Set(["homepage", "notFound", "footer"])
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"])
 
@@ -42,6 +43,7 @@ export default defineConfig({
           .items([
             createListItem(S, homepage),
             createListItem(S, footer),
+            createListItem(S, notFound),
             S.divider(),
             S.documentTypeListItem("blog_entries"),
             S.documentTypeListItem("blog_categories"),

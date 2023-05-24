@@ -1,5 +1,6 @@
 // Single Types
 import homepage from './singleTypes/homepage'
+import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 
 // Collection Types
@@ -18,6 +19,10 @@ import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
 
 export const schemaTypes = [
+  homepage,
+  notFound,
+  footer,
+
   blog_entries,
   blog_categories,
   team,
@@ -25,8 +30,7 @@ export const schemaTypes = [
   technologies,
   curiosities,
   caseStudies,
-  homepage,
-  footer,
+
   cta,
   img,
   link,
