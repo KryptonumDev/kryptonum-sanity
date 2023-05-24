@@ -100,6 +100,12 @@ export default {
       group: 'challenge',
     },
     {
+      name: 'challenge_SecondClaim',
+      type: 'markdown',
+      title: 'Challenge Second Claim',
+      group: 'challenge',
+    },
+    {
       name: 'services_Heading',
       type: 'markdown',
       title: 'Services Heading',
