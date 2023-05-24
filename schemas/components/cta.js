@@ -6,13 +6,14 @@ export default {
     {
       name: 'theme',
       type: 'string',
-      title: 'Link Text',
+      title: 'Theme',
       options: {
         list: [
           { title: 'primary', value: 'primary' },
           { title: 'secondary', value: 'secondary' }
         ],
-        layout: 'radio'
+        layout: 'radio',
+        direction: "horizontal"
       },
       initialValue: 'primary'
     },
@@ -20,18 +21,29 @@ export default {
       title: 'Text',
       name: 'text',
       type: 'string',
+      description: 'a text which will be visible in the Button',
+      fieldset: 'content',
     },
     {
       title: 'Link',
       name: 'href',
       type: 'string',
+      description: 'A URL, either relative or absolute (https://)',
       validation: Rule =>
         Rule.custom(value => {
-          if (!value.startsWith('/') && !value.startsWith('https://')) {
+          if (value && !value.startsWith('/') && !value.startsWith('https://')) {
             return 'Invalid URL format. Please provide a relative URL (starting with "/") or an absolute URL (with "https").';
           }
           return true;
         }),
+      fieldset: 'content',
     }
-  ]
+  ],
+  fieldsets: [
+    {
+      name: 'content',
+      title: 'Content',
+      options: { columns: 2 },
+    },
+  ],
 }

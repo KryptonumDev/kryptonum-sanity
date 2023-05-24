@@ -2,6 +2,7 @@ export default {
   name: 'team',
 	title: 'Team',
   type: 'document',
+  icon: () => '👯‍♀️',
   fields: [
     {
       name: 'name',

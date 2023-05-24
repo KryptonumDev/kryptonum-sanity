@@ -2,6 +2,7 @@ export default {
   name: 'testimonials',
   type: 'document',
 	title: 'Testiminials',
+  icon: () => '🖊️',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,8 @@
 export default {
-  name: 'caseStudies',
-	title: 'Case Studies',
+  name: 'technologies',
+	title: 'Technologies',
   type: 'document',
+  icon: () => '📡',
   fields: [
     {
       name: 'name',

@@ -2,6 +2,7 @@ export default {
   name: 'curiosities',
 	title: 'Curiosities',
   type: 'document',
+  icon: () => '😲',
   fields: [
     {
       name: 'title',
