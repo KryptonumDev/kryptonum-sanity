@@ -106,6 +106,12 @@ export default {
       group: 'challenge',
     },
     {
+      name: 'challenge_Cta',
+      type: 'cta',
+      title: 'Challenge Cta',
+      group: 'challenge',
+    },
+    {
       name: 'services_Heading',
       type: 'markdown',
       title: 'Services Heading',
