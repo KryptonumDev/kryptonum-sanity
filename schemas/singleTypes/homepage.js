@@ -81,6 +81,25 @@ export default {
       group: 'conquest',
     },
     {
+      name: 'challenge_Heading',
+      type: 'markdown',
+      title: 'Challenge Heading',
+      group: 'challenge',
+    },
+    {
+      name: 'challenge_Claim',
+      type: 'markdown',
+      title: 'Challenge Claim',
+      group: 'challenge',
+    },
+    {
+      name: 'challenge_Paragraph',
+      type: 'text',
+      rows: 5,
+      title: 'Challenge Paragraph',
+      group: 'challenge',
+    },
+    {
       name: 'services_Heading',
       type: 'markdown',
       title: 'Services Heading',
