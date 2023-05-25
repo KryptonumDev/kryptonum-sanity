@@ -14,6 +14,19 @@ export default {
       rows: 5,
       fieldset: 'content',
     },
+    {
+      name: 'href',
+      title: 'Link (optional)',
+      type: 'string',
+      validation: Rule =>
+        Rule.custom(value => {
+          if (value && !value.startsWith('/') && !value.startsWith('https://')) {
+            return 'Invalid URL format. Please provide a relative URL (starting with "/") or an absolute URL (with "https").';
+          }
+          return true;
+        }),
+      description: 'A URL, either relative or absolute (https://)',
+    },
   ],
   fieldsets: [
     {

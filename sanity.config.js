@@ -2,19 +2,16 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import { singleTypes } from './schemas'
 
 import {markdownSchema} from 'sanity-plugin-markdown'
 import {CustomMarkdownInput} from './components/CustomInput'
 
-import homepage from './schemas/singleTypes/homepage'
-import notFound from './schemas/singleTypes/404'
-import footer from './schemas/singleTypes/footer'
-const singletonTypes = new Set(["homepage", "notFound", "footer"])
+const singletonTypes = new Set(singleTypes.map(type => type.name))
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"])
 
 function createListItem(S, singleType) {
-  console.log(S);
   const { title, name, icon } = singleType;
   return S.listItem()
     .title(title)
@@ -41,9 +38,7 @@ export default defineConfig({
         S.list()
           .title("Content")
           .items([
-            createListItem(S, homepage),
-            createListItem(S, footer),
-            createListItem(S, notFound),
+            ...singleTypes.map((item) => createListItem(S, item)),
             S.divider(),
             S.documentTypeListItem("blog_entries"),
             S.documentTypeListItem("blog_categories"),

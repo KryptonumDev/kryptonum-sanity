@@ -6,7 +6,7 @@ export default {
   fields: [
     {
       name: 'title',
-      type: 'string',
+      type: 'markdown',
       title: 'Title'
     },
     {
@@ -18,27 +18,53 @@ export default {
       }
     },
     {
-      name: 'thumbnail',
+      name: 'subtitle',
+      type: 'markdown',
+      title: 'Subtitle'
+    },
+    {
+      name: 'cover',
       type: 'img',
-      title: 'Thumbnail',
+      title: 'Cover',
     },
     {
       name: 'categories',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'blog_categories' }] }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'blog_categories' }],
+        }
+      ],
       title: 'Categories'
     },
     {
       name: 'author',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'team' }] }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'team' }],
+          options: { disableNew: true },
+        }
+      ],
       title: 'Author'
     },
+    {
+      name: 'content',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+        }
+      ],
+      title: 'Content'
+    }
   ],
   preview: {
     select: {
       title: 'title',
-      media: 'thumbnail.source'
+      media: 'cover.source'
     }
   }
 }

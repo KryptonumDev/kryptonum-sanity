@@ -1,7 +1,10 @@
 // Single Types
 import homepage from './singleTypes/homepage'
+import webDevelopment from './singleTypes/web-development'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
+
+export const singleTypes = [homepage, webDevelopment, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -20,6 +23,7 @@ import titleAndDescription from './components/titleAndDescription'
 
 export const schemaTypes = [
   homepage,
+  webDevelopment,
   notFound,
   footer,
 
