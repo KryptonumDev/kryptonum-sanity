@@ -64,7 +64,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'cover.source'
+      media: 'cover'
     }
   }
 }

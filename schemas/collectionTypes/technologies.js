@@ -26,7 +26,7 @@ export default {
   preview: {
     select: {
       title: 'name',
-      media: 'thumbnail.source'
+      media: 'thumbnail'
     }
   }
 }

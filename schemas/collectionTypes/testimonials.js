@@ -33,7 +33,7 @@ export default {
   preview: {
     select: {
       title: 'name',
-      media: 'img.source'
+      media: 'img'
     }
   }
 }
