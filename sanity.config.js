@@ -3,6 +3,7 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import { singleTypes } from './schemas'
+import { media } from 'sanity-plugin-media'
 
 import {markdownSchema} from 'sanity-plugin-markdown'
 import {CustomMarkdownInput} from './components/CustomInput'
@@ -52,6 +53,7 @@ export default defineConfig({
     }),
     visionTool(),
     markdownSchema({input: CustomMarkdownInput}),
+    media(),
   ],
 
   schema: {

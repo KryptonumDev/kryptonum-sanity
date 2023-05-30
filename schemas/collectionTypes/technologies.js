@@ -19,7 +19,7 @@ export default {
     },
     {
       name: 'thumbnail',
-      type: 'img',
+      type: 'image',
       title: 'Thumbnail',
     },
   ],

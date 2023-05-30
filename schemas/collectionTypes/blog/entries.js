@@ -24,7 +24,7 @@ export default {
     },
     {
       name: 'cover',
-      type: 'img',
+      type: 'image',
       title: 'Cover',
     },
     {

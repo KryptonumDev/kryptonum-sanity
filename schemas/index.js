@@ -1,10 +1,11 @@
 // Single Types
 import homepage from './singleTypes/homepage'
 import webDevelopment from './singleTypes/web-development'
+import pwa from './singleTypes/pwa'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 
-export const singleTypes = [homepage, webDevelopment, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, pwa, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -17,7 +18,6 @@ import blog_categories from './collectionTypes/blog/categories'
 
 // Components
 import cta from './components/cta'
-import img from './components/img'
 import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
 import titleDescriptionAndImg from './components/titleDescriptionAndImg'
@@ -28,6 +28,7 @@ export const schemaTypes = [
   webDevelopment,
   notFound,
   footer,
+  pwa,
 
   blog_entries,
   blog_categories,
@@ -38,7 +39,6 @@ export const schemaTypes = [
   caseStudies,
 
   cta,
-  img,
   link,
   titleAndDescription,
   titleDescriptionAndImg,

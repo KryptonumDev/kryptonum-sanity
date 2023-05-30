@@ -24,7 +24,7 @@ export default {
     },
     {
       name: 'hero_Img',
-      type: 'img',
+      type: 'image',
       title: 'Hero Image',
       group: 'hero',
     },
@@ -42,7 +42,7 @@ export default {
     },
     {
       name: 'ctaSection_Img',
-      type: 'img',
+      type: 'image',
       title: 'Call To Action Section Image',
       group: 'cta',
     },
