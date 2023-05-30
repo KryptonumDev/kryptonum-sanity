@@ -20,6 +20,8 @@ import cta from './components/cta'
 import img from './components/img'
 import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
+import titleDescriptionAndImg from './components/titleDescriptionAndImg'
+import scrollToNext from './components/scrollToNext'
 
 export const schemaTypes = [
   homepage,
@@ -39,4 +41,6 @@ export const schemaTypes = [
   img,
   link,
   titleAndDescription,
+  titleDescriptionAndImg,
+  scrollToNext
 ]

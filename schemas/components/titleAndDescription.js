@@ -10,8 +10,7 @@ export default {
     },
     {
       name: 'description',
-      type: 'text',
-      rows: 5,
+      type: 'markdown',
       fieldset: 'content',
     },
     {

@@ -28,7 +28,7 @@ export default {
       title: 'Hero Image',
       group: 'hero',
     },
-     {
+    {
       name: 'ctaSection_Heading',
       type: 'markdown',
       title: 'Call To Action Section Heading',

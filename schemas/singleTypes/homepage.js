@@ -30,26 +30,6 @@ export default {
       group: 'hero',
     },
     {
-      name: 'hero_CaseStudies',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'caseStudies' }],
-          options: { disableNew: true },
-        }
-      ],
-      validation: Rule => Rule.max(3),
-      title: 'Hero Case Studies',
-      group: 'hero',
-    },
-    {
-      name: 'hero_CaseStudiesLink',
-      type: 'string',
-      title: 'Hero Case Studies Link',
-      group: 'hero',
-    },
-    {
       name: 'conquest_Heading',
       type: 'markdown',
       title: 'Conquest Heading',
