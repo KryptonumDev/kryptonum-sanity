@@ -1,11 +1,11 @@
 // Single Types
 import homepage from './singleTypes/homepage'
 import webDevelopment from './singleTypes/web-development'
-import pwa from './singleTypes/pwa'
+import webDevelopment_Pwa from './singleTypes/webDevelopment_Pwa'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 
-export const singleTypes = [homepage, webDevelopment, pwa, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -22,13 +22,14 @@ import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
 import titleDescriptionAndImg from './components/titleDescriptionAndImg'
 import scrollToNext from './components/scrollToNext'
+import CtaSection from './components/CtaSection'
 
 export const schemaTypes = [
   homepage,
   webDevelopment,
   notFound,
   footer,
-  pwa,
+  webDevelopment_Pwa,
 
   blog_entries,
   blog_categories,
@@ -42,5 +43,6 @@ export const schemaTypes = [
   link,
   titleAndDescription,
   titleDescriptionAndImg,
-  scrollToNext
+  scrollToNext,
+  CtaSection
 ]

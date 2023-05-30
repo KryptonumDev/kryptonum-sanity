@@ -9,13 +9,13 @@ export default {
       title: 'Theme',
       options: {
         list: [
-          { title: 'primary', value: 'primary' },
-          { title: 'secondary', value: 'secondary' }
+          { title: 'Primary', value: 'primary' },
+          { title: 'Secondary', value: 'secondary' }
         ],
         layout: 'radio',
         direction: "horizontal"
       },
-      initialValue: 'primary'
+      initialValue: 'primary',
     },
     {
       title: 'Text',

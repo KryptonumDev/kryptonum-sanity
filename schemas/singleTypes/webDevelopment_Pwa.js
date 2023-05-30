@@ -1,5 +1,7 @@
+const astertiks = "*❋*";
+
 export default {
-  name: 'pwa',
+  name: 'webDevelopment_Pwa',
 	title: 'Progressive Web Apps',
   type: 'document',
   icon: () => '📱',
@@ -9,17 +11,19 @@ export default {
       type: 'markdown',
       title: 'Hero Heading',
       group: 'hero',
+      description: `To make an annotion simply use one enter between new lines of text. If you want to use asteriks, put (${astertiks})`
     },
     {
-      name: 'hero_Claim',
+      name: 'hero_Annotation',
       type: 'markdown',
-      title: 'Hero Claim',
+      title: 'Hero Annotation',
       group: 'hero',
+      hidden: ({ parent }) => !parent.hero_Heading?.includes(`${astertiks}`)
     },
     {
       name: 'hero_Paragraph',
       type: 'markdown',
-      title: 'Hero Paragraph',
+      title: 'Hero paragraph',
       group: 'hero',
     },
     {
@@ -40,6 +44,24 @@ export default {
       title: 'Scroll To Next Section',
       group: 'scrollToNext',
     },
+    {
+      name: 'talk_Heading',
+      type: 'markdown',
+      title: 'Talk Section Heading',
+      group: 'talkSection',
+    },
+    {
+      name: 'talk_Cta',
+      type: 'cta',
+      title: 'Talk Section Cta',
+      group: 'talkSection',
+    },
+    {
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Call To Action Section',
+      group: 'ctaSection',
+    },
   ],
   groups: [
     {
@@ -47,23 +69,11 @@ export default {
       title: 'Hero',
     },
     {
-      name: 'advantages',
-      title: 'Advantages',
+      name: 'talkSection',
+      title: 'Talk Section',
     },
     {
-      name: 'process',
-      title: 'Process',
-    },
-    {
-      name: 'flexibility',
-      title: 'Flexibility',
-    },
-    {
-      name: 'caseStudies',
-      title: 'Case Studies',
-    },
-    {
-      name: 'cta',
+      name: 'ctaSection',
       title: 'Call To Action',
     },
     {

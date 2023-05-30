@@ -1,3 +1,5 @@
+const astertiks = "*❋*";
+
 export default {
   name: 'webDevelopment',
 	title: 'Web Development',
@@ -9,17 +11,19 @@ export default {
       type: 'markdown',
       title: 'Hero Heading',
       group: 'hero',
+      description: `To make an annotion simply use one enter between new lines of text. If you want to use asteriks, put (${astertiks})`
     },
     {
-      name: 'hero_Claim',
+      name: 'hero_Annotation',
       type: 'markdown',
-      title: 'Hero Claim',
+      title: 'Hero Annotation',
       group: 'hero',
+      hidden: ({ parent }) => !parent.hero_Heading?.includes(`${astertiks}`)
     },
     {
       name: 'hero_Paragraph',
       type: 'markdown',
-      title: 'Hero Paragraph',
+      title: 'Hero paragraph',
       group: 'hero',
     },
     {
@@ -147,22 +151,10 @@ export default {
       group: 'caseStudies',
     },
     {
-      name: 'ctaSection_Heading',
-      type: 'markdown',
-      title: 'Call To Action Section Heading',
-      group: 'cta',
-    },
-    {
-      name: 'ctaSection_Cta',
-      type: 'cta',
-      title: 'Call To Action Section Button',
-      group: 'cta',
-    },
-    {
-      name: 'ctaSection_Img',
-      type: 'image',
-      title: 'Call To Action Section Image',
-      group: 'cta',
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Call To Action Section',
+      group: 'ctaSection',
     },
     {
       name: 'scrollToNext',
@@ -193,8 +185,8 @@ export default {
       title: 'Case Studies',
     },
     {
-      name: 'cta',
-      title: 'Call To Action',
+      name: 'ctaSection',
+      title: 'CTA Section',
     },
     {
       name: 'scrollToNext',
