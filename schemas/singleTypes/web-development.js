@@ -101,7 +101,10 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'titleAndDescription'
+          type: 'titleAndDescription',
+          options: {
+            modal: {type: 'popover'} //Makes the modal type a popover
+          }
         }
       ],
       title: 'Process List',

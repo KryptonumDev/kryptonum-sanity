@@ -39,12 +39,6 @@ export default {
       group: 'hero',
     },
     {
-      name: 'scrollToNext',
-      type: 'scrollToNext',
-      title: 'Scroll To Next Section',
-      group: 'scrollToNext',
-    },
-    {
       name: 'talk_Heading',
       type: 'markdown',
       title: 'Talk Section Heading',
@@ -57,10 +51,58 @@ export default {
       group: 'talkSection',
     },
     {
+      name: 'process_Heading',
+      type: 'markdown',
+      title: 'Process Heading',
+      group: 'process',
+    },
+    {
+      name: 'process_Paragraph',
+      type: 'markdown',
+      title: 'Process Paragraph',
+      group: 'process',
+    },
+    {
+      name: 'process_SecondParagraph',
+      type: 'markdown',
+      title: 'Process Second Paragraph',
+      group: 'process',
+    },
+    {
+      name: 'process_List',
+      type: 'array',
+      of: [
+        {
+          type: 'FiveItemsList',
+        }
+      ],
+      validation: Rule => Rule.max(3),
+      title: 'Process List',
+      group: 'process',
+    },
+    {
       name: 'ctaSection',
       type: 'ctaSection',
       title: 'Call To Action Section',
       group: 'ctaSection',
+    },
+    {
+      name: 'caseStudies_Heading',
+      type: 'markdown',
+      title: 'Case Studies Heading',
+      group: 'caseStudies',
+    },
+    {
+      name: 'blogEntries_Heading',
+      type: 'markdown',
+      title: 'Blog Entries Heading',
+      group: 'blogEntries',
+    },
+    {
+      name: 'scrollToNext',
+      type: 'scrollToNext',
+      title: 'Scroll To Next Section',
+      group: 'scrollToNext',
     },
   ],
   groups: [
@@ -73,8 +115,20 @@ export default {
       title: 'Talk Section',
     },
     {
+      name: 'process',
+      title: 'Process',
+    },
+    {
       name: 'ctaSection',
       title: 'Call To Action',
+    },
+    {
+      name: 'caseStudies',
+      title: 'Case Studies',
+    },
+    {
+      name: 'blogEntries',
+      title: 'Blog Entries',
     },
     {
       name: 'scrollToNext',

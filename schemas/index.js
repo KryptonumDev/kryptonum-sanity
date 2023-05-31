@@ -23,6 +23,7 @@ import titleAndDescription from './components/titleAndDescription'
 import titleDescriptionAndImg from './components/titleDescriptionAndImg'
 import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
+import FiveItemsList from './components/FiveItemsList'
 
 export const schemaTypes = [
   homepage,
@@ -44,5 +45,6 @@ export const schemaTypes = [
   titleAndDescription,
   titleDescriptionAndImg,
   scrollToNext,
-  CtaSection
+  CtaSection,
+  FiveItemsList
 ]
