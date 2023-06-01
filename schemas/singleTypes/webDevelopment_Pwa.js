@@ -81,6 +81,24 @@ export default {
       group: 'process',
     },
     {
+      name: 'form_Heading',
+      type: 'markdown',
+      title: 'Form Heading',
+      group: 'form',
+    },
+    {
+      name: 'form_Subheading',
+      type: 'markdown',
+      title: 'Form Subheading',
+      group: 'form',
+    },
+    {
+      name: 'form_Cta',
+      type: 'string',
+      title: 'Form Cta',
+      group: 'form',
+    },
+    {
       name: 'ctaSection',
       type: 'ctaSection',
       title: 'Call To Action Section',
@@ -117,6 +135,10 @@ export default {
     {
       name: 'process',
       title: 'Process',
+    },
+    {
+      name: 'form',
+      title: 'Form',
     },
     {
       name: 'ctaSection',

@@ -4,6 +4,7 @@ import webDevelopment from './singleTypes/web-development'
 import webDevelopment_Pwa from './singleTypes/webDevelopment_Pwa'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
+import global from './singleTypes/global'
 
 export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, notFound, footer];
 
@@ -31,6 +32,7 @@ export const schemaTypes = [
   notFound,
   footer,
   webDevelopment_Pwa,
+  global,
 
   blog_entries,
   blog_categories,

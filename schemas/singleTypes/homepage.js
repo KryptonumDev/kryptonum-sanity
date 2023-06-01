@@ -2,7 +2,7 @@ export default {
   name: 'homepage',
 	title: 'Homepage',
   type: 'document',
-  icon: () => '🌍',
+  icon: () => '⭐️',
   fields: [
     {
       name: 'hero_Heading',

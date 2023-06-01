@@ -8,6 +8,8 @@ import { media } from 'sanity-plugin-media'
 import {markdownSchema} from 'sanity-plugin-markdown'
 import {CustomMarkdownInput} from './components/CustomInput'
 
+import global from './schemas/singleTypes/global';
+
 const singletonTypes = new Set(singleTypes.map(type => type.name))
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"])
@@ -40,6 +42,8 @@ export default defineConfig({
           .title("Content")
           .items([
             ...singleTypes.map((item) => createListItem(S, item)),
+            S.divider(),
+            createListItem(S, global),
             S.divider(),
             S.documentTypeListItem("blog_entries"),
             S.documentTypeListItem("blog_categories"),
