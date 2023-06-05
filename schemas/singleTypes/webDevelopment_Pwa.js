@@ -81,22 +81,10 @@ export default {
       group: 'process',
     },
     {
-      name: 'form_Heading',
-      type: 'markdown',
-      title: 'Form Heading',
-      group: 'form',
-    },
-    {
-      name: 'form_Subheading',
-      type: 'markdown',
-      title: 'Form Subheading',
-      group: 'form',
-    },
-    {
-      name: 'form_Cta',
-      type: 'string',
-      title: 'Form Cta',
-      group: 'form',
+      name: 'quickForm',
+      type: 'quickForm',
+      title: 'Quick Form',
+      group: 'quickForm',
     },
     {
       name: 'ctaSection',
@@ -129,16 +117,12 @@ export default {
       title: 'Hero',
     },
     {
-      name: 'talkSection',
-      title: 'Talk Section',
-    },
-    {
       name: 'process',
       title: 'Process',
     },
     {
-      name: 'form',
-      title: 'Form',
+      name: 'quickForm',
+      title: 'Quick Form',
     },
     {
       name: 'ctaSection',

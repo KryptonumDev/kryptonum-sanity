@@ -4,7 +4,7 @@ export default {
   name: 'webDevelopment',
 	title: 'Web Development',
   type: 'document',
-  icon: () => '🌐',
+  icon: () => '👨🏻‍💻',
   fields: [
     {
       name: 'hero_Heading',

@@ -3,11 +3,12 @@ import homepage from './singleTypes/homepage'
 import webDevelopment from './singleTypes/webDevelopment'
 import webDevelopment_Pwa from './singleTypes/webDevelopment_Pwa'
 import webDevelopment_Ecom from './singleTypes/webDevelopment_Ecom'
+import webDevelopment_Site from './singleTypes/webDevelopment_Site'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 import global from './singleTypes/global'
 
-export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -27,6 +28,7 @@ import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
 import FiveItemsList from './components/FiveItemsList'
 import webDevelopmentEcom_Process from './components/webDevelopmentEcom_Process';
+import quickForm from './components/quickForm'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -47,5 +49,6 @@ export const schemaTypes = [
   scrollToNext,
   CtaSection,
   FiveItemsList,
-  webDevelopmentEcom_Process
+  webDevelopmentEcom_Process,
+  quickForm,
 ]

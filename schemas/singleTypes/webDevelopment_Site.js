@@ -1,10 +1,10 @@
 const astertiks = "*❋*";
 
 export default {
-  name: 'webDevelopment_Ecom',
-	title: 'Web Development - E-commerce',
+  name: 'webDevelopment_Site',
+	title: 'Web Development - Websites',
   type: 'document',
-  icon: () => '🛒',
+  icon: () => '🌐',
   fields: [
     {
       name: 'hero_Heading',
@@ -51,28 +51,10 @@ export default {
       group: 'hero',
     },
     {
-      name: 'process_Heading',
+      name: 'pricing_Heading',
       type: 'markdown',
-      title: 'Process Heading',
-      group: 'process',
-    },
-    {
-      name: 'process_Claim',
-      type: 'markdown',
-      title: 'Process Claim',
-      group: 'process',
-    },
-    {
-      name: 'process_List',
-      type: 'array',
-      of: [
-        {
-          type: 'webDevelopmentEcom_Process'
-        }
-      ],
-      validation: Rule => Rule.max(6),
-      title: 'Process List',
-      group: 'process',
+      title: 'Hero Procing Heading',
+      group: 'pricing',
     },
     {
       name: 'quickForm',
@@ -81,40 +63,28 @@ export default {
       group: 'quickForm',
     },
     {
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Call To Action Section',
+      group: 'ctaSection',
+    },
+    {
       name: 'caseStudies_Heading',
       type: 'markdown',
       title: 'Case Studies Heading',
       group: 'caseStudies',
     },
     {
-      name: 'develop_Paragraph1',
+      name: 'simpleCtaSection_Heading',
       type: 'markdown',
-      title: 'Develop First Paragraph',
-      group: 'develop',
+      title: 'Simple CTA Section Heading',
+      group: 'simpleCtaSection'
     },
     {
-      name: 'develop_Paragraph2',
-      type: 'markdown',
-      title: 'Develop Second Paragraph',
-      group: 'develop',
-    },
-    {
-      name: 'develop_Paragraph3',
-      type: 'markdown',
-      title: 'Develop Third Paragraph',
-      group: 'develop',
-    },
-    {
-      name: 'develop_Paragraph4',
-      type: 'markdown',
-      title: 'Develop Fourth Paragraph',
-      group: 'develop',
-    },
-    {
-      name: 'ctaSection',
-      type: 'ctaSection',
-      title: 'Call To Action Section',
-      group: 'ctaSection',
+      name: 'simpleCtaSection_Cta',
+      type: 'cta',
+      title: 'Simple CTA Section CTA',
+      group: 'simpleCtaSection'
     },
     {
       name: 'blogEntries_Heading',
@@ -135,24 +105,24 @@ export default {
       title: 'Hero',
     },
     {
-      name: 'process',
-      title: 'Process',
+      name: 'pricing',
+      title: 'Pricing',
     },
     {
       name: 'quickForm',
       title: 'Quick Form',
     },
     {
+      name: 'ctaSection',
+      title: 'Call To Action',
+    },
+    {
       name: 'caseStudies',
       title: 'Case Studies',
     },
     {
-      name: 'develop',
-      title: 'Develop',
-    },
-    {
-      name: 'ctaSection',
-      title: 'Call To Action',
+      name: 'simpleCtaSection',
+      title: 'Simple CTA Section',
     },
     {
       name: 'blogEntries',
