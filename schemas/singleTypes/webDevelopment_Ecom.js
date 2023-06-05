@@ -1,10 +1,10 @@
 const astertiks = "*❋*";
 
 export default {
-  name: 'webDevelopment_Pwa',
-	title: 'Web Development - Progressive Web Apps',
+  name: 'webDevelopment_Ecom',
+	title: 'Web Development - E-commerce',
   type: 'document',
-  icon: () => '📱',
+  icon: () => '🛒',
   fields: [
     {
       name: 'hero_Heading',
@@ -57,15 +57,9 @@ export default {
       group: 'process',
     },
     {
-      name: 'process_Paragraph',
+      name: 'process_Claim',
       type: 'markdown',
-      title: 'Process Paragraph',
-      group: 'process',
-    },
-    {
-      name: 'process_SecondParagraph',
-      type: 'markdown',
-      title: 'Process Second Paragraph',
+      title: 'Process Claim',
       group: 'process',
     },
     {
@@ -73,10 +67,10 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'FiveItemsList',
+          type: 'webDevelopmentEcom_Process'
         }
       ],
-      validation: Rule => Rule.max(3),
+      validation: Rule => Rule.max(6),
       title: 'Process List',
       group: 'process',
     },
@@ -99,16 +93,40 @@ export default {
       group: 'form',
     },
     {
-      name: 'ctaSection',
-      type: 'ctaSection',
-      title: 'Call To Action Section',
-      group: 'ctaSection',
-    },
-    {
       name: 'caseStudies_Heading',
       type: 'markdown',
       title: 'Case Studies Heading',
       group: 'caseStudies',
+    },
+    {
+      name: 'develop_Paragraph1',
+      type: 'markdown',
+      title: 'Develop First Paragraph',
+      group: 'develop',
+    },
+    {
+      name: 'develop_Paragraph2',
+      type: 'markdown',
+      title: 'Develop Second Paragraph',
+      group: 'develop',
+    },
+    {
+      name: 'develop_Paragraph3',
+      type: 'markdown',
+      title: 'Develop Third Paragraph',
+      group: 'develop',
+    },
+    {
+      name: 'develop_Paragraph4',
+      type: 'markdown',
+      title: 'Develop Fourth Paragraph',
+      group: 'develop',
+    },
+    {
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Call To Action Section',
+      group: 'ctaSection',
     },
     {
       name: 'blogEntries_Heading',
@@ -129,10 +147,6 @@ export default {
       title: 'Hero',
     },
     {
-      name: 'talkSection',
-      title: 'Talk Section',
-    },
-    {
       name: 'process',
       title: 'Process',
     },
@@ -141,12 +155,16 @@ export default {
       title: 'Form',
     },
     {
-      name: 'ctaSection',
-      title: 'Call To Action',
-    },
-    {
       name: 'caseStudies',
       title: 'Case Studies',
+    },
+    {
+      name: 'develop',
+      title: 'Develop',
+    },
+    {
+      name: 'ctaSection',
+      title: 'Call To Action',
     },
     {
       name: 'blogEntries',

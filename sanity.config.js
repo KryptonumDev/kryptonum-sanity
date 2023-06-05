@@ -41,9 +41,9 @@ export default defineConfig({
         S.list()
           .title("Content")
           .items([
-            ...singleTypes.map((item) => createListItem(S, item)),
-            S.divider(),
             createListItem(S, global),
+            S.divider(),
+            ...singleTypes.map((item) => createListItem(S, item)),
             S.divider(),
             S.documentTypeListItem("blog_entries"),
             S.documentTypeListItem("blog_categories"),

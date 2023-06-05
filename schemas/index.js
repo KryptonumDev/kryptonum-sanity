@@ -1,12 +1,13 @@
 // Single Types
 import homepage from './singleTypes/homepage'
-import webDevelopment from './singleTypes/web-development'
+import webDevelopment from './singleTypes/webDevelopment'
 import webDevelopment_Pwa from './singleTypes/webDevelopment_Pwa'
+import webDevelopment_Ecom from './singleTypes/webDevelopment_Ecom'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 import global from './singleTypes/global'
 
-export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -25,13 +26,10 @@ import titleDescriptionAndImg from './components/titleDescriptionAndImg'
 import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
 import FiveItemsList from './components/FiveItemsList'
+import webDevelopmentEcom_Process from './components/webDevelopmentEcom_Process';
 
 export const schemaTypes = [
-  homepage,
-  webDevelopment,
-  notFound,
-  footer,
-  webDevelopment_Pwa,
+  ...singleTypes,
   global,
 
   blog_entries,
@@ -48,5 +46,6 @@ export const schemaTypes = [
   titleDescriptionAndImg,
   scrollToNext,
   CtaSection,
-  FiveItemsList
+  FiveItemsList,
+  webDevelopmentEcom_Process
 ]
