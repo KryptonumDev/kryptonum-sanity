@@ -29,6 +29,9 @@ import CtaSection from './components/CtaSection'
 import FiveItemsList from './components/FiveItemsList'
 import webDevelopmentEcom_Process from './components/webDevelopmentEcom_Process';
 import quickForm from './components/quickForm'
+import pricing from './components/pricing'
+import benefits from './components/benefits'
+import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -51,4 +54,7 @@ export const schemaTypes = [
   FiveItemsList,
   webDevelopmentEcom_Process,
   quickForm,
+  pricing,
+  benefits,
+  webDevelopmentSite_Process,
 ]

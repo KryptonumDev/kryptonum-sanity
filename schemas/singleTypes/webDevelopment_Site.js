@@ -53,8 +53,59 @@ export default {
     {
       name: 'pricing_Heading',
       type: 'markdown',
-      title: 'Hero Procing Heading',
+      title: 'Hero Pricing Heading',
       group: 'pricing',
+    },
+    {
+      name: 'pricing_Plans',
+      type: 'array',
+      of: [
+        {
+          type: 'pricing',
+        }
+      ],
+      title: 'Hero Pricing Plans',
+      group: 'pricing',
+    },
+    {
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Call To Action Section',
+      group: 'ctaSection',
+    },
+    {
+      name: 'process_Heading',
+      type: 'markdown',
+      title: 'Process Heading',
+      group: 'process',
+    },
+    {
+      name: 'process_List',
+      type: 'array',
+      of: [
+        {
+          type: 'webDevelopmentSite_Process'
+        }
+      ],
+      title: 'Process List',
+      group: 'process',
+    },
+    {
+      name: 'roadmap_Heading',
+      type: 'markdown',
+      title: 'Roadmap Heading',
+      group: 'roadmap',
+    },
+    {
+      name: 'roadmap_List',
+      type: 'array',
+      of: [
+        {
+          type: 'titleAndDescription'
+        }
+      ],
+      title: 'Roadmap List',
+      group: 'roadmap',
     },
     {
       name: 'quickForm',
@@ -63,10 +114,29 @@ export default {
       group: 'quickForm',
     },
     {
-      name: 'ctaSection',
-      type: 'ctaSection',
-      title: 'Call To Action Section',
-      group: 'ctaSection',
+      name: 'technology_Heading',
+      type: 'markdown',
+      title: 'Technology Heading',
+      group: 'technology'
+    },
+    {
+      name: 'technology_Paragraph',
+      type: 'markdown',
+      title: 'Technology Paragraph',
+      group: 'technology'
+    },
+    {
+      name: 'technology_Content',
+      type: 'markdown',
+      title: 'Technology Content',
+      group: 'technology'
+    },
+    {
+      name: 'technology_Img',
+      type: 'array',
+      of: [{ type: 'image' }],
+      title: 'Technology Images',
+      group: 'technology'
     },
     {
       name: 'caseStudies_Heading',
@@ -109,12 +179,24 @@ export default {
       title: 'Pricing',
     },
     {
+      name: 'ctaSection',
+      title: 'Call To Action',
+    },
+    {
+      name: 'process',
+      title: 'Process',
+    },
+    {
+      name: 'roadmap',
+      title: 'Roadmap',
+    },
+    {
       name: 'quickForm',
       title: 'Quick Form',
     },
     {
-      name: 'ctaSection',
-      title: 'Call To Action',
+      name: 'technology',
+      title: 'Technology',
     },
     {
       name: 'caseStudies',

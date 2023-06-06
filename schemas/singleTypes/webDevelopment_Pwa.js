@@ -87,6 +87,64 @@ export default {
       group: 'quickForm',
     },
     {
+      name: 'customer_Heading',
+      type: 'markdown',
+      title: 'Customer Heading',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhatHeading',
+      type: 'markdown',
+      title: 'Customer "What" Heading',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhatList',
+      type: 'array',
+      of: [
+        {
+          type: 'titleAndDescription'
+        }
+      ],
+      title: 'Customer "What" List',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhatParagraph',
+      type: 'markdown',
+      title: 'Customer "What" Paragraph',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhatSecondParagraph',
+      type: 'markdown',
+      title: 'Customer "What" Second Paragraph',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhoHeading',
+      type: 'markdown',
+      title: 'Customer "Who" Heading',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhoList',
+      type: 'array',
+      of: [
+        {
+          type: 'titleAndDescription'
+        }
+      ],
+      title: 'Customer "Who" List',
+      group: 'customer',
+    },
+    {
+      name: 'customer_WhoAnnotation',
+      type: 'markdown',
+      title: 'Customer "Who" Annotation',
+      group: 'customer',
+    },
+    {
       name: 'ctaSection',
       type: 'ctaSection',
       title: 'Call To Action Section',
@@ -123,6 +181,14 @@ export default {
     {
       name: 'quickForm',
       title: 'Quick Form',
+    },
+    {
+      name: 'ctaSection',
+      title: 'Call To Action',
+    },
+    {
+      name: 'customer',
+      title: 'Customer',
     },
     {
       name: 'ctaSection',
