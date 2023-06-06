@@ -32,6 +32,7 @@ import quickForm from './components/quickForm'
 import pricing from './components/pricing'
 import benefits from './components/benefits'
 import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
+import { faqSchemas } from './components/faq/faq'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -57,4 +58,5 @@ export const schemaTypes = [
   pricing,
   benefits,
   webDevelopmentSite_Process,
+  ...faqSchemas,
 ]

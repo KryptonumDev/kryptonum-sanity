@@ -24,11 +24,21 @@ export default {
       title: 'Quick Form Tel',
       group: 'quickForm',
     },
+    {
+      name: 'faq',
+      type: 'faq',
+      title: 'FAQ',
+      group: 'faq',
+    },
   ],
   groups: [
     {
       name: 'quickForm',
       title: 'Quick Form',
+    },
+    {
+      name: 'faq',
+      title: 'FAQ',
     },
   ],
 }
