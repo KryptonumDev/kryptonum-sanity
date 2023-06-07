@@ -1,10 +1,10 @@
 export default {
-  name: "faq_Price",
-  title: "FAQ Price",
+  name: "faq_Payment",
+  title: "FAQ Payment",
   type: 'object',
   fields: [
     {
-      name: 'title',
+      name: 'question',
       type: 'string'
     },
     {
@@ -16,16 +16,25 @@ export default {
       type: 'markdown'
     },
     {
-      name: 'subheading',
-      type: 'markdown'
-    },
-    {
       name: 'secondParagraph',
       type: 'markdown'
     },
     {
-      name: 'cta',
-      type: 'cta'
+      name: 'thirdParagraph',
+      type: 'markdown'
+    },
+    {
+      name: 'text',
+      type: 'string'
+    },
+    {
+      name: 'list',
+      type: 'array',
+      of: [
+        {
+          type: 'string'
+        }
+      ],
     },
   ],
 }
