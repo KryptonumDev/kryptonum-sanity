@@ -7,8 +7,9 @@ import webDevelopment_Site from './singleTypes/webDevelopment_Site'
 import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 import global from './singleTypes/global'
+import workshop from './singleTypes/workshop'
 
-export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, workshop, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -33,6 +34,7 @@ import pricing from './components/pricing'
 import benefits from './components/benefits'
 import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
 import { faqSchemas } from './components/faq/faq'
+import simpleCtaSection from './components/simpleCtaSection'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -59,4 +61,5 @@ export const schemaTypes = [
   benefits,
   webDevelopmentSite_Process,
   ...faqSchemas,
+  simpleCtaSection,
 ]

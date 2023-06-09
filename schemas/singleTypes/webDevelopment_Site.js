@@ -39,15 +39,9 @@ export default {
       group: 'hero',
     },
     {
-      name: 'hero_CtaHeading',
-      type: 'markdown',
-      title: 'Hero Cta Heading',
-      group: 'hero',
-    },
-    {
-      name: 'hero_Cta',
-      type: 'cta',
-      title: 'Hero Cta',
+      name: 'hero_simpleCtaSection',
+      type: 'simpleCtaSection',
+      title: 'Hero Simple CTA Section',
       group: 'hero',
     },
     {
@@ -145,15 +139,9 @@ export default {
       group: 'caseStudies',
     },
     {
-      name: 'simpleCtaSection_Heading',
-      type: 'markdown',
-      title: 'Simple CTA Section Heading',
-      group: 'simpleCtaSection'
-    },
-    {
-      name: 'simpleCtaSection_Cta',
-      type: 'cta',
-      title: 'Simple CTA Section CTA',
+      name: 'simpleCtaSection',
+      type: 'simpleCtaSection',
+      title: 'Simple CTA Section',
       group: 'simpleCtaSection'
     },
     {

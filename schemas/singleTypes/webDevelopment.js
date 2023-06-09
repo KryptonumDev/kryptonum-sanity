@@ -67,16 +67,10 @@ export default {
       group: 'advantages',
     },
     {
-      name: 'advantages_CtaHeading',
-      type: 'markdown',
-      title: 'Advantages Cta Heading',
-      group: 'advantages',
-    },
-    {
-      name: 'advantages_Cta',
-      type: 'cta',
-      title: 'Advantages Cta',
-      group: 'advantages',
+      name: 'simpleCtaSection',
+      type: 'simpleCtaSection',
+      title: 'Simple CTA Section',
+      group: 'simpleCtaSection',
     },
     {
       name: 'process_Heading',
@@ -171,6 +165,10 @@ export default {
     {
       name: 'advantages',
       title: 'Advantages',
+    },
+    {
+      name: 'simpleCtaSection',
+      title: 'Simple CTA Section',
     },
     {
       name: 'process',
