@@ -102,6 +102,12 @@ export default {
       group: 'roadmap',
     },
     {
+      name: 'roadmap_Cta',
+      type: 'cta',
+      title: 'Roadmap CTA',
+      group: 'roadmap',
+    },
+    {
       name: 'quickForm',
       type: 'quickForm',
       title: 'Quick Form',

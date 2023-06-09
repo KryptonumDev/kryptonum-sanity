@@ -45,6 +45,93 @@ export default {
       group: 'simpleCtaSection',
     },
     {
+      name: 'process_Heading',
+      type: 'markdown',
+      title: 'Process Heading',
+      group: 'process'
+    },
+    {
+      name: 'process_List',
+      type: 'array',
+      of: [
+        {
+          type: 'titleAndDescription'
+        }
+      ],
+      title: 'Process List',
+      group: 'process'
+    },
+    {
+      name: 'why_Heading',
+      type: 'markdown',
+      title: 'Why Heading',
+      group: 'why'
+    },
+    {
+      name: 'why_Paragraph',
+      type: 'markdown',
+      title: 'Why Paragraph',
+      group: 'why'
+    },
+    {
+      name: 'why_SecondParagraph',
+      type: 'markdown',
+      title: 'Why Second Paragraph',
+      group: 'why'
+    },
+    {
+      name: 'why_ThirdParagraph',
+      type: 'markdown',
+      title: 'Why Third Paragraph',
+      group: 'why'
+    },
+    {
+      name: 'why_FourthParagraph',
+      type: 'markdown',
+      title: 'Why Fourth Paragraph',
+      group: 'why'
+    },
+    {
+      name: 'why_Cta',
+      type: 'cta',
+      title: 'Why Cta',
+      group: 'why'
+    },
+    {
+      name: 'document_Heading',
+      type: 'markdown',
+      title: 'Document Heading',
+      group: 'document'
+    },
+    {
+      name: 'document_Paragraph',
+      type: 'markdown',
+      title: 'Document Paragraph',
+      group: 'document'
+    },
+    {
+      name: 'document_Paragraph2',
+      type: 'markdown',
+      title: 'Document Paragraph Second',
+      group: 'document'
+    },
+    {
+      name: 'document_Images',
+      type: 'array',
+      of: [
+        {
+          type: 'image'
+        }
+      ],
+      title: 'Document Images',
+      group: 'document'
+    },
+    {
+      name: 'document_SimpleCtaSection',
+      type: 'simpleCtaSection',
+      group: 'document'
+    },
+    {
       name: 'scrollToNext',
       type: 'scrollToNext',
       title: 'Scroll To Next Section',
@@ -59,6 +146,18 @@ export default {
     {
       name: 'simpleCtaSection',
       title: 'Simple CTA Section',
+    },
+    {
+      name: 'process',
+      title: 'Process',
+    },
+    {
+      name: 'why',
+      title: 'Why',
+    },
+    {
+      name: 'document',
+      title: 'Document',
     },
     {
       name: 'scrollToNext',
