@@ -8,8 +8,10 @@ import notFound from './singleTypes/404'
 import footer from './singleTypes/footer'
 import global from './singleTypes/global'
 import workshop from './singleTypes/workshop'
+import agency from './singleTypes/agency'
+import graphicsDesign from './singleTypes/graphics-design'
 
-export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, workshop, notFound, footer];
+export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, workshop, agency, graphicsDesign, notFound, footer];
 
 // Collection Types
 import team from './collectionTypes/team'
@@ -25,6 +27,7 @@ import cta from './components/cta'
 import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
 import titleDescriptionAndImg from './components/titleDescriptionAndImg'
+import titleAndImage from './components/titleAndImage'
 import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
 import FiveItemsList from './components/FiveItemsList'
@@ -52,6 +55,7 @@ export const schemaTypes = [
   link,
   titleAndDescription,
   titleDescriptionAndImg,
+  titleAndImage,
   scrollToNext,
   CtaSection,
   FiveItemsList,
