@@ -10,8 +10,21 @@ import global from './singleTypes/global'
 import workshop from './singleTypes/workshop'
 import agency from './singleTypes/agency'
 import graphicsDesign from './singleTypes/graphics-design'
+import visualIdentity from './singleTypes/visual-identity'
 
-export const singleTypes = [homepage, webDevelopment, webDevelopment_Pwa, webDevelopment_Ecom, webDevelopment_Site, workshop, agency, graphicsDesign, notFound, footer];
+export const singleTypes = [
+  homepage,
+  webDevelopment,
+  webDevelopment_Pwa,
+  webDevelopment_Ecom,
+  webDevelopment_Site,
+  workshop,
+  agency,
+  graphicsDesign,
+  visualIdentity,
+  notFound,
+  footer
+];
 
 // Collection Types
 import team from './collectionTypes/team'
