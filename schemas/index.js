@@ -11,6 +11,7 @@ import workshop from './singleTypes/workshop'
 import agency from './singleTypes/agency'
 import graphicsDesign from './singleTypes/graphics-design'
 import visualIdentity from './singleTypes/visual-identity'
+import audits from './singleTypes/audits'
 
 export const singleTypes = [
   homepage,
@@ -22,6 +23,7 @@ export const singleTypes = [
   agency,
   graphicsDesign,
   visualIdentity,
+  audits,
   notFound,
   footer
 ];

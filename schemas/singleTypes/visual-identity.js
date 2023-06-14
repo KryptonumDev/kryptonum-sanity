@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'visual-identity',
-	title: 'Visual Identity',
+	title: '├ Visual Identity',
   type: 'document',
   icon: () => '👁️',
   fields: [
