@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'audits',
-	title: '└ Audits',
+	title: '├ Audits',
   type: 'document',
   icon: () => '✅',
   fields: [
@@ -187,6 +187,30 @@ export default {
       group: 'comboAudit',
     },
     {
+      name: 'benefits_Heading',
+      type: 'markdown',
+      title: 'Benefits Heading',
+      group: 'benefits',
+    },
+    {
+      name: 'benefits_Paragraph',
+      type: 'markdown',
+      title: 'benefits Paragraph',
+      group: 'benefits',
+    },
+    {
+      name: 'benefits_Standout',
+      type: 'markdown',
+      title: 'benefits Standout',
+      group: 'benefits',
+    },
+    {
+      name: 'benefits_Img',
+      type: 'image',
+      title: 'benefits Image',
+      group: 'benefits',
+    },
+    {
       name: 'caseStudies_Heading',
       type: 'markdown',
       title: 'Case Studies Heading',
@@ -235,6 +259,10 @@ export default {
     {
       name: 'comboAudit',
       title: 'Combo Audit',
+    },
+    {
+      name: 'benefits',
+      title: 'Benefits',
     },
     {
       name: 'caseStudies',

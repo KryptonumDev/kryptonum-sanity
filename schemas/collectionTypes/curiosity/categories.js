@@ -1,8 +1,8 @@
 export default {
-  name: 'team',
-	title: 'Team',
+  name: 'curiosity_categories',
+	title: 'Curiosity Categories',
   type: 'document',
-  icon: () => '👯‍♀️',
+  icon: () => '📑',
   fields: [
     {
       name: 'name',
@@ -17,16 +17,5 @@ export default {
         source: 'name'
       }
     },
-    {
-      name: 'img',
-      type: 'image',
-      title: 'Thumbnail',
-    },
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'img'
-    }
-  }
 }

@@ -13,7 +13,7 @@ export default {
     {
       name: 'quickForm_Person',
       type: 'reference',
-      to: [{ type: 'team' }],
+      to: [{ type: 'teamMember' }],
       options: { disableNew: true },
       title: 'Quick Form Person',
       group: 'quickForm',

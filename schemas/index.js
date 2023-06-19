@@ -5,13 +5,17 @@ import webDevelopment_Pwa from './singleTypes/webDevelopment_Pwa'
 import webDevelopment_Ecom from './singleTypes/webDevelopment_Ecom'
 import webDevelopment_Site from './singleTypes/webDevelopment_Site'
 import notFound from './singleTypes/404'
+import privacyPolicy from './singleTypes/privacyPolicy'
 import footer from './singleTypes/footer'
 import global from './singleTypes/global'
 import workshop from './singleTypes/workshop'
 import agency from './singleTypes/agency'
-import graphicsDesign from './singleTypes/graphics-design'
-import visualIdentity from './singleTypes/visual-identity'
-import audits from './singleTypes/audits'
+import graphicsDesign from './singleTypes/graphicsDesign'
+import graphicsDesign_VisualIdentity from './singleTypes/graphicsDesign_VisualIdentity'
+import graphicsDesign_Audits from './singleTypes/graphicsDesign_Audits'
+import graphicsDesign_Logo from './singleTypes/graphicsDesign_Logo'
+import academy from './singleTypes/academy'
+import team from './singleTypes/team'
 
 export const singleTypes = [
   homepage,
@@ -19,23 +23,28 @@ export const singleTypes = [
   webDevelopment_Pwa,
   webDevelopment_Ecom,
   webDevelopment_Site,
+  graphicsDesign,
+  graphicsDesign_VisualIdentity,
+  graphicsDesign_Audits,
+  graphicsDesign_Logo,
   workshop,
   agency,
-  graphicsDesign,
-  visualIdentity,
-  audits,
+  team,
+  academy,
   notFound,
-  footer
+  footer,
+  privacyPolicy,
 ];
 
 // Collection Types
-import team from './collectionTypes/team'
+import teamMember from './collectionTypes/teamMember'
 import testimonails from './collectionTypes/testimonials'
 import technologies from './collectionTypes/technologies'
-import curiosities from './collectionTypes/curiosities'
 import caseStudies from './collectionTypes/caseStudies'
 import blog_entries from './collectionTypes/blog/entries'
 import blog_categories from './collectionTypes/blog/categories'
+import curiosity_entries from './collectionTypes/curiosity/entries'
+import curiosity_categories from './collectionTypes/curiosity/categories'
 
 // Components
 import cta from './components/cta'
@@ -53,6 +62,7 @@ import benefits from './components/benefits'
 import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
 import { faqSchemas } from './components/faq/faq'
 import simpleCtaSection from './components/simpleCtaSection'
+import linkWithImg from './components/linkWithImg'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -60,10 +70,11 @@ export const schemaTypes = [
 
   blog_entries,
   blog_categories,
-  team,
+  curiosity_entries,
+  curiosity_categories,
+  teamMember,
   testimonails,
   technologies,
-  curiosities,
   caseStudies,
 
   cta,
@@ -81,4 +92,5 @@ export const schemaTypes = [
   webDevelopmentSite_Process,
   ...faqSchemas,
   simpleCtaSection,
+  linkWithImg,
 ]

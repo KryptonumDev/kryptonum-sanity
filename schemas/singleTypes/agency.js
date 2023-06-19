@@ -63,6 +63,12 @@ export default {
       group: 'services',
     },
     {
+      name: 'services_Title',
+      type: 'markdown',
+      title: 'Services Title',
+      group: 'services',
+    },
+    {
       name: 'services_List',
       type: 'array',
       of: [

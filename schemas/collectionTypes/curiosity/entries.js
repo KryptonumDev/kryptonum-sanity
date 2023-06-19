@@ -1,13 +1,13 @@
 export default {
-  name: 'blog_entries',
-	title: 'Blog Entries',
+  name: 'curiosity_entries',
+	title: 'Curiosity Entries',
   type: 'document',
-  icon: () => '✍🏼',
+  icon: () => '😲',
   fields: [
     {
       name: 'title',
       type: 'markdown',
-      title: 'Title'
+      title: 'Name'
     },
     {
       name: 'slug',
@@ -20,23 +20,12 @@ export default {
     {
       name: 'subtitle',
       type: 'markdown',
-      title: 'Subtitle'
+      title: 'Subtitle',
     },
     {
-      name: 'cover',
+      name: 'img',
       type: 'image',
-      title: 'Cover',
-    },
-    {
-      name: 'categories',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'blog_categories' }],
-        }
-      ],
-      title: 'Categories'
+      title: 'Image',
     },
     {
       name: 'author',
@@ -48,23 +37,24 @@ export default {
           options: { disableNew: true },
         }
       ],
-      title: 'Author'
     },
     {
-      name: 'content',
+      name: 'categories',
       type: 'array',
       of: [
         {
-          type: 'block',
+          type: 'reference',
+          to: [{ type: 'curiosity_categories' }],
+          options: { disableNew: true },
         }
       ],
-      title: 'Content'
-    }
+      title: 'Categories'
+    },
   ],
   preview: {
     select: {
       title: 'title',
-      media: 'cover'
+      media: 'img'
     }
   }
 }
