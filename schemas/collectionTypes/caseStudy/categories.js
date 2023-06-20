@@ -1,8 +1,8 @@
 export default {
-  name: 'caseStudies',
-	title: 'Case Studies',
+  name: 'caseStudy_categories',
+	title: 'Case Study Categories',
   type: 'document',
-  icon: () => '📂',
+  icon: () => '📑',
   fields: [
     {
       name: 'name',
@@ -17,16 +17,5 @@ export default {
         source: 'name'
       }
     },
-    {
-      name: 'thumbnail',
-      type: 'image',
-      title: 'Thumbnail',
-    },
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'thumbnail'
-    }
-  }
 }

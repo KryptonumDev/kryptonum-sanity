@@ -34,6 +34,7 @@ export default {
         {
           type: 'reference',
           to: [{ type: 'blog_categories' }],
+          options: { disableNew: true },
         }
       ],
       title: 'Categories'

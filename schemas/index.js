@@ -6,7 +6,6 @@ import webDevelopment_Ecom from './singleTypes/webDevelopment_Ecom'
 import webDevelopment_Site from './singleTypes/webDevelopment_Site'
 import notFound from './singleTypes/404'
 import privacyPolicy from './singleTypes/privacyPolicy'
-import footer from './singleTypes/footer'
 import global from './singleTypes/global'
 import workshop from './singleTypes/workshop'
 import agency from './singleTypes/agency'
@@ -16,9 +15,11 @@ import graphicsDesign_Audits from './singleTypes/graphicsDesign_Audits'
 import graphicsDesign_Logo from './singleTypes/graphicsDesign_Logo'
 import academy from './singleTypes/academy'
 import team from './singleTypes/team'
+import portfolio from './singleTypes/portfolio'
 
 export const singleTypes = [
   homepage,
+  portfolio,
   webDevelopment,
   webDevelopment_Pwa,
   webDevelopment_Ecom,
@@ -32,7 +33,6 @@ export const singleTypes = [
   team,
   academy,
   notFound,
-  footer,
   privacyPolicy,
 ];
 
@@ -40,11 +40,12 @@ export const singleTypes = [
 import teamMember from './collectionTypes/teamMember'
 import testimonails from './collectionTypes/testimonials'
 import technologies from './collectionTypes/technologies'
-import caseStudies from './collectionTypes/caseStudies'
 import blog_entries from './collectionTypes/blog/entries'
 import blog_categories from './collectionTypes/blog/categories'
 import curiosity_entries from './collectionTypes/curiosity/entries'
 import curiosity_categories from './collectionTypes/curiosity/categories'
+import caseStudy_entries from './collectionTypes/caseStudy/entries'
+import caseStudy_categories from './collectionTypes/caseStudy/categories'
 
 // Components
 import cta from './components/cta'
@@ -67,15 +68,16 @@ import linkWithImg from './components/linkWithImg'
 export const schemaTypes = [
   ...singleTypes,
   global,
-
+  
+  teamMember,
   blog_entries,
   blog_categories,
   curiosity_entries,
   curiosity_categories,
-  teamMember,
+  caseStudy_entries,
+  caseStudy_categories,
   testimonails,
   technologies,
-  caseStudies,
 
   cta,
   link,

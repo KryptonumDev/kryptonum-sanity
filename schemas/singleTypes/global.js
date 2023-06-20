@@ -5,6 +5,50 @@ export default {
   icon: () => '🌍',
   fields: [
     {
+      name: 'footer_OfficeCity',
+      type: 'string',
+      title: 'Footer Office City',
+      group: 'footer',
+    },
+    {
+      name: 'footer_OfficeStreet',
+      type: 'string',
+      title: 'Footer Office Street',
+      group: 'footer',
+    },
+    {
+      name: 'footer_ContactName',
+      type: 'string',
+      title: 'Footer Contact Name',
+      group: 'footer',
+    },
+    {
+      name: 'footer_ContactTel',
+      type: 'string',
+      title: 'Footer Contact Tel',
+      group: 'footer',
+    },
+    {
+      name: 'footer_ContactEmail',
+      type: 'string',
+      title: 'Footer Contact Email',
+      group: 'footer',
+    },
+    {
+      name: 'footer_LegalLinks',
+      type: 'array',
+      title: 'Foote Legal Links',
+      of: [{ type: 'link' }],
+      group: 'footer',
+    },
+    {
+      name: 'footer_Socials',
+      type: 'array',
+      title: 'Footer Social Media',
+      of: [{ type: 'link' }],
+      group: 'footer',
+    },
+    {
       name: 'quickForm_Paragraph',
       type: 'string',
       title: 'Quick Form Paragraph',
@@ -32,6 +76,10 @@ export default {
     },
   ],
   groups: [
+    {
+      name: 'footer',
+      title: '🦶 Footer',
+    },
     {
       name: 'quickForm',
       title: 'Quick Form',
