@@ -18,15 +18,15 @@ export default {
       }
     },
     {
-      name: 'thumbnail',
+      name: 'img',
       type: 'image',
-      title: 'Thumbnail',
+      title: 'Image',
     },
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'thumbnail'
+      media: 'img'
     }
   }
 }
