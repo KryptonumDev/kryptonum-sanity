@@ -64,6 +64,8 @@ import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
 import { faqSchemas } from './components/faq/faq'
 import simpleCtaSection from './components/simpleCtaSection'
 import linkWithImg from './components/linkWithImg'
+import caseStudy_Process from './components/caseStudy/process'
+import process_KeyElements from './components/caseStudy/process_KeyElements'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -95,4 +97,6 @@ export const schemaTypes = [
   ...faqSchemas,
   simpleCtaSection,
   linkWithImg,
+  caseStudy_Process,
+  process_KeyElements,
 ]

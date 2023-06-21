@@ -95,6 +95,83 @@ export default {
       group: 'challenge',
     },
     {
+      name: 'process',
+      type: 'array',
+      of: [
+        {
+          type: 'caseStudy_Process',
+        }
+      ],
+      title: 'Process',
+      group: 'process',
+    },
+    {
+      name: 'logo_Images',
+      type: 'array',
+      of: [{ type: 'image' }],
+      title: 'Logo',
+      group: 'logo',
+      hidden: ({ parent }) => !parent.categories?.find(({_ref}) => _ref === 'dcaf4d22-de24-4eae-84d5-1743586c8fbb')
+    },
+    {
+      name: 'logo_Paragraph',
+      type: 'markdown',
+      title: 'Logo Paragraph',
+      group: 'logo',
+      initialValue: 'Logo',
+      hidden: ({ parent }) => !parent.categories?.find(({_ref}) => _ref === 'dcaf4d22-de24-4eae-84d5-1743586c8fbb')
+    },
+    {
+      name: 'visualIdentification_Images',
+      type: 'array',
+      of: [{ type: 'image' }],
+      title: 'Visual Identification Images',
+      group: 'visualIdentification',
+      hidden: ({ parent }) => !parent.categories?.find(({_ref}) => _ref === 'b0c9484a-e2cd-4522-963b-fa0d712c11f8')
+    },
+    {
+      name: 'visualIdentification_Paragraph',
+      type: 'markdown',
+      title: 'Visual Identification Paragraph',
+      group: 'visualIdentification',
+      initialValue: 'Identyfikacja wizualna',
+      hidden: ({ parent }) => !parent.categories?.find(({_ref}) => _ref === 'b0c9484a-e2cd-4522-963b-fa0d712c11f8')
+    },
+    {
+      name: 'visualIdentification_Paragraph2',
+      type: 'markdown',
+      title: 'Visual Identification Second Paragraph',
+      group: 'visualIdentification',
+      hidden: ({ parent }) => !parent.categories?.find(({_ref}) => _ref === 'b0c9484a-e2cd-4522-963b-fa0d712c11f8')
+    },
+    {
+      name: 'testimonial_Heading',
+      type: 'markdown',
+      title: 'Testimonial Heading',
+      initialValue: '**Opinia** klienta',
+      group: 'testimonial',
+    },
+    {
+      name: 'testimonial',
+      type: 'reference',
+      to: [{ type: 'testimonials' }],
+      options: { disableNew: true },
+      title: 'Testimonial',
+      group: 'testimonial',
+    },
+    {
+      name: 'testimonial_Paragraph',
+      type: 'markdown',
+      title: 'Testimonial Paragraph',
+      group: 'testimonial',
+    },
+    {
+      name: 'testimonial_Paragraph2',
+      type: 'markdown',
+      title: 'Testimonial Second Paragraph',
+      group: 'testimonial',
+    },
+    {
       name: 'technologies_Paragraph',
       type: 'string',
       title: 'Technologies Paragraph',
@@ -151,8 +228,24 @@ export default {
       title: 'Challenge'
     },
     {
+      name: 'process',
+      title: 'Process'
+    },
+    {
+      name: 'logo',
+      title: 'Logo'
+    },
+    {
+      name: 'visualIdentification',
+      title: 'Visual Identification'
+    },
+    {
       name: 'technologies',
       title: 'Technologies'
+    },
+    {
+      name: 'testimonial',
+      title: 'Testimonial'
     },
   ]
 }
