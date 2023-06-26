@@ -122,6 +122,12 @@ export default {
       title: 'Curiosity Entries Heading',
       group: 'curisityEntries',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -151,6 +157,10 @@ export default {
     {
       name: 'curisityEntries',
       title: 'Curiosity Entries',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }

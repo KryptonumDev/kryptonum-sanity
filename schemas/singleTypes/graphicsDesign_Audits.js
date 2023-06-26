@@ -234,6 +234,12 @@ export default {
       title: 'Scroll To Next Section',
       group: 'scrollToNext',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -279,6 +285,10 @@ export default {
     {
       name: 'scrollToNext',
       title: 'Scroll To Next',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }

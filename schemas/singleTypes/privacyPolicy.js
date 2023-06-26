@@ -39,6 +39,12 @@ export default {
       title: 'Simple CTA Section',
       group: 'simpleCtaSection',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -52,6 +58,10 @@ export default {
     {
       name: 'simpleCtaSection',
       title: 'Simple CTA Section',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }

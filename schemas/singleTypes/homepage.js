@@ -171,6 +171,12 @@ export default {
       title: 'Team Cta',
       group: 'team',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -200,6 +206,10 @@ export default {
     {
       name: 'team',
       title: 'Team',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }

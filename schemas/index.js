@@ -66,6 +66,8 @@ import simpleCtaSection from './components/simpleCtaSection'
 import linkWithImg from './components/linkWithImg'
 import caseStudy_Process from './components/caseStudy/process'
 import process_KeyElements from './components/caseStudy/process_KeyElements'
+import seo from './components/seo'
+import globalSeo from './components/globalSeo'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -99,4 +101,6 @@ export const schemaTypes = [
   linkWithImg,
   caseStudy_Process,
   process_KeyElements,
+  seo,
+  globalSeo,
 ]

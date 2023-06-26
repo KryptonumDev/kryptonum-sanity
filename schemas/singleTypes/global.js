@@ -74,6 +74,12 @@ export default {
       title: 'FAQ',
       group: 'faq',
     },
+    {
+      name: 'globalSeo',
+      type: 'globalSeo',
+      title: 'Global SEO',
+      group: 'globalSeo',
+    },
   ],
   groups: [
     {
@@ -87,6 +93,10 @@ export default {
     {
       name: 'faq',
       title: 'FAQ',
+    },
+    {
+      name: 'globalSeo',
+      title: 'Global SEO',
     },
   ],
 }

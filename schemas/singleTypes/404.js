@@ -34,6 +34,12 @@ export default {
       title: 'Call To Action Section',
       group: 'cta',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -43,6 +49,10 @@ export default {
     {
       name: 'cta',
       title: 'Call To Action',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }
