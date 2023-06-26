@@ -1,3 +1,5 @@
+import { removeMarkdown } from "../../../utils/functions";
+
 export default {
   name: 'curiosity_entries',
 	title: 'Curiosity Entries',
@@ -51,10 +53,16 @@ export default {
       title: 'Categories'
     },
   ],
-  preview: {
+   preview: {
     select: {
       title: 'title',
       media: 'img'
+    },
+    prepare({ title, media }) {
+      return {
+        title: removeMarkdown(title),
+        media,
+      };
     }
   }
 }

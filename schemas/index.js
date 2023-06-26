@@ -16,6 +16,7 @@ import graphicsDesign_Logo from './singleTypes/graphicsDesign_Logo'
 import academy from './singleTypes/academy'
 import team from './singleTypes/team'
 import portfolio from './singleTypes/portfolio'
+import blog from './singleTypes/blog'
 
 export const singleTypes = [
   homepage,
@@ -32,6 +33,7 @@ export const singleTypes = [
   agency,
   team,
   academy,
+  blog,
   notFound,
   privacyPolicy,
 ];

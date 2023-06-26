@@ -1,3 +1,5 @@
+import { removeMarkdown } from '../../../utils/functions';
+
 export default {
   name: 'blog_entries',
 	title: 'Blog Entries',
@@ -23,9 +25,9 @@ export default {
       title: 'Subtitle'
     },
     {
-      name: 'cover',
+      name: 'img',
       type: 'image',
-      title: 'Cover',
+      title: 'Image',
     },
     {
       name: 'categories',
@@ -60,12 +62,30 @@ export default {
         }
       ],
       title: 'Content'
+    },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo'
     }
+  ],
+  groups: [
+    {
+      name: 'seo',
+      title: 'SEO',
+    },
   ],
   preview: {
     select: {
       title: 'title',
-      media: 'cover'
+      media: 'img'
+    },
+    prepare({ title, media }) {
+      return {
+        title: removeMarkdown(title),
+        media,
+      };
     }
   }
 }
