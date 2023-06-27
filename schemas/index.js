@@ -17,9 +17,12 @@ import academy from './singleTypes/academy'
 import team from './singleTypes/team'
 import portfolio from './singleTypes/portfolio'
 import blog from './singleTypes/blog'
+import sitemap from './singleTypes/sitemap'
+import contact from './singleTypes/contact'
 
 export const singleTypes = [
   homepage,
+  contact,
   portfolio,
   webDevelopment,
   webDevelopment_Pwa,
@@ -35,6 +38,7 @@ export const singleTypes = [
   academy,
   blog,
   notFound,
+  sitemap,
   privacyPolicy,
 ];
 
@@ -70,6 +74,7 @@ import caseStudy_Process from './components/caseStudy/process'
 import process_KeyElements from './components/caseStudy/process_KeyElements'
 import seo from './components/seo'
 import globalSeo from './components/globalSeo'
+import contactPerson from './components/contactPerson'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -105,4 +110,5 @@ export const schemaTypes = [
   process_KeyElements,
   seo,
   globalSeo,
+  contactPerson,
 ]

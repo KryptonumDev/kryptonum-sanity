@@ -94,6 +94,11 @@ export default {
       type: 'string',
       title: 'Email',
     },
+    {
+      name: 'tel',
+      type: 'string',
+      title: 'Phone Number',
+    },
   ],
   preview: {
     select: {

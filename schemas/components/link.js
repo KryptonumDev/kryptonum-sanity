@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      title: 'Link',
       name: 'href',
+      title: 'Link',
       type: 'string',
       validation: Rule =>
         Rule.custom(value => {

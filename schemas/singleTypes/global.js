@@ -63,12 +63,6 @@ export default {
       group: 'quickForm',
     },
     {
-      name: 'quickForm_Tel',
-      type: 'string',
-      title: 'Quick Form Tel',
-      group: 'quickForm',
-    },
-    {
       name: 'faq',
       type: 'faq',
       title: 'FAQ',
