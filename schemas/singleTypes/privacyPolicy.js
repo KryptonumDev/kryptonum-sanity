@@ -23,13 +23,29 @@ export default {
       group: 'hero',
     },
     {
-      name: 'content',
+      name: 'keyInfo_Heading',
+      type: 'markdown',
+      title: 'Key Info Heading',
+      group: 'content',
+    },
+    {
+      name: 'keyInfo_List',
       type: 'array',
       of: [
-        {
-          type: 'block',
-        },
+        { type: 'markdown' }
       ],
+      title: 'Key Info List',
+      group: 'content',
+    },
+    {
+      name: 'content_Heading',
+      type: 'markdown',
+      title: 'Content Heading',
+      group: 'content',
+    },
+    {
+      name: 'content',
+      type: 'portableText',
       title: 'Content',
       group: 'content',
     },

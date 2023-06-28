@@ -75,6 +75,7 @@ import process_KeyElements from './components/caseStudy/process_KeyElements'
 import seo from './components/seo'
 import globalSeo from './components/globalSeo'
 import contactPerson from './components/contactPerson'
+import portableText from './components/portableText'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -111,4 +112,5 @@ export const schemaTypes = [
   seo,
   globalSeo,
   contactPerson,
+  portableText,
 ]

@@ -55,38 +55,7 @@ export default {
     },
     {
       name: 'content',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-          styles: [
-            {title: 'Normal', value: 'normal'},
-            {title: 'H2', value: 'h2'},
-            {title: 'H3', value: 'h3'},
-            {title: 'H4', value: 'h4'},
-          ],
-          marks: {
-            decorators: [
-              {title: 'Strong', value: 'strong'},
-              {title: 'Emphasis', value: 'em'}
-            ],
-            annotations: [
-              {
-                name: 'link',
-                type: 'object',
-                title: 'link',
-                fields: [
-                  {
-                    name: 'url',
-                    type: 'url'
-                  }
-                ]
-              },
-            ],
-          },
-        },
-        { type: 'image' },
-      ],
+      type: 'portableText',
       title: 'Content'
     },
     {
