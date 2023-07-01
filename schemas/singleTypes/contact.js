@@ -26,6 +26,72 @@ export default {
       group: 'hero',
     },
     {
+      name: 'contact_Email',
+      type: 'markdown',
+      title: 'Contact Email',
+      group: 'contact',
+    },
+    {
+      name: 'contact_Tel',
+      type: 'markdown',
+      title: 'Contact Phone',
+      group: 'contact',
+    },
+    {
+      name: 'contact_Address',
+      type: 'markdown',
+      title: 'Contact Address',
+      group: 'contact',
+    },
+    {
+      name: 'contact_Img',
+      type: 'image',
+      title: 'Contact Image',
+      group: 'contact',
+    },
+    {
+      name: 'pricing_Paragraph',
+      type: 'markdown',
+      title: 'Pricing Paragraph',
+      group: 'pricing',
+    },
+    {
+      name: 'pricing_Paragraph2',
+      type: 'markdown',
+      title: 'Pricing Second Paragraph',
+      group: 'pricing',
+    },
+    {
+      name: 'pricing_Cta',
+      type: 'cta',
+      title: 'Pricing CTA',
+      group: 'pricing',
+    },
+    {
+      name: 'helpDesk_Heading',
+      type: 'markdown',
+      title: 'Help Desk Heading',
+      group: 'helpDesk',
+    },
+    {
+      name: 'helpDesk_Subheading',
+      type: 'markdown',
+      title: 'Help Desk Subheading',
+      group: 'helpDesk',
+    },
+    {
+      name: 'helpDesk_Paragraph',
+      type: 'markdown',
+      title: 'Help Desk Paragraph',
+      group: 'helpDesk',
+    },
+    {
+      name: 'helpDesk_FormTitle',
+      type: 'markdown',
+      title: 'Help Desk Form Title',
+      group: 'helpDesk',
+    },
+    {
       name: 'seo',
       type: 'seo',
       title: 'SEO',
@@ -38,8 +104,16 @@ export default {
       title: 'Hero',
     },
     {
-      name: 'cta',
-      title: 'Call To Action',
+      name: 'contact',
+      title: 'Contact',
+    },
+    {
+      name: 'pricing',
+      title: 'Pricing',
+    },
+    {
+      name: 'helpDesk',
+      title: 'Help Desk',
     },
     {
       name: 'seo',

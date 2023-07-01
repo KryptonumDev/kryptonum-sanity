@@ -19,10 +19,12 @@ import portfolio from './singleTypes/portfolio'
 import blog from './singleTypes/blog'
 import sitemap from './singleTypes/sitemap'
 import contact from './singleTypes/contact'
+import brief from './singleTypes/brief'
 
 export const singleTypes = [
   homepage,
   contact,
+  brief,
   portfolio,
   webDevelopment,
   webDevelopment_Pwa,
