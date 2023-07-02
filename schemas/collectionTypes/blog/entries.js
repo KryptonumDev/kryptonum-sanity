@@ -9,7 +9,8 @@ export default {
     {
       name: 'title',
       type: 'markdown',
-      title: 'Title'
+      title: 'Title',
+      group: 'content'
     },
     {
       name: 'slug',
@@ -17,17 +18,20 @@ export default {
       title: 'Slug',
       options: {
         source: 'title'
-      }
+      },
+      group: 'content'
     },
     {
       name: 'subtitle',
       type: 'markdown',
-      title: 'Subtitle'
+      title: 'Subtitle',
+      group: 'content'
     },
     {
       name: 'img',
       type: 'image',
       title: 'Image',
+      group: 'content'
     },
     {
       name: 'categories',
@@ -39,7 +43,8 @@ export default {
           options: { disableNew: true },
         }
       ],
-      title: 'Categories'
+      title: 'Categories',
+      group: 'content'
     },
     {
       name: 'author',
@@ -51,12 +56,14 @@ export default {
           options: { disableNew: true },
         }
       ],
-      title: 'Author'
+      title: 'Author',
+      group: 'content'
     },
     {
       name: 'content',
       type: 'portableText',
-      title: 'Content'
+      title: 'Content',
+      group: 'content'
     },
     {
       name: 'seo',
@@ -66,6 +73,10 @@ export default {
     }
   ],
   groups: [
+    {
+      name: 'content',
+      title: 'Content',
+    },
     {
       name: 'seo',
       title: 'SEO',

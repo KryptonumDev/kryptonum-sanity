@@ -77,7 +77,11 @@ import process_KeyElements from './components/caseStudy/process_KeyElements'
 import seo from './components/seo'
 import globalSeo from './components/globalSeo'
 import contactPerson from './components/contactPerson'
-import portableText from './components/portableText'
+import PortableText from '../components/PortableText'
+import OrderedListArray from './components/blog/orderedListArray'
+import OrderedList from './components/blog/orderedList'
+import UnorderedListArray from './components/blog/unorderedListArray'
+import UnorderedList from './components/blog/unorderedList'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -114,5 +118,9 @@ export const schemaTypes = [
   seo,
   globalSeo,
   contactPerson,
-  portableText,
+  PortableText,
+  OrderedListArray,
+  OrderedList,
+  UnorderedListArray,
+  UnorderedList,
 ]

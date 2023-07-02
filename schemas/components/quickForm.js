@@ -1,3 +1,5 @@
+import { removeMarkdown } from "../../utils/functions";
+
 export default {
   name: "quickForm",
   title: "Quick Form",
@@ -18,5 +20,17 @@ export default {
       type: 'string',
       title: 'Cta',
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'heading',
+      subtitle: 'subheading',
+    },
+    prepare({ title, subtitle }) {
+      return {
+        title: removeMarkdown(title),
+        subtitle: removeMarkdown(subtitle),
+      };
+    }
+  }
 }
