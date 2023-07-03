@@ -1,6 +1,6 @@
 export default {
   name: 'blog_categories',
-	title: 'Blog Categories',
+	title: 'Blog Kategorie',
   type: 'document',
   icon: () => '📑',
   fields: [

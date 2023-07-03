@@ -1,6 +1,6 @@
 export default {
   name: 'teamMember',
-	title: 'Team Members',
+	title: 'Członkowie zespołu',
   type: 'document',
   icon: () => '👯‍♀️',
   fields: [

@@ -1,6 +1,6 @@
 export default {
   name: 'caseStudy_entries',
-	title: 'Case Study Entries',
+	title: 'Case Study Wpisy',
   type: 'document',
   icon: () => '📂',
   fields: [

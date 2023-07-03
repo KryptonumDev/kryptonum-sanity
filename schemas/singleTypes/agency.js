@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'agency',
-	title: 'Agency Care',
+	title: 'Opieka agencyjna',
   type: 'document',
   icon: () => '🧘🏻',
   fields: [

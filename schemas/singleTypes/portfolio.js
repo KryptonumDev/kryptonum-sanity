@@ -1,6 +1,6 @@
 export default {
   name: 'portfolio',
-	title: 'Portfolio',
+	title: 'Projekty',
   type: 'document',
   icon: () => '📑',
   fields: [

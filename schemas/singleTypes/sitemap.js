@@ -1,6 +1,6 @@
 export default {
   name: 'sitemap',
-	title: 'Sitemap',
+	title: 'Mapa strony',
   type: 'document',
   icon: () => '🗺️',
   fields: [

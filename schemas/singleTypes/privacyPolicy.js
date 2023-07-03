@@ -1,6 +1,6 @@
 export default {
   name: 'privacyPolicy',
-	title: 'Privacy Policy',
+	title: 'Polityka prywatności',
   type: 'document',
   icon: () => '📄',
   fields: [

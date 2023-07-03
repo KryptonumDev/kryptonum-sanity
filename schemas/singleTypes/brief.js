@@ -1,6 +1,6 @@
 export default {
   name: 'brief',
-	title: 'Brief',
+	title: 'Brief z Kryptonum',
   type: 'document',
   icon: () => '💼',
   fields: [

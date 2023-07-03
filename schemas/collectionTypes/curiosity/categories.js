@@ -1,6 +1,6 @@
 export default {
   name: 'curiosity_categories',
-	title: 'Curiosity Categories',
+	title: 'Ciekawostki kategorie',
   type: 'document',
   icon: () => '📑',
   fields: [

@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'webDevelopment_Site',
-	title: '└ Websites',
+	title: '└ Strony internetowe',
   type: 'document',
   icon: () => '🌐',
   fields: [

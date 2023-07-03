@@ -1,6 +1,6 @@
 export default {
   name: 'homepage',
-	title: 'Homepage',
+	title: 'Strona główna',
   type: 'document',
   icon: () => '⭐️',
   fields: [

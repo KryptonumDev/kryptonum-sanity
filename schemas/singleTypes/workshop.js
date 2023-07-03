@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'workshop',
-	title: 'Workshop',
+	title: 'Warsztat strategiczny',
   type: 'document',
   icon: () => '🔨',
   fields: [

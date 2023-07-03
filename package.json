@@ -15,11 +15,13 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/dashboard": "^3.1.4",
     "@sanity/vision": "^3.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
-    "sanity": "^3.13.0",
+    "sanity": "^3.14.1",
+    "sanity-plugin-gatsby-cloud-preview": "^1.0.3",
     "sanity-plugin-markdown": "^4.1.0",
     "sanity-plugin-media": "^2.0.5",
     "styled-components": "^5.3.9"

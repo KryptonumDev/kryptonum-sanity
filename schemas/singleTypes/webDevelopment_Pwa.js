@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'webDevelopment_Pwa',
-	title: '├ Progressive Web Apps',
+	title: '├ Aplikacje internetowe',
   type: 'document',
   icon: () => '📱',
   fields: [

@@ -1,6 +1,6 @@
 export default {
   name: 'academy',
-	title: 'Academy',
+	title: 'Akademia',
   type: 'document',
   icon: () => '🧑🏻‍🏫',
   fields: [

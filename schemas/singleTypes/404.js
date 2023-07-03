@@ -1,6 +1,6 @@
 export default {
   name: 'notFound',
-	title: 'Not Found - 404',
+	title: '404',
   type: 'document',
   icon: () => '🚫',
   fields: [

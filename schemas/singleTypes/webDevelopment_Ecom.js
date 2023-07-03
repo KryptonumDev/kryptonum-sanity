@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'webDevelopment_Ecom',
-	title: '├ E-commerce',
+	title: '├ Sklepy internetowe',
   type: 'document',
   icon: () => '🛒',
   fields: [

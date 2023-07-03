@@ -1,6 +1,6 @@
 export default {
   name: 'team',
-	title: 'Team',
+	title: 'Zespół',
   type: 'document',
   icon: () => '👫',
   fields: [

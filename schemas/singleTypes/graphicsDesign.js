@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'graphics-design',
-	title: '┌ Graphics & Design',
+	title: '┌ Grafika & design',
   type: 'document',
   icon: () => '🖌️',
   fields: [

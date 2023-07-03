@@ -1,6 +1,6 @@
 export default {
   name: 'contact',
-	title: 'Contact',
+	title: 'Kontakt',
   type: 'document',
   icon: () => '📫',
   fields: [

@@ -2,7 +2,7 @@ import { removeMarkdown } from '../../../utils/functions';
 
 export default {
   name: 'blog_entries',
-	title: 'Blog Entries',
+	title: 'Blog Wpisy',
   type: 'document',
   icon: () => '✍🏼',
   fields: [

@@ -2,7 +2,7 @@ const astertiks = "*❋*";
 
 export default {
   name: 'audits',
-	title: '├ Audits',
+	title: '├ Audyty',
   type: 'document',
   icon: () => '✅',
   fields: [

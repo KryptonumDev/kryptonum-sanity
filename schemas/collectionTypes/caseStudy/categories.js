@@ -1,6 +1,6 @@
 export default {
   name: 'caseStudy_categories',
-	title: 'Case Study Categories',
+	title: 'Case Study Kategorie',
   type: 'document',
   icon: () => '📑',
   fields: [

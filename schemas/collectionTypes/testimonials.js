@@ -1,7 +1,7 @@
 export default {
   name: 'testimonials',
+	title: 'Referencje',
   type: 'document',
-	title: 'Testimonials',
   icon: () => '🖊️',
   fields: [
     {

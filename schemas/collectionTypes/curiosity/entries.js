@@ -2,7 +2,7 @@ import { removeMarkdown } from "../../../utils/functions";
 
 export default {
   name: 'curiosity_entries',
-	title: 'Curiosity Entries',
+	title: 'Ciekawostki wpisy',
   type: 'document',
   icon: () => '😲',
   fields: [

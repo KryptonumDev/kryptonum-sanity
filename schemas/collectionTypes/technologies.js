@@ -1,6 +1,6 @@
 export default {
   name: 'technologies',
-	title: 'Technologies',
+	title: 'Technologie',
   type: 'document',
   icon: () => '📡',
   fields: [
