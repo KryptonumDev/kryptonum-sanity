@@ -4,6 +4,11 @@ export default {
   type: "object",
   fields: [
     {
+      name: 'paragraph',
+      type: 'markdown',
+      title: 'Paragraph'
+    },
+    {
       type: 'array',
       name: 'array',
       of: [

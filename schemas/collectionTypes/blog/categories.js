@@ -7,7 +7,8 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name'
+      title: 'Name',
+      group: 'category'
     },
     {
       name: 'slug',
@@ -15,7 +16,36 @@ export default {
       title: 'Slug',
       options: {
         source: 'name'
-      }
+      },
+      group: 'category'
+    },
+    {
+      name: 'hero_Heading',
+      type: 'markdown',
+      title: 'Hero Heading',
+      group: 'hero'
+    },
+    {
+      name: 'hero_Paragraph',
+      type: 'markdown',
+      title: 'Hero Paragraph',
+      group: 'hero',
+    },
+    {
+      name: 'hero_Img',
+      type: 'image',
+      title: 'Hero Image',
+      group: 'hero',
     },
   ],
+  groups: [
+    {
+      name: 'category',
+      title: 'Category',
+    },
+    {
+      name: 'hero',
+      title: 'Hero',
+    },
+  ]
 }

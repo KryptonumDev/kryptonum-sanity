@@ -30,6 +30,24 @@ export default {
       group: 'hero',
     },
     {
+      name: 'services_Heading',
+      type: 'markdown',
+      title: 'Services Heading',
+      group: 'services',
+    },
+    {
+      name: 'services_List',
+      type: 'array',
+      title: 'Services List',
+      of: [
+        {
+          type: 'titleAndDescription',
+        }
+      ],
+      validation: Rule => Rule.max(4),
+      group: 'services',
+    },
+    {
       name: 'conquest_Heading',
       type: 'markdown',
       title: 'Conquest Heading',
@@ -90,24 +108,6 @@ export default {
       type: 'cta',
       title: 'Challenge Cta',
       group: 'challenge',
-    },
-    {
-      name: 'services_Heading',
-      type: 'markdown',
-      title: 'Services Heading',
-      group: 'services',
-    },
-    {
-      name: 'services_List',
-      type: 'array',
-      title: 'Services List',
-      of: [
-        {
-          type: 'titleAndDescription',
-        }
-      ],
-      validation: Rule => Rule.max(4),
-      group: 'services',
     },
     {
       name: 'creativity_Heading',
@@ -184,16 +184,16 @@ export default {
       title: 'Hero',
     },
     {
+      name: 'services',
+      title: 'Services',
+    },
+    {
       name: 'conquest',
       title: 'Conquest',
     },
     {
       name: 'challenge',
       title: 'Challenge',
-    },
-    {
-      name: 'services',
-      title: 'Services',
     },
     {
       name: 'creativity',

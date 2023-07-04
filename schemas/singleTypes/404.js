@@ -29,6 +29,12 @@ export default {
       group: 'hero',
     },
     {
+      name: 'curiosities_Heading',
+      type: 'markdown',
+      title: 'Curiosities Heading',
+      group: 'curiosities',
+    },
+    {
       name: 'ctaSection',
       type: 'ctaSection',
       title: 'Call To Action Section',
@@ -45,6 +51,10 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
+    },
+    {
+      name: 'curiosities',
+      title: 'Curiosities',
     },
     {
       name: 'cta',
