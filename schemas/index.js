@@ -82,6 +82,16 @@ import OrderedListArray from './components/blog/orderedListArray'
 import OrderedList from './components/blog/orderedList'
 import UnorderedListArray from './components/blog/unorderedListArray'
 import UnorderedList from './components/blog/unorderedList'
+import curiosity_KeyElements from './components/curiosity/curiosity_KeyElements'
+import curiosity_Sources from './components/curiosity/curiosity_Sources'
+import standout from './components/standout'
+import curiosity_Share from './components/curiosity/curiosity_Share'
+import curiosity_Highlight from './components/curiosity/curiosity_Highlight'
+import curiosity_Note from './components/curiosity/curiosity_Note'
+import curiosity_Tiles from './components/curiosity/curiosity_Tiles'
+import curiosity_LargeList from './components/curiosity/curiosity_LargeList'
+import blog_Tiles from './components/blog/blog_Tiles'
+import blog_TilesArray from './components/blog/blog_TilesArray'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -123,4 +133,14 @@ export const schemaTypes = [
   OrderedList,
   UnorderedListArray,
   UnorderedList,
+  curiosity_KeyElements,
+  curiosity_Sources,
+  standout,
+  curiosity_Share,
+  curiosity_Highlight,
+  curiosity_Note,
+  curiosity_Tiles,
+  curiosity_LargeList,
+  blog_Tiles,
+  blog_TilesArray,
 ]

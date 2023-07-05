@@ -9,7 +9,8 @@ export default {
     {
       name: 'title',
       type: 'markdown',
-      title: 'Title'
+      title: 'Title',
+      group: 'hero'
     },
     {
       name: 'slug',
@@ -17,17 +18,20 @@ export default {
       title: 'Slug',
       options: {
         source: 'title'
-      }
+      },
+      group: 'hero'
     },
     {
       name: 'subtitle',
       type: 'markdown',
       title: 'Subtitle',
+      group: 'hero'
     },
     {
       name: 'img',
       type: 'image',
       title: 'Image',
+      group: 'hero'
     },
     {
       name: 'author',
@@ -39,6 +43,7 @@ export default {
           options: { disableNew: true },
         }
       ],
+      group: 'hero'
     },
     {
       name: 'categories',
@@ -50,97 +55,33 @@ export default {
           options: { disableNew: true },
         }
       ],
-      title: 'Categories'
+      title: 'Categories',
+      group: 'hero'
     },
     {
-      name: 'meaty_Heading',
-      type: 'markdown',
-      title: 'Meaty Heading',
-      group: 'meaty',
-      initialValue: 'Samo **gęste**'
-    },
-    {
-      name: 'meaty_List',
+      name: 'content',
       type: 'array',
       of: [
-        {
-          type: 'markdown'
-        }
+        { type: 'curiosity_KeyElements' },
+        { type: 'standout' },
+        { type: 'curiosity_Highlight' },
+        { type: 'curiosity_Note' },
+        { type: 'curiosity_Tiles' },
+        { type: 'curiosity_LargeList' },
       ],
-      title: 'Meaty List',
-      group: 'meaty'
+      title: 'Content',
+      group: 'content'
     },
     {
-      name: 'standout_Heading',
-      type: 'markdown',
-      title: 'Standout Heading',
-      group: 'standout',
-    },
-    {
-      name: 'standout_Paragraph',
-      type: 'markdown',
-      title: 'Standout Paragraph',
-      group: 'standout'
-    },
-    {
-      name: 'showcase_Heading',
-      type: 'markdown',
-      title: 'Showcase Heading',
-      group: 'showcase',
-      initialValue: '**Przykład** wykorzystania'
-    },
-    {
-      name: 'showcase_Img',
-      type: 'image',
-      title: 'Showcase Image',
-      group: 'showcase',
-    },
-    {
-      name: 'showcase_Paragraph',
-      type: 'markdown',
-      title: 'Showcase Paragraph',
-      group: 'showcase',
-    },
-    {
-      name: 'showcase_Paragraph2',
-      type: 'markdown',
-      title: 'Showcase Second Paragraph',
-      group: 'showcase',
-    },
-    {
-      name: 'share_Heading',
-      type: 'markdown',
-      title: 'Share Heading',
+      name: 'share',
+      type: 'curiosity_Share',
+      title: 'Share',
       group: 'share',
-      initialValue: '**Udostępnij** artykuł'
     },
     {
-      name: 'share_Img',
-      type: 'image',
-      title: 'Share Image',
-      group: 'share',
-      initialValue: {
-        asset: {
-          _ref: 'image-0c5df92be748428b48f09c0ad04ca8e7bc9400e6-556x447.webp',
-        }
-      }
-    },
-    {
-      name: 'sources_Heading',
-      type: 'markdown',
-      title: 'Sources Heading',
-      group: 'sources',
-      initialValue: '**Źródła ~**'
-    },
-    {
-      name: 'sources_List',
-      type: 'array',
-      of: [
-        {
-          type: 'link'
-        },
-      ],
-      title: 'Sources List',
+      name: 'sources',
+      type: 'curiosity_Sources',
+      title: 'Sources',
       group: 'sources',
     },
     {
@@ -159,16 +100,12 @@ export default {
   ],
   groups: [
     {
-      name: 'meaty',
-      title: 'Meaty',
+      name: 'hero',
+      title: 'Hero',
     },
     {
-      name: 'standout',
-      title: 'Standout',
-    },
-    {
-      name: 'showcase',
-      title: 'Showcase',
+      name: 'content',
+      title: 'Content',
     },
     {
       name: 'share',

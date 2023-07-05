@@ -75,6 +75,11 @@ export default {
       name: 'unorderedList',
       type: 'unorderedListArray',
       title: 'Unordered List',
+    },
+    {
+      name: 'blog_Tiles',
+      type: 'blog_TilesArray',
+      title: 'Blog Tiles',
     }
   ]
 }
