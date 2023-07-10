@@ -26,3 +26,37 @@ export default {
     }
   }
 }
+
+export const process_KeyElementsWrapper = {
+  name: "process_KeyElementsWrapper",
+  title: "Sekcja kluczowych elementów lewo/prawo",
+  type: "object",
+  fields: [
+    {
+      name: 'paragraph',
+      type: 'markdown',
+      title: 'Paragraph',
+      initialValue: 'Znaki szczególne:'
+    },
+    {
+      name: 'list',
+      type: 'array',
+      of: [
+        {
+          type: 'process_KeyElements'
+        }
+      ],
+      title: 'List'
+    },
+  ],
+  preview: {
+    select: {
+      title: 'list',
+    },
+    prepare({ title }) {
+      return {
+        title: title[0].heading
+      }
+    }
+  }
+}

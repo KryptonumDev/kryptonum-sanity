@@ -41,26 +41,47 @@ export default {
       title: 'Principles List'
     },
     {
-      name: 'keyElements_Paragraph',
-      type: 'markdown',
-      title: 'Key Elements Paragraph',
-      initialValue: 'Znaki szczególne:'
-    },
-    {
-      name: 'keyElements_List',
-      type: 'array',
-      of: [
-        {
-          type: 'process_KeyElements'
-        }
-      ],
-      title: 'Key Elements List'
-    },
+      name: 'keyElements',
+      type: 'process_KeyElementsWrapper',
+      title: 'Key Elements',
+    }
   ],
   preview: {
     select: {
       title: 'heading',
       media: 'img'
+    }
+  }
+}
+
+
+export const caseStudy_ProcessArray = {
+  name: "caseStudy_ProcessArray",
+  title: "Proces Case Study",
+  type: "object",
+  fields: [
+    {
+      name: 'array',
+      type: 'array',
+      of: [
+        { type: 'caseStudy_Process' },
+        { type: 'caseStudy_Technology' },
+        { type: 'caseStudy_VisualIdentification' },
+        { type: 'caseStudy_Logo' },
+      ],
+      title: 'Lista'
+    },
+  ],
+  preview: {
+    select: {
+      title: 'Proces Case Study',
+      subtitle: 'array'
+    },
+    prepare({ title, subtitle }) {
+      return {
+        title: 'Proces Case Study',
+        subtitle: subtitle.map(item => item.heading).join(', '),
+      };
     }
   }
 }

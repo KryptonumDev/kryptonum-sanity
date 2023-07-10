@@ -68,6 +68,9 @@ export default {
         { type: 'curiosity_Note' },
         { type: 'curiosity_Tiles' },
         { type: 'curiosity_LargeList' },
+        { type: 'curiosity_ColumnText' },
+        { type: 'quickForm' },
+        { type: 'curiosity_ExtendedList' },
       ],
       title: 'Content',
       group: 'content'

@@ -72,8 +72,6 @@ import webDevelopmentSite_Process from './components/webDevelopmentSite_Process'
 import { faqSchemas } from './components/faq/faq'
 import simpleCtaSection from './components/simpleCtaSection'
 import linkWithImg from './components/linkWithImg'
-import caseStudy_Process from './components/caseStudy/process'
-import process_KeyElements from './components/caseStudy/process_KeyElements'
 import seo from './components/seo'
 import globalSeo from './components/globalSeo'
 import contactPerson from './components/contactPerson'
@@ -90,8 +88,18 @@ import curiosity_Highlight from './components/curiosity/curiosity_Highlight'
 import curiosity_Note from './components/curiosity/curiosity_Note'
 import curiosity_Tiles from './components/curiosity/curiosity_Tiles'
 import curiosity_LargeList from './components/curiosity/curiosity_LargeList'
+import curiosity_ColumnText from './components/curiosity/curiosity_ColumnText'
 import blog_Tiles from './components/blog/blog_Tiles'
 import blog_TilesArray from './components/blog/blog_TilesArray'
+import curiosity_ExtendedList, { curiosity_ExtendedList_Array, curiosity_ExtendedList_Array_Item } from './components/curiosity/curiosity_ExtendedList'
+import caseStudy_Process, { caseStudy_ProcessArray } from './components/caseStudy/caseStudy_Process'
+import process_KeyElements, { process_KeyElementsWrapper } from './components/caseStudy/process_KeyElements'
+import caseStudy_Highlight from './components/caseStudy/caseStudy_Highlight'
+import caseStudy_Summary from './components/caseStudy/caseStudy_Summary'
+import caseStudy_Testimonial from './components/caseStudy/caseStudy_Testimonial'
+import caseStudy_Technology from './components/caseStudy/caseStudy_Technology'
+import caseStudy_VisualIdentification from './components/caseStudy/caseStudy_VisualIdentification'
+import caseStudy_Logo from './components/caseStudy/caseStudy_Logo'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -143,4 +151,16 @@ export const schemaTypes = [
   curiosity_LargeList,
   blog_Tiles,
   blog_TilesArray,
+  curiosity_ColumnText,
+  curiosity_ExtendedList,
+  curiosity_ExtendedList_Array,
+  curiosity_ExtendedList_Array_Item,
+  caseStudy_Highlight,
+  caseStudy_ProcessArray,
+  caseStudy_Summary,
+  caseStudy_Testimonial,
+  caseStudy_Technology,
+  caseStudy_VisualIdentification,
+  caseStudy_Logo,
+  process_KeyElementsWrapper
 ]

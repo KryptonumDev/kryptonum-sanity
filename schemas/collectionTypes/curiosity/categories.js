@@ -37,6 +37,12 @@ export default {
       title: 'Hero Image',
       group: 'hero',
     },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   groups: [
     {
@@ -46,6 +52,10 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
+    },
+    {
+      name: 'seo',
+      title: 'SEO',
     },
   ]
 }

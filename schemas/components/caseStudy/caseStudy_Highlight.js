@@ -1,41 +1,35 @@
 import { removeMarkdown } from "../../../utils/functions";
 
 export default {
-  name: "curiosity_KeyElements",
-  title: "Lista kluczowych elementów",
+  name: "caseStudy_Highlight",
+  title: "Wyróżniony blok tesktu",
   type: "object",
   fields: [
     {
       name: 'heading',
-      title: 'Heading',
       type: 'markdown',
-    },
-    {
-      name: 'list',
-      type: 'array',
-      of: [
-        {
-          type: 'markdown',
-          title: 'Text',
-        }
-      ],
-      title: 'List',
+      title: 'Heading',
     },
     {
       name: 'paragraph',
       type: 'markdown',
       title: 'Paragraph',
     },
+    {
+      name: 'claim',
+      type: 'markdown',
+      title: 'Claim',
+    },
   ],
   preview: {
     select: {
       title: 'heading',
-      subtitle: 'list',
+      subtitle: 'paragraph',
     },
     prepare({ title, subtitle }) {
       return {
         title: removeMarkdown(title),
-        subtitle: removeMarkdown(subtitle[0]),
+        subtitle: removeMarkdown(subtitle),
       };
     }
   }
