@@ -101,6 +101,19 @@ export default {
       },
     },
     {
+      name: 'participated',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'teamMember' }],
+          options: { disableNew: true },
+        }
+      ],
+      title: 'Participated',
+      group: 'participated',
+    },
+    {
       name: 'seo',
       type: 'seo',
       title: 'SEO',
@@ -129,6 +142,10 @@ export default {
     {
       name: 'ctaSection',
       title: 'CTA Section'
+    },
+    {
+      name: 'participated',
+      title: 'Participated'
     },
     {
       name: 'seo',

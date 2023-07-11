@@ -6,6 +6,7 @@ import faqInfo from './faqInfo';
 import faqWhy from './faqWhy';
 import faqCopy from './faqCopy';
 import faqWordpress from './faqWordpress';
+import faq_Form from './faq_Form';
 
 export default {
   name: "faq",
@@ -112,7 +113,12 @@ export default {
         collapsed: true,
       },
     },
+    {
+      name: 'form',
+      type: 'faq_Form',
+      title: 'Form',
+    },
   ],
 }
 
-export const faqSchemas = [faq, faq4Grid, faqPayment, faqTime, faqInfo, faqWhy, faqCopy, faqWordpress];
+export const faqSchemas = [faq, faq4Grid, faqPayment, faqTime, faqInfo, faqWhy, faqCopy, faqWordpress, faq_Form];

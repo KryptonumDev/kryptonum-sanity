@@ -66,6 +66,13 @@ export default {
       group: 'content'
     },
     {
+      name: 'likes',
+      type: 'number',
+      title: 'Likes',
+      readOnly: true,
+      initialValue: 0
+    },
+    {
       name: 'seo',
       type: 'seo',
       title: 'SEO',
@@ -85,11 +92,13 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'img'
+      subtitle: 'likes',
+      media: 'img',
     },
-    prepare({ title, media }) {
+    prepare({ title, subtitle, media }) {
       return {
         title: removeMarkdown(title),
+        subtitle: `${subtitle} likes`,
         media,
       };
     }
