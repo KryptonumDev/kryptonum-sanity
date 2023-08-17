@@ -26,18 +26,6 @@ export default {
       group: 'hero',
     },
     {
-      name: 'paragraph',
-      type: 'markdown',
-      title: 'Paragraph',
-      group: 'hero',
-    },
-    {
-      name: 'paragraph2',
-      type: 'markdown',
-      title: 'Second Paragraph',
-      group: 'hero',
-    },
-    {
       name: 'categories_Paragraph',
       type: 'string',
       title: 'Categories Paragraph',
@@ -68,50 +56,37 @@ export default {
       name: 'content',
       type: 'array',
       of: [
-        { type: 'standout' },
-        { type: 'caseStudy_Highlight' },
-        { type: 'caseStudy_ProcessArray' },
-        { type: 'caseStudy_Testimonial' },
-        { type: 'caseStudy_Summary' },
-        { type: 'caseStudy_Technology' },
-        { type: 'process_KeyElementsWrapper' }
+        { type: 'caseStudy_Participated' },
+        { type: 'caseStudy_Text' },
+        { type: 'caseStudy_Image' },
+        { type: 'caseStudy_Showcase' },
+        { type: 'caseStudy_Logo' },
+        { type: 'caseStudy_Stylescape' },
+        { type: 'caseStudy_Feautures' },
+        {
+          type: 'ctaSection',
+          title: 'Case Study CtaSection',
+          initialValue: {
+            heading: "Chcesz, byśmy **zaopiekowali** się Twoją marką?",
+            cta: {
+              theme: 'primary',
+              text: 'Umów darmową konsultację',
+              href: '/pl/kontakt'
+            },
+            img: {
+              _type: 'image',
+              asset: {
+                _type: 'reference',
+                _ref: 'image-4b4c8eee5356689bd082550ebb7ade03f0d95b2d-700x633-webp'
+              }
+            }
+          },
+        },
+        { type: 'reference', to: { type: 'testimonials' }},
+        { type: 'caseStudy_Slider' },
       ],
       title: 'Content',
       group: 'content'
-    },
-    {
-      name: 'ctaSection',
-      type: 'ctaSection',
-      title: 'Cta Section',
-      group: 'ctaSection',
-      initialValue: {
-        heading: "Chcesz, byśmy **zaopiekowali** się Twoją marką?",
-        cta: {
-          theme: 'primary',
-          text: 'Umów darmową konsultację',
-          href: '/pl/kontakt'
-        },
-        img: {
-          _type: 'image',
-          asset: {
-            _type: 'reference',
-            _ref: 'image-4b4c8eee5356689bd082550ebb7ade03f0d95b2d-700x633-webp'
-          }
-        }
-      },
-    },
-    {
-      name: 'participated',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'teamMember' }],
-          options: { disableNew: true },
-        }
-      ],
-      title: 'Participated',
-      group: 'participated',
     },
     {
       name: 'seo',
@@ -120,7 +95,7 @@ export default {
       group: 'seo',
       initialValue: {
         title: '{usługa} dla {brand} | Kryptonum',
-        description: 'Zobacz case study dla {brand}. {usługa}, którą zrealizowaliśmy wykorzystując {techs}.'
+        description: 'Zobacz case study dla {brand}. {usługa}, którą zrealizowaliśmy wykorzystując {technologie}.'
       },
     },
   ],
@@ -138,14 +113,6 @@ export default {
     {
       name: 'content',
       title: 'Content'
-    },
-    {
-      name: 'ctaSection',
-      title: 'CTA Section'
-    },
-    {
-      name: 'participated',
-      title: 'Participated'
     },
     {
       name: 'seo',

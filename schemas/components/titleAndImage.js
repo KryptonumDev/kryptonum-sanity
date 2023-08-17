@@ -1,3 +1,5 @@
+import { removeMarkdown } from "../../utils/functions"
+
 export default {
   name: "titleAndImage",
   title: "Title & Image",
@@ -16,6 +18,13 @@ export default {
   preview: {
     select: {
       title: 'title',
+      media: 'img'
+    },
+    prepare({ title, media }){
+      return {
+        title: removeMarkdown(title),
+        media
+      }
     }
   }
 }

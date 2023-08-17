@@ -1,8 +1,8 @@
 import { removeMarkdown } from "../../../utils/functions";
 
 export default {
-  name: "caseStudy_Logo",
-  title: "Case Study Logo",
+  name: "caseStudy_Feautures",
+  title: "Case Study Feautures",
   type: "object",
   fields: [
     {
@@ -11,31 +11,26 @@ export default {
       title: 'Heading',
     },
     {
-      name: 'paragraph',
-      type: 'markdown',
-      title: 'Paragraph',
-    },
-    {
-      name: 'proposals',
+      name: 'feautures',
       type: 'array',
       of: [
         {
           type: 'titleAndImage'
         }
       ],
-      title: 'Proposals',
-      validation: Rule => Rule.max(4),
+      title: 'Feautures',
+      validation: Rule => Rule.max(7),
     },
   ],
   preview: {
     select: {
       title: 'heading',
-      subtitle: 'paragraph'
+      subtitle: 'feautures'
     },
     prepare({ title, subtitle }) {
       return {
-        title: `[Logo] ${removeMarkdown(title)}`,
-        subtitle: removeMarkdown(subtitle),
+        title: `[Feautures] ${removeMarkdown(title)}`,
+        subtitle: `${subtitle.length} feautures`,
       };
     }
   }

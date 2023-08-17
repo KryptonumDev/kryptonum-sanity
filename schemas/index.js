@@ -92,14 +92,14 @@ import curiosity_ColumnText from './components/curiosity/curiosity_ColumnText'
 import blog_Tiles from './components/blog/blog_Tiles'
 import blog_TilesArray from './components/blog/blog_TilesArray'
 import curiosity_ExtendedList, { curiosity_ExtendedList_Array, curiosity_ExtendedList_Array_Item } from './components/curiosity/curiosity_ExtendedList'
-import caseStudy_Process, { caseStudy_ProcessArray } from './components/caseStudy/caseStudy_Process'
-import process_KeyElements, { process_KeyElementsWrapper } from './components/caseStudy/process_KeyElements'
-import caseStudy_Highlight from './components/caseStudy/caseStudy_Highlight'
-import caseStudy_Summary from './components/caseStudy/caseStudy_Summary'
-import caseStudy_Testimonial from './components/caseStudy/caseStudy_Testimonial'
-import caseStudy_Technology from './components/caseStudy/caseStudy_Technology'
-import caseStudy_VisualIdentification from './components/caseStudy/caseStudy_VisualIdentification'
-import caseStudy_Logo from './components/caseStudy/caseStudy_Logo'
+import caseStudy_Participated from './components/caseStudy/caseStudy_Participated';
+import caseStudy_Text, { caseStudy_Text_Blocks } from './components/caseStudy/caseStudy_Text';
+import caseStudy_Image from './components/caseStudy/caseStudy_Image';
+import caseStudy_Showcase from './components/caseStudy/caseStudy_Showcase';
+import caseStudy_Logo from './components/caseStudy/caseStudy_Logo';
+import caseStudy_Stylescape from './components/caseStudy/caseStudy_Stylescape';
+import caseStudy_Feautures from './components/caseStudy/caseStudy_Feautures';
+import caseStudy_Slider from './components/caseStudy/caseStudy_Slider';
 
 export const schemaTypes = [
   ...singleTypes,
@@ -131,8 +131,6 @@ export const schemaTypes = [
   ...faqSchemas,
   simpleCtaSection,
   linkWithImg,
-  caseStudy_Process,
-  process_KeyElements,
   seo,
   globalSeo,
   contactPerson,
@@ -155,12 +153,14 @@ export const schemaTypes = [
   curiosity_ExtendedList,
   curiosity_ExtendedList_Array,
   curiosity_ExtendedList_Array_Item,
-  caseStudy_Highlight,
-  caseStudy_ProcessArray,
-  caseStudy_Summary,
-  caseStudy_Testimonial,
-  caseStudy_Technology,
-  caseStudy_VisualIdentification,
+
+  caseStudy_Participated,
+  caseStudy_Text,
+  caseStudy_Text_Blocks,
+  caseStudy_Image,
+  caseStudy_Showcase,
   caseStudy_Logo,
-  process_KeyElementsWrapper
+  caseStudy_Stylescape,
+  caseStudy_Feautures,
+  caseStudy_Slider,
 ]

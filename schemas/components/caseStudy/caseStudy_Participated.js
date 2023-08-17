@@ -1,8 +1,8 @@
 import { removeMarkdown } from "../../../utils/functions";
 
 export default {
-  name: "caseStudy_Highlight",
-  title: "Wyróżniony blok tesktu",
+  name: "caseStudy_Participated",
+  title: "Case Study Participated",
   type: "object",
   fields: [
     {
@@ -16,9 +16,16 @@ export default {
       title: 'Paragraph',
     },
     {
-      name: 'claim',
-      type: 'markdown',
-      title: 'Claim',
+      name: 'people',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'teamMember' }],
+          options: { disableNew: true },
+        }
+      ],
+      validation: Rule => Rule.max(6),
     },
   ],
   preview: {
@@ -28,8 +35,8 @@ export default {
     },
     prepare({ title, subtitle }) {
       return {
-        title: removeMarkdown(title),
-        subtitle: removeMarkdown(subtitle),
+        title: `[Participated] ${removeMarkdown(title)}`,
+        subtitle: removeMarkdown(subtitle)
       };
     }
   }

@@ -1,8 +1,8 @@
 import { removeMarkdown } from "../../../utils/functions";
 
 export default {
-  name: "caseStudy_Logo",
-  title: "Case Study Logo",
+  name: "caseStudy_Stylescape",
+  title: "Case Study Stylescape",
   type: "object",
   fields: [
     {
@@ -16,25 +16,34 @@ export default {
       title: 'Paragraph',
     },
     {
-      name: 'proposals',
+      name: 'stylescapes',
+      type: 'array',
+      of: [
+        {
+          type: 'image'
+        }
+      ],
+      title: 'Stylescapes',
+    },
+    {
+      name: 'elements',
       type: 'array',
       of: [
         {
           type: 'titleAndImage'
         }
       ],
-      title: 'Proposals',
-      validation: Rule => Rule.max(4),
+      title: 'Elements',
     },
   ],
   preview: {
     select: {
-      title: 'heading',
-      subtitle: 'paragraph'
+      subtitle: 'heading',
+      media: 'stylescapes',
     },
-    prepare({ title, subtitle }) {
+    prepare({ subtitle, media }) {
       return {
-        title: `[Logo] ${removeMarkdown(title)}`,
+        title: `[Stylescape] ${media.length} stylescapes`,
         subtitle: removeMarkdown(subtitle),
       };
     }

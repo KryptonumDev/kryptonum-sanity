@@ -1,3 +1,5 @@
+import { removeMarkdown } from "../../utils/functions";
+
 export default {
   name: 'testimonials',
 	title: 'Referencje',
@@ -33,7 +35,15 @@ export default {
   preview: {
     select: {
       title: 'name',
+      subtitle: 'text',
       media: 'img'
+    },
+    prepare({ title, subtitle, media }) {
+      return {
+        title: `[Testimonial] ${removeMarkdown(title)}`,
+        subtitle,
+        media
+      }
     }
   }
 }
