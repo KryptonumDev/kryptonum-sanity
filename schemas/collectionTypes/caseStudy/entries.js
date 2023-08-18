@@ -43,7 +43,6 @@ export default {
         }
       ],
       title: 'Categories',
-      description: 'The first category in an array should be the most important one, because it shows in SEO tags.',
       group: 'hero',
     },
     {
