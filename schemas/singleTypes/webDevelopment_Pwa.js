@@ -189,10 +189,6 @@ export default {
       title: 'Quick Form',
     },
     {
-      name: 'ctaSection',
-      title: 'Call To Action',
-    },
-    {
       name: 'customer',
       title: 'Customer',
     },
