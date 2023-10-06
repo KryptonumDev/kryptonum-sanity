@@ -1,6 +1,6 @@
 export default {
-  name: "caseStudy_Showcase",
-  title: "Case Study Showcase",
+  name: "ImageShowcase",
+  title: "Image Showcase",
   type: "object",
   fields: [
     {
@@ -12,14 +12,21 @@ export default {
       title: 'Images',
       validation: Rule => Rule.required().min(2).max(2)
     },
+    {
+      name: 'cta',
+      type: 'cta',
+      title: 'CTA (optional)',
+    },
   ],
   preview: {
     select: {
       media: 'images',
+      cta: 'cta',
     },
-    prepare({ media }) {
+    prepare({ media, cta }) {
       return {
-        title: `[Showcase] ${media.length} photos`,
+        title: `[Image Showcase] ${media.length} photos`,
+        subtitle: cta.text ? `'${cta.text}' linked to '${cta.href}'` : '',
         media: media[0]
       };
     }

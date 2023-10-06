@@ -1,12 +1,12 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from './schemas'
 import { singleTypes } from './schemas'
 import { media } from 'sanity-plugin-media'
 
-import {markdownSchema} from 'sanity-plugin-markdown'
-import {CustomMarkdownInput} from './components/CustomInput'
+import { markdownSchema } from 'sanity-plugin-markdown'
+import { CustomMarkdownInput } from './components/CustomInput'
 
 import {
   dashboardTool,
@@ -18,7 +18,7 @@ import global from './schemas/singleTypes/global';
 
 const singletonTypes = new Set(singleTypes.map(type => type.name))
 
-const singletonActions = new Set(["publish", "discardChanges", "restore"])
+const singletonActions = new Set([ "publish", "discardChanges", "restore" ])
 
 function createListItem(S, singleType) {
   const { title, name, icon } = singleType;
@@ -63,6 +63,8 @@ export default defineConfig({
             S.documentTypeListItem("teamMember"),
             S.documentTypeListItem("technologies"),
             S.documentTypeListItem("testimonials"),
+            S.divider(),
+            S.documentTypeListItem("locationPage"),
           ]),
     }),
     visionTool(),

@@ -58,8 +58,8 @@ export default {
         { type: 'caseStudy_Participated' },
         { type: 'caseStudy_Text' },
         { type: 'caseStudy_Image' },
-        { type: 'caseStudy_Showcase' },
-        { type: 'caseStudy_Logo' },
+        { type: 'ImageShowcase' },
+        { type: 'LogoShowcase' },
         { type: 'caseStudy_Stylescape' },
         { type: 'caseStudy_Feautures' },
         {

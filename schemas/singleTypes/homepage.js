@@ -30,21 +30,9 @@ export default {
       group: 'hero',
     },
     {
-      name: 'services_Heading',
-      type: 'markdown',
-      title: 'Services Heading',
-      group: 'services',
-    },
-    {
-      name: 'services_List',
-      type: 'array',
-      title: 'Services List',
-      of: [
-        {
-          type: 'titleAndDescription',
-        }
-      ],
-      validation: Rule => Rule.max(4),
+      name: 'GridFloatingImg',
+      type: 'GridFloatingImg',
+      title: 'Grid Floating Img',
       group: 'services',
     },
     {

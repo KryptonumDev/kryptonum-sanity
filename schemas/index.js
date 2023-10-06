@@ -54,12 +54,13 @@ import curiosity_entries from './collectionTypes/curiosity/entries'
 import curiosity_categories from './collectionTypes/curiosity/categories'
 import caseStudy_entries from './collectionTypes/caseStudy/entries'
 import caseStudy_categories from './collectionTypes/caseStudy/categories'
+import locationPage from './collectionTypes/locationPage'
 
 // Components
 import cta from './components/cta'
 import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
-import titleDescriptionAndImg from './components/titleDescriptionAndImg'
+import titleDescriptionAndImg, { titleDescriptionAndImg_Array } from './components/titleDescriptionAndImg'
 import titleAndImage from './components/titleAndImage'
 import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
@@ -95,11 +96,22 @@ import curiosity_ExtendedList, { curiosity_ExtendedList_Array, curiosity_Extende
 import caseStudy_Participated from './components/caseStudy/caseStudy_Participated';
 import caseStudy_Text, { caseStudy_Text_Blocks } from './components/caseStudy/caseStudy_Text';
 import caseStudy_Image from './components/caseStudy/caseStudy_Image';
-import caseStudy_Showcase from './components/caseStudy/caseStudy_Showcase';
-import caseStudy_Logo from './components/caseStudy/caseStudy_Logo';
+import ImageShowcase from './components/ImageShowcase';
 import caseStudy_Stylescape from './components/caseStudy/caseStudy_Stylescape';
 import caseStudy_Feautures from './components/caseStudy/caseStudy_Feautures';
 import caseStudy_Slider from './components/caseStudy/caseStudy_Slider';
+import TeamSection from './components/TeamSection'
+import LatestTestimonials from './components/LatestTestimonials'
+import CaseStudies from './components/CaseStudies'
+import TextComponent, { TextComponent_Blocks } from './components/TextComponent'
+import ImageComponent from './components/ImageComponent'
+import TilesComponent, { TilesComponent_List } from './components/TilesComponent'
+import CenteredHeading from './components/CenteredHeading'
+import TextColumnComponent from './components/TextColumnComponent'
+import Process from './components/Process'
+import LargeList from './components/LargeList'
+import LogoShowcase from './components/LogoShowcase'
+import GridFloatingImg from './components/GridFloatingImg'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -114,11 +126,13 @@ export const schemaTypes = [
   caseStudy_categories,
   testimonails,
   technologies,
+  locationPage,
 
   cta,
   link,
   titleAndDescription,
   titleDescriptionAndImg,
+  titleDescriptionAndImg_Array,
   titleAndImage,
   scrollToNext,
   CtaSection,
@@ -153,13 +167,26 @@ export const schemaTypes = [
   curiosity_ExtendedList,
   curiosity_ExtendedList_Array,
   curiosity_ExtendedList_Array_Item,
+  TeamSection,
+  LatestTestimonials,
+  CaseStudies,
+  TextComponent,
+  TextComponent_Blocks,
+  ImageComponent,
+  TilesComponent,
+  TilesComponent_List,
+  CenteredHeading,
+  TextColumnComponent,
+  Process,
+  LargeList,
+  LogoShowcase,
+  GridFloatingImg,
 
   caseStudy_Participated,
   caseStudy_Text,
   caseStudy_Text_Blocks,
   caseStudy_Image,
-  caseStudy_Showcase,
-  caseStudy_Logo,
+  ImageShowcase,
   caseStudy_Stylescape,
   caseStudy_Feautures,
   caseStudy_Slider,

@@ -1,17 +1,22 @@
+import { removeMarkdown } from "../../utils/functions";
+
 export default {
   name: "titleAndDescription",
   title: "Title And Description",
   type: "object",
   fields: [
     {
+      name: 'isHref',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
       name: 'title',
       type: 'markdown',
-      fieldset: 'content',
     },
     {
       name: 'description',
       type: 'markdown',
-      fieldset: 'content',
     },
     {
       name: 'href',
@@ -25,18 +30,19 @@ export default {
           return true;
         }),
       description: 'A URL, either relative or absolute (https://)',
-    },
-  ],
-  fieldsets: [
-    {
-      name: 'content',
-      title: 'Content',
-      options: { columns: 2 },
+      hidden: ({ parent }) => !parent?.isHref
     },
   ],
   preview: {
     select: {
       title: 'title',
+      subtitle: 'description',
+    },
+    prepare({ title, subtitle }){
+      return {
+        title: removeMarkdown(title),
+        subtitle: removeMarkdown(subtitle),
+      }
     }
   }
 }
