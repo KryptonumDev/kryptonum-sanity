@@ -39,6 +39,12 @@ export default {
       fieldset: 'hero',
     },
     {
+      name: 'hero_Cta',
+      type: 'cta',
+      title: 'CTA',
+      fieldset: 'hero',
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',
