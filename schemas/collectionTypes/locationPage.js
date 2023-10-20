@@ -60,7 +60,7 @@ export default {
         { type: 'ImageComponent' },
         { type: 'TilesComponent' },
         { type: 'CenteredHeading' },
-        { type: 'titleDescriptionAndImg_Array' },
+        { type: 'ListWithOverflowIcon_Array' },
         { type: 'Process' },
         { type: 'LargeList' },
         { type: 'LogoShowcase' },

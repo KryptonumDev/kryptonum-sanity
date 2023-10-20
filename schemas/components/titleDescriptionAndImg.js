@@ -53,33 +53,3 @@ export default {
     }
   }
 }
-
-
-export const titleDescriptionAndImg_Array = {
-  name: "titleDescriptionAndImg_Array",
-  title: "Title, Description & Image",
-  type: "object",
-  fields: [
-    {
-      name: 'blocks',
-      type: 'array',
-      of: [
-        {
-          type: 'titleDescriptionAndImg',
-        }
-      ],
-      title: 'Blocks',
-      validation: Rule => Rule.required(),
-    },
-  ],
-  preview: {
-    select: {
-      title: 'blocks',
-    },
-    prepare({ title }) {
-      return {
-        title: `[Title, Description & Image] - ${title.length} blocks`,
-      };
-    }
-  }
-}

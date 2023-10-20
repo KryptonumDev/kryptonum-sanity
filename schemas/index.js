@@ -60,7 +60,7 @@ import locationPage from './collectionTypes/locationPage'
 import cta from './components/cta'
 import link from './components/link'
 import titleAndDescription from './components/titleAndDescription'
-import titleDescriptionAndImg, { titleDescriptionAndImg_Array } from './components/titleDescriptionAndImg'
+import titleDescriptionAndImg from './components/titleDescriptionAndImg'
 import titleAndImage from './components/titleAndImage'
 import scrollToNext from './components/scrollToNext'
 import CtaSection from './components/CtaSection'
@@ -112,6 +112,7 @@ import Process from './components/Process'
 import LargeList from './components/LargeList'
 import LogoShowcase from './components/LogoShowcase'
 import GridFloatingImg from './components/GridFloatingImg'
+import ListWithOverflowIcon, { ListWithOverflowIcon_Array } from './components/ListWithOverflowIcon'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -132,7 +133,6 @@ export const schemaTypes = [
   link,
   titleAndDescription,
   titleDescriptionAndImg,
-  titleDescriptionAndImg_Array,
   titleAndImage,
   scrollToNext,
   CtaSection,
@@ -181,6 +181,8 @@ export const schemaTypes = [
   LargeList,
   LogoShowcase,
   GridFloatingImg,
+  ListWithOverflowIcon,
+  ListWithOverflowIcon_Array,
 
   caseStudy_Participated,
   caseStudy_Text,
