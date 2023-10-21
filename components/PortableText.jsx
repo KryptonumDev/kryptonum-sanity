@@ -80,6 +80,14 @@ export default {
       name: 'blog_Tiles',
       type: 'blog_TilesArray',
       title: 'Blog Tiles',
-    }
+    },
+    {
+      name: 'SimpleGridList2Columns',
+      type: 'SimpleGridList2Columns',
+    },
+    {
+      name: 'SimpleGridImage2Columns',
+      type: 'SimpleGridImage2Columns',
+    },
   ]
 }

@@ -90,8 +90,7 @@ import curiosity_Note from './components/curiosity/curiosity_Note'
 import curiosity_Tiles from './components/curiosity/curiosity_Tiles'
 import curiosity_LargeList from './components/curiosity/curiosity_LargeList'
 import curiosity_ColumnText from './components/curiosity/curiosity_ColumnText'
-import blog_Tiles from './components/blog/blog_Tiles'
-import blog_TilesArray from './components/blog/blog_TilesArray'
+import blog_Tiles, { blog_TilesArray } from './components/blog/blog_Tiles'
 import curiosity_ExtendedList, { curiosity_ExtendedList_Array, curiosity_ExtendedList_Array_Item } from './components/curiosity/curiosity_ExtendedList'
 import caseStudy_Participated from './components/caseStudy/caseStudy_Participated';
 import caseStudy_Text, { caseStudy_Text_Blocks } from './components/caseStudy/caseStudy_Text';
@@ -113,6 +112,8 @@ import LargeList from './components/LargeList'
 import LogoShowcase from './components/LogoShowcase'
 import GridFloatingImg from './components/GridFloatingImg'
 import ListWithOverflowIcon, { ListWithOverflowIcon_Array } from './components/ListWithOverflowIcon'
+import SimpleGridList2Columns from './components/blog/SimpleGridList2Columns'
+import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -183,6 +184,8 @@ export const schemaTypes = [
   GridFloatingImg,
   ListWithOverflowIcon,
   ListWithOverflowIcon_Array,
+  SimpleGridList2Columns,
+  SimpleGridImage2Columns,
 
   caseStudy_Participated,
   caseStudy_Text,
