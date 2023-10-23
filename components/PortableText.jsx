@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomInternalBlogLink from './CustomInternalBlogLink'
 
 export default {
   name: 'portableText',
@@ -49,7 +50,22 @@ export default {
               },
             ]
           },
-        ]
+          {
+            name: 'internalLink',
+            type: 'object',
+            title: 'Link internal blog page',
+            fields: [
+              {
+                name: 'href',
+                type: 'string',
+                title: 'URL',
+                components: {
+                  input: CustomInternalBlogLink
+                }
+              },
+            ],
+          }
+        ],
       },
     },
     {

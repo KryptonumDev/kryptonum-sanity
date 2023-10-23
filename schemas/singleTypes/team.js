@@ -37,6 +37,29 @@ export default {
       group: 'hero',
     },
     {
+      name: 'decode_Heading',
+      type: 'markdown',
+      title: 'Heading',
+      fieldset: 'decode',
+    },
+    {
+      name: 'decode_Hint',
+      type: 'string',
+      title: 'Hint',
+      fieldset: 'decode',
+    },
+    {
+      name: 'decode_List',
+      type: 'array',
+      title: 'List',
+      of: [
+        {
+          type: 'titleAndDescription'
+        },
+      ],
+      fieldset: 'decode',
+    },
+    {
       name: 'smallCta_Heading',
       type: 'markdown',
       title: 'Small CTA Section Heading',
@@ -127,6 +150,13 @@ export default {
       type: 'seo',
       title: 'SEO',
       group: 'seo',
+    },
+  ],
+  fieldsets: [
+    {
+      name: 'decode',
+      title: 'Decode US',
+      options: { collapsible: true }
     },
   ],
   groups: [

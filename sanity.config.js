@@ -4,6 +4,7 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemas'
 import { singleTypes } from './schemas'
 import { media } from 'sanity-plugin-media'
+import { createClient } from '@sanity/client'
 
 import { markdownSchema } from 'sanity-plugin-markdown'
 import { CustomMarkdownInput } from './components/CustomInput'
@@ -88,4 +89,11 @@ export default defineConfig({
         ? input.filter(({ action }) => action && singletonActions.has(action))
         : input,
   },
+})
+
+export const client = createClient({
+  projectId: '8mfl0q49',
+  dataset: 'production',
+  useCdn: true,
+  apiVersion: '2023-10-23',
 })
