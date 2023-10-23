@@ -93,5 +93,9 @@ export default {
       name: 'TabSection',
       type: 'TabSection_Array',
     },
+    {
+      name: 'DetailedGrid',
+      type: 'DetailedGrid',
+    },
   ]
 }

@@ -115,6 +115,7 @@ import ListWithOverflowIcon, { ListWithOverflowIcon_Array } from './components/L
 import SimpleGridList2Columns from './components/blog/SimpleGridList2Columns'
 import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
 import TabSection, { TabSection_Array } from './components/blog/TabSection'
+import DetailedGrid from './components/blog/DetailedGrid'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -189,6 +190,7 @@ export const schemaTypes = [
   SimpleGridImage2Columns,
   TabSection,
   TabSection_Array,
+  DetailedGrid,
 
   caseStudy_Participated,
   caseStudy_Text,
