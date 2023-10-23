@@ -114,6 +114,7 @@ import GridFloatingImg from './components/GridFloatingImg'
 import ListWithOverflowIcon, { ListWithOverflowIcon_Array } from './components/ListWithOverflowIcon'
 import SimpleGridList2Columns from './components/blog/SimpleGridList2Columns'
 import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
+import TabSection, { TabSection_Array } from './components/blog/TabSection'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -186,6 +187,8 @@ export const schemaTypes = [
   ListWithOverflowIcon_Array,
   SimpleGridList2Columns,
   SimpleGridImage2Columns,
+  TabSection,
+  TabSection_Array,
 
   caseStudy_Participated,
   caseStudy_Text,

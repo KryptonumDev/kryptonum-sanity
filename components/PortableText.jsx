@@ -89,5 +89,9 @@ export default {
       name: 'SimpleGridImage2Columns',
       type: 'SimpleGridImage2Columns',
     },
+    {
+      name: 'TabSection',
+      type: 'TabSection_Array',
+    },
   ]
 }
