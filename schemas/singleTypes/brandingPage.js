@@ -88,6 +88,19 @@ export default {
       fieldset: 'ctaSections',
     },
     {
+      name: 'team_Heading',
+      type: 'markdown',
+      title: 'Team Heading',
+      group: 'team',
+    },
+    {
+      name: 'team_Text',
+      type: 'text',
+      rows: 8,
+      title: 'Team Text',
+      group: 'team',
+    },
+    {
       name: 'team_Cta',
       type: 'cta',
       title: 'Team Cta',
