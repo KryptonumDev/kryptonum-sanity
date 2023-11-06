@@ -23,6 +23,7 @@ import brief from './singleTypes/brief'
 import brandingPage from './singleTypes/brandingPage'
 
 export const singleTypes = [
+  projektowanieUiPage,
   brandingPage,
   homepage,
   contact,
@@ -119,6 +120,7 @@ import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
 import TabSection, { TabSection_Array } from './components/blog/TabSection'
 import DetailedGrid from './components/blog/DetailedGrid'
 import headerTitleDescriptionList from './components/headerTitleDescriptionList'
+import projektowanieUiPage from './singleTypes/projektowanieUiPage'
 
 export const schemaTypes = [
   ...singleTypes,

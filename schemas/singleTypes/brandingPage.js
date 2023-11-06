@@ -87,6 +87,18 @@ export default {
       title: '2nd cta section',
       fieldset: 'ctaSections',
     },
+    {
+      name: 'team_Cta',
+      type: 'cta',
+      title: 'Team Cta',
+      group: 'team',
+    },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo',
+    },
   ],
   fieldsets: [
     {
@@ -117,5 +129,16 @@ export default {
       name: 'headerTitleDescriptionList',
       title: 'header with description list'
     },
+
   ],
+  groups: [
+    {
+      name: 'team',
+      title: 'Team'
+    },
+    {
+      name: 'seo',
+      title: 'SEO'
+    },
+  ]
 }
