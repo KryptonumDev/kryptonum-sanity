@@ -20,8 +20,10 @@ import blog from './singleTypes/blog'
 import sitemap from './singleTypes/sitemap'
 import contact from './singleTypes/contact'
 import brief from './singleTypes/brief'
+import brandingPage from './singleTypes/brandingPage'
 
 export const singleTypes = [
+  brandingPage,
   homepage,
   contact,
   brief,
@@ -116,6 +118,7 @@ import SimpleGridList2Columns from './components/blog/SimpleGridList2Columns'
 import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
 import TabSection, { TabSection_Array } from './components/blog/TabSection'
 import DetailedGrid from './components/blog/DetailedGrid'
+import headerTitleDescriptionList from './components/headerTitleDescriptionList'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -132,6 +135,7 @@ export const schemaTypes = [
   technologies,
   locationPage,
 
+  headerTitleDescriptionList,
   cta,
   link,
   titleAndDescription,

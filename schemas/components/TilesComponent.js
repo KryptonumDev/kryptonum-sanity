@@ -46,6 +46,16 @@ export const TilesComponent_List = {
       initialValue: false,
     },
     {
+      name: 'isOverflowContent',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
+      name: 'overflowContent',
+      type: 'markdown',
+      hidden: ({ parent }) => !parent?.isOverflowContent
+    },
+    {
       name: 'icon',
       type: 'image',
       hidden: ({ parent }) => !parent?.isIcon
