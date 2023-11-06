@@ -21,8 +21,11 @@ import sitemap from './singleTypes/sitemap'
 import contact from './singleTypes/contact'
 import brief from './singleTypes/brief'
 import brandingPage from './singleTypes/brandingPage'
+import projektowanieUiPage from './singleTypes/projektowanieUiPage'
+import projektowanieUxPage from './singleTypes/projektowanieUxPage'
 
 export const singleTypes = [
+  projektowanieUxPage,
   projektowanieUiPage,
   brandingPage,
   homepage,
@@ -119,8 +122,10 @@ import SimpleGridList2Columns from './components/blog/SimpleGridList2Columns'
 import SimpleGridImage2Columns from './components/blog/SimpleGridImage2Columns'
 import TabSection, { TabSection_Array } from './components/blog/TabSection'
 import DetailedGrid from './components/blog/DetailedGrid'
-import headerTitleDescriptionList from './components/headerTitleDescriptionList'
-import projektowanieUiPage from './singleTypes/projektowanieUiPage'
+import HeaderTitleDescriptionList from './components/HeaderTitleDescriptionList'
+import HeadingImageText from './components/HeadingImageText'
+import IconDescription from './components/IconDescription'
+import HeadingWithIconDescriptionList from './components/HeadingWithIconTitleDescriptionList'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -137,7 +142,10 @@ export const schemaTypes = [
   technologies,
   locationPage,
 
-  headerTitleDescriptionList,
+  HeadingWithIconDescriptionList,
+  HeaderTitleDescriptionList,
+  IconDescription,
+  HeadingImageText,
   cta,
   link,
   titleAndDescription,

@@ -79,7 +79,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'headerTitleDescriptionList',
+          type: 'HeaderTitleDescriptionList',
         }
       ],
       title: 'list',

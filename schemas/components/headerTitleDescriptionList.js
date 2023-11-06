@@ -1,5 +1,5 @@
 export default {
-  name: "headerTitleDescriptionList",
+  name: "HeaderTitleDescriptionList",
   title: "Lista",
   type: "object",
   fields: [

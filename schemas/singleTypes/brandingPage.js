@@ -11,9 +11,9 @@ export default {
       fieldset: 'hero',
     },
     {
-      name: 'hero_Img',
+      name: 'hero_sideImage',
       type: 'image',
-      title: 'image',
+      title: 'sideImage',
       fieldset: 'hero',
     },
     {
@@ -75,7 +75,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'headerTitleDescriptionList'
+          type: 'HeaderTitleDescriptionList'
         }
       ],
       title: 'List',
