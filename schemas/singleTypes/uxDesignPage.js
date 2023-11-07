@@ -113,7 +113,7 @@ export default {
     {
       name: 'sustainableDevelopment_cardGrid',
       type: 'array',
-      of: [{type:'markdown'}],
+      of: [{type:'titleAndDescription'}],
       title: 'Cards',
       fieldset: 'sustainableDevelopment'
     },

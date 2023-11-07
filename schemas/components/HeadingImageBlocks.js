@@ -14,7 +14,7 @@ export default {
     name: 'blocks',
     type: 'array',
     of: [{
-      type: 'markdown'
+      type: 'titleAndDescription'
     }]
   },
  ] 
