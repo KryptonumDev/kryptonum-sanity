@@ -1,5 +1,5 @@
 export default {
-  name: 'projektowanieUxPage',
+  name: 'uxDesignPage',
   title: 'Projektowanie UX',
   type: 'document',
   icon: () => '📐',
@@ -14,26 +14,26 @@ export default {
     {
       name: 'hero_subheading',
       type: 'markdown',
-      title: 'subHeading',
+      title: 'Sub Heading',
       fieldset: 'hero',
     },
     {
       name: 'hero_Img',
       type: 'image',
-      title: 'image',
+      title: 'Image',
       fieldset: 'hero',
     },
     {
       name: 'textSection',
       type: 'TextComponent',
-      title: '1st text section',
-      fieldset: 'textSections',
+      title: 'Text Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection',
       type: 'ctaSection',
-      title: '1st cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'titleDescriptionImageList',
@@ -45,43 +45,43 @@ export default {
       fieldset: 'titleDescriptionImageList',
     },
     {
-      name: 'headingImageTextList',
+      name: 'headingImageBlocksList',
       type: 'array',
       of: [{
-        type: 'HeadingImageText'
+        type: 'HeadingImageBlocks'
       }],
       title: 'List',
-      fieldset: 'headingImageTextList',
+      fieldset: 'headingImageBlocksList',
     },
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: '2nd cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: '2nd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'imageSection',
       type: 'image',
-      title: 'image',
-      fieldset: 'imageSections',
+      title: 'Image',
+      fieldset: 'imageSection',
     },
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: '3rd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 3',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'cardWithOverflowIcon',
       type: 'ListWithOverflowIcon',
       title: 'Card',
-      fieldset: 'cardWithOverflowIcon'
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'cardGrid',
@@ -89,75 +89,69 @@ export default {
       of: [{
         type: 'IconDescription'
       }],
-      title: 'cards',
+      title: 'List',
       fieldset: 'cardGrid'
     },
     {
       name: 'ctaSection3',
       type: 'ctaSection',
-      title: '3rd cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 3',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'sustainableDevelopment_heading',
       type: 'markdown',
-      title: 'heading',
+      title: 'Heading',
       fieldset: 'sustainableDevelopment'
     },
     {
       name: 'sustainableDevelopment_blocks',
       type: 'titleAndDescription',
-      title: 'blocks',
+      title: 'Blocks',
       fieldset: 'sustainableDevelopment'
     },
     {
       name: 'sustainableDevelopment_cardGrid',
       type: 'array',
       of: [{type:'markdown'}],
-      title: 'cards',
+      title: 'Cards',
       fieldset: 'sustainableDevelopment'
     },
     {
       name: 'consultationCta',
       type: 'quickForm',
-      title: 'form',
-      fieldset: 'consultationCta'
+      title: 'Consultation Cta',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headingWithIconTitleDescriptionList',
       type: 'HeadingWithIconTitleDescriptionList',
-      title: '1st heading with icon description list',
-      fieldset: 'headingWithIconDescriptionList'
+      title: 'Heading With Icon Description List',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ImageDisplayedOnTablet',
       type: 'image',
-      title: 'image',
+      title: 'Image',
       fieldset: 'imageDisplayedOnTablet',
     },
     {
       name: 'headingWithIconDescriptionList2',
       type: 'HeadingWithIconTitleDescriptionList',
-      title: '2nd heading with icon description list',
-      fieldset: 'headingWithIconDescriptionList'
-    },
-    {
-      name: 'headingWithIconDescriptionList2_blocks',
-      type: 'ListWithOverflowIcon',
-      title: '2nd List',
-      fieldset: 'headingWithIconDescriptionList'
+      title: 'Heading With Icon Description List 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headingWithMaxWidth',
       type: 'markdown',
-      title: 'heading',
+      title: 'Heading',
       fieldset: 'headingWithMaxWidth'
     },
     {
       name: 'ctaSection4',
       type: 'ctaSection',
-      title: '4th cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 4',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'team_Heading',
@@ -200,54 +194,41 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
-    },
-    {
-      name: 'textSections',
-      title: 'Text Sections',
-    },
-    {
-      name: 'ctaSections',
-      title: 'Cta Sections'
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'titleDescriptionImageList',
-      title: 'title description image list'
+      title: 'Title Description Image List',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'headingImageTextList',
-      title: 'heading image text list'
+      name: 'headingImageBlocksList',
+      title: 'Heading Image Blocks List',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'imageSections',
-      title: 'image sections'
-    },
-    {
-      name: 'cardWithOverflowIcon',
-      title: 'card with overflow icon'
+      name: 'imageSection',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'cardGrid',
-      title: 'card grid'
+      title: 'Card Grid',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'sustainableDevelopment',
-      title: 'sustainable development'
-    },
-    {
-      name: 'consultationCta',
-      title: 'consultation cta'
-    },
-    {
-      name: 'headingWithIconDescriptionList',
-      title: 'heading with icon description list'
+      title: 'Sustainable Development',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'imageDisplayedOnTablet',
-      title: 'image displayed on tablet'
+      title: 'Image Displayed On Tablet',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headingWithMaxWidth',
-      title: 'heading with max width'
+      title: 'Heading With Max Width',
+      options: { collapsible: true, collapsed: true }
     },
   ],
 }

@@ -1,6 +1,6 @@
 export default {
   name: "HeaderTitleDescriptionList",
-  title: "Lista",
+  title: "List",
   type: "object",
   fields: [
     {

@@ -1,6 +1,6 @@
 export default {
   name: 'HeadingWithIconTitleDescriptionList',
-  title: 'HeadingWithIconTitleDescripitonList',
+  title: 'Heading With Icon Title Descripiton List',
   type: 'object',
   fields: [
     {

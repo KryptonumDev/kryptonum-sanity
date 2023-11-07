@@ -13,62 +13,64 @@ export default {
     {
       name: 'hero_sideImage',
       type: 'image',
-      title: 'sideImage',
+      title: 'Side Image',
       fieldset: 'hero',
     },
     {
       name: 'textSection',
       type: 'TextComponent',
-      title: '1st text section',
-      fieldset: 'textSections',
+      title: 'Text Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection',
       type: 'ctaSection',
-      title: '1st cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'Tiles',
       type: 'TilesComponent',
       title: 'Tiles',
-      fieldset: 'tiles'
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: '2nd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'iconTitleDescriptionGrid',
-      type: 'ListWithOverflowIcon',
-      title: '1st card list',
-      fieldset: 'iconTitleDescriptionGrids',
+      type: 'array',
+      of: [{type: 'ListWithOverflowIcon'}],
+      title: 'List',
+      fieldset: 'iconTitleDescriptionGrid',
     },
     {
       name: 'centralizedHeading',
       type: 'markdown',
-      title: '1st heading',
-      fieldset: 'centralizedHeadings',
+      title: 'Heading',
+      fieldset: 'centralizedHeading',
     },
     {
       name: 'iconTitleDescriptionGrid2',
-      type: 'ListWithOverflowIcon',
-      title: '2nd card list',
-      fieldset: 'iconTitleDescriptionGrids',
+      type: 'array',
+      of: [{type: 'ListWithOverflowIcon'}],
+      title: 'List',
+      fieldset: 'iconTitleDescriptionGrid2',
     },
     {
       name: 'centralizedHeading2',
       type: 'markdown',
-      title: '2nd heading',
-      fieldset: 'centralizedHeadings',
+      title: 'Heading',
+      fieldset: 'centralizedHeading2',
     },
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: '3rd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 3',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headerTitleDescriptionList',
@@ -84,8 +86,8 @@ export default {
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: '2nd cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'team_Heading',
@@ -117,30 +119,32 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'textSections',
-      title: 'Text Sections',
+      name: 'iconTitleDescriptionGrid',
+      title: 'Icon Title Description Grid',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'ctaSections',
-      title: 'Cta Sections'
-    },
-    {
-      name: 'tiles',
-      title: 'Tiles'
-    },
-    {
-      name: 'iconTitleDescriptionGrids',
-      title: 'card list'
-    },
-    {
-      name: 'centralizedHeadings',
-      title: 'Centralized Headings'
+      name: 'centralizedHeading',
+      title: 'Centralized Heading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headerTitleDescriptionList',
-      title: 'header with description list'
+      title: 'Header With Description List',
+      options: { collapsible: true, collapsed: true }
+    },
+    {
+      name: 'iconTitleDescriptionGrid2',
+      title: 'Icon Title Description Grid',
+      options: { collapsible: true, collapsed: true }
+    },
+    {
+      name: 'centralizedHeading2',
+      title: 'Centralized Heading',
+      options: { collapsible: true, collapsed: true }
     },
 
   ],

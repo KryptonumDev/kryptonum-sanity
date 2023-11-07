@@ -1,5 +1,5 @@
 export default {
-  name: 'projektowanieUiPage',
+  name: 'uiDesignPage',
   title: 'Projektowanie UI',
   type: 'document',
   icon: () => '🎨',
@@ -13,26 +13,26 @@ export default {
     {
       name: 'hero_Img',
       type: 'image',
-      title: 'image',
+      title: 'Image',
       fieldset: 'hero',
     },
     {
       name: 'textSection',
       type: 'TextComponent',
-      title: '1st text section',
-      fieldset: 'textSections',
+      title: 'Text Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'centralizedHeading',
       type: 'markdown',
-      title: '1st centralized heading',
-      fieldset: 'centralizedHeadings',
+      title: 'Heading',
+      fieldset: 'centralizedHeading',
     },
     {
       name: 'ctaSection',
       type: 'ctaSection',
-      title: '1st cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'Tiles_tiles',
@@ -43,14 +43,14 @@ export default {
     {
       name: 'Tiles_heading',
       type: 'markdown',
-      title: 'heading',
+      title: 'Heading',
       fieldset: 'tilesComponentWithHeading'
     },
     {
       name: 'Image',
       type: 'image',
-      title: '1st image',
-      fieldset: 'imageSections',
+      title: 'Image',
+      fieldset: 'imageSection',
     },
     {
       name: 'slider_slides',
@@ -65,14 +65,14 @@ export default {
     {
       name: 'slider_heading',
       type: 'markdown',
-      title: 'heading',
+      title: 'Heading',
       fieldset: 'slider'
     },
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: '2nd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headerTitleDescriptionList',
@@ -82,32 +82,32 @@ export default {
           type: 'HeaderTitleDescriptionList',
         }
       ],
-      title: 'list',
+      title: 'List',
       fieldset: 'headerTitleDescriptionList',
     },
     {
       name: 'Image2',
       type: 'image',
-      title: '2nd image',
-      fieldset: 'imageSections',
+      title: 'Image',
+      fieldset: 'imageSection2',
     },
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: '3rd text section',
-      fieldset: 'textSections',
+      title: 'Text Section 3',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: '2nd cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection4',
       type: 'TextComponent',
-      title: '4th text section',
-      fieldset: 'textSections',
+      title: 'Text Section 4',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'process',
@@ -121,20 +121,20 @@ export default {
     {
       name: 'centralizedHeading2',
       type: 'markdown',
-      title: '2nd centralized heading',
-      fieldset: 'centralizedHeadings',
+      title: 'Heading',
+      fieldset: 'centralizedHeading2',
     },
     {
       name: 'caseStudies',
       type: 'cta',
-      title: 'cta',
+      title: 'Call to action',
       fieldset: 'caseStudies',
     },
     {
       name: 'ctaSection3',
       type: 'ctaSection',
-      title: '3rd cta section',
-      fieldset: 'ctaSections',
+      title: 'Cta Section 3',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'team_Heading',
@@ -177,50 +177,54 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'textSections',
-      title: 'Text Sections',
+      name: 'imageSection',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'ctaSections',
-      title: 'Cta Sections'
+      name: 'imageSection2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'tiles',
-      title: 'Tiles'
+      title: 'Tiles',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'iconTitleDescriptionGrids',
-      title: 'card list'
+      name: 'centralizedHeading',
+      title: 'Centralized Heading',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'centralizedHeadings',
-      title: 'Centralized Headings'
+      name: 'centralizedHeading2',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headerTitleDescriptionList',
-      title: 'header with description list'
+      title: 'Header With Description List',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'tilesComponentWithHeading',
-      title: 'Tiles component with heading'
+      title: 'Tiles component with heading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'slider',
-      title: 'slider'
-    },
-    {
-      name: 'imageSections',
-      title: 'image sections'
+      title: 'Slider',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'process',
-      title: 'Process'
+      title: 'Process',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'caseStudies',
-      title: 'case studies'
+      title: 'Case studies',
+      options: { collapsible: true, collapsed: true }
     }
   ],
 }

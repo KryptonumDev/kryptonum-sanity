@@ -1,6 +1,6 @@
 export default {
   name: "IconDescription",
-  title: "Lista",
+  title: "List",
   type: 'object',
   fields: [
     {
