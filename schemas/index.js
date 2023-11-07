@@ -126,6 +126,7 @@ import HeaderTitleDescriptionList from './components/HeaderTitleDescriptionList'
 import HeadingImageBlocks from './components/HeadingImageBlocks'
 import IconDescription from './components/IconDescription'
 import HeadingWithIconDescriptionList from './components/HeadingWithIconTitleDescriptionList'
+import IconTitleBlocks, {Blocks_Array} from './components/IconTitleBlocks'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -143,6 +144,8 @@ export const schemaTypes = [
   locationPage,
 
   HeadingWithIconDescriptionList,
+  Blocks_Array,
+  IconTitleBlocks,
   HeaderTitleDescriptionList,
   IconDescription,
   HeadingImageBlocks,

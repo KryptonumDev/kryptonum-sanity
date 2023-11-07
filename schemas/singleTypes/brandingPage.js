@@ -43,20 +43,26 @@ export default {
     {
       name: 'iconTitleDescriptionGrid',
       type: 'array',
-      of: [{type: 'ListWithOverflowIcon'}],
+      of: [{type: 'IconTitleBlocks'}],
       title: 'List',
       fieldset: 'iconTitleDescriptionGrid',
     },
     {
-      name: 'centralizedHeading',
+      name: 'centralizedHeading_Heading',
       type: 'markdown',
       title: 'Heading',
       fieldset: 'centralizedHeading',
     },
     {
+      name: 'centralizedHeading_Cta',
+      type: 'cta',
+      title: 'Cta',
+      fieldset: 'centralizedHeading',
+    },
+    {
       name: 'iconTitleDescriptionGrid2',
       type: 'array',
-      of: [{type: 'ListWithOverflowIcon'}],
+      of: [{type: 'IconTitleBlocks'}],
       title: 'List',
       fieldset: 'iconTitleDescriptionGrid2',
     },
@@ -64,6 +70,12 @@ export default {
       name: 'centralizedHeading2',
       type: 'markdown',
       title: 'Heading',
+      fieldset: 'centralizedHeading2',
+    },
+    {
+      name: 'centralizedHeading_Cta2',
+      type: 'cta',
+      title: 'Cta',
       fieldset: 'centralizedHeading2',
     },
     {
@@ -138,12 +150,12 @@ export default {
     },
     {
       name: 'iconTitleDescriptionGrid2',
-      title: 'Icon Title Description Grid',
+      title: 'Icon Title Description Grid 2',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'centralizedHeading2',
-      title: 'Centralized Heading',
+      title: 'Centralized Heading 2',
       options: { collapsible: true, collapsed: true }
     },
 
