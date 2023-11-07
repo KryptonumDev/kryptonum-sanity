@@ -23,9 +23,15 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'centralizedHeading',
+      name: 'centralizedHeading_Heading',
       type: 'markdown',
       title: 'Heading',
+      fieldset: 'centralizedHeading',
+    },
+    {
+      name: 'centralizedHeading_SubHeading',
+      type: 'markdown',
+      title: 'Subheading',
       fieldset: 'centralizedHeading',
     },
     {
@@ -203,7 +209,7 @@ export default {
     },
     {
       name: 'headerTitleDescriptionList',
-      title: 'Header With Description List',
+      title: 'Header Title Description List',
       options: { collapsible: true, collapsed: true }
     },
     {
