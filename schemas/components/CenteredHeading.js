@@ -14,9 +14,13 @@ export default {
     {
       name: 'paragraph',
       type: 'markdown',
-      title: 'Paragraph',
-      validation: Rule => Rule.required(),
+      title: 'Paragraph (optional)'
     },
+    {
+      name: 'cta',
+      type: 'cta',
+      title: 'Call to action (optional)'
+    }
   ],
   preview: {
     select: {

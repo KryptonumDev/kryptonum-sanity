@@ -5,23 +5,10 @@ export default {
   icon: () => '📐',
   fields: [
     {
-      name: 'hero_Heading',
-      type: 'markdown',
+      name: 'hero',
+      type: 'Hero',
       title: 'Heading',
-      fieldset: 'hero',
-    },
-    
-    {
-      name: 'hero_subheading',
-      type: 'markdown',
-      title: 'Sub Heading',
-      fieldset: 'hero',
-    },
-    {
-      name: 'hero_Img',
-      type: 'image',
-      title: 'Image',
-      fieldset: 'hero',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection',
@@ -80,17 +67,12 @@ export default {
     {
       name: 'cardWithOverflowIcon',
       type: 'ListWithOverflowIcon',
-      title: 'Card',
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'cardGrid',
-      type: 'array',
-      of: [{
-        type: 'IconDescription'
-      }],
-      title: 'List',
-      fieldset: 'cardGrid'
+      name: 'cardGridWithCentralizedHeading',
+      type: 'CardGridWithCentralizedHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection3',
@@ -99,23 +81,9 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'sustainableDevelopment_heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'sustainableDevelopment'
-    },
-    {
-      name: 'sustainableDevelopment_blocks',
-      type: 'titleAndDescription',
-      title: 'Blocks',
-      fieldset: 'sustainableDevelopment'
-    },
-    {
-      name: 'sustainableDevelopment_cardGrid',
-      type: 'array',
-      of: [{type:'titleAndDescription'}],
-      title: 'Cards',
-      fieldset: 'sustainableDevelopment'
+      name: 'development',
+      type: 'Development',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'consultationCta',
@@ -126,11 +94,10 @@ export default {
     {
       name: 'headingWithIconTitleDescriptionList',
       type: 'HeadingWithIconTitleDescriptionList',
-      title: 'Heading With Icon Description List',
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'ImageDisplayedOnTablet',
+      name: 'imageDisplayedOnTablet',
       type: 'image',
       title: 'Image',
       fieldset: 'imageDisplayedOnTablet',
@@ -138,7 +105,6 @@ export default {
     {
       name: 'headingWithIconDescriptionList2',
       type: 'HeadingWithIconTitleDescriptionList',
-      title: 'Heading With Icon Description List 2',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -192,11 +158,6 @@ export default {
 
   fieldsets: [
     {
-      name: 'hero',
-      title: 'Hero',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
       name: 'titleDescriptionImageList',
       title: 'Title Description Image List',
       options: { collapsible: true, collapsed: true }
@@ -208,16 +169,6 @@ export default {
     },
     {
       name: 'imageSection',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'cardGrid',
-      title: 'Card Grid',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'sustainableDevelopment',
-      title: 'Sustainable Development',
       options: { collapsible: true, collapsed: true }
     },
     {

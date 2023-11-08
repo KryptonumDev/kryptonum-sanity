@@ -127,6 +127,11 @@ import HeadingImageBlocks from './components/HeadingImageBlocks'
 import IconDescription from './components/IconDescription'
 import HeadingWithIconDescriptionList from './components/HeadingWithIconTitleDescriptionList'
 import IconTitleBlocks, {Blocks_Array} from './components/IconTitleBlocks'
+import Hero from './components/Hero'
+import TilesWithHeading from './components/TilesWithHeading'
+import Slider from './components/Slider'
+import CardGridWithCentralizedHeading from './components/uxDesignPage/CardGridWithCentralizedHeading'
+import Development from './components/uxDesignPage/Development'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -143,6 +148,11 @@ export const schemaTypes = [
   technologies,
   locationPage,
 
+  Hero,
+  TilesWithHeading,
+  Slider,
+  CardGridWithCentralizedHeading,
+  Development,
   HeadingWithIconDescriptionList,
   Blocks_Array,
   IconTitleBlocks,

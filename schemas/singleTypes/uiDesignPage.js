@@ -5,16 +5,9 @@ export default {
   icon: () => '🎨',
   fields: [
     {
-      name: 'hero_Heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'hero',
-    },
-    {
-      name: 'hero_Img',
-      type: 'image',
-      title: 'Image',
-      fieldset: 'hero',
+      name: 'hero',
+      type: 'Hero',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection',
@@ -23,16 +16,9 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'centralizedHeading_Heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'centralizedHeading',
-    },
-    {
-      name: 'centralizedHeading_SubHeading',
-      type: 'markdown',
-      title: 'Subheading',
-      fieldset: 'centralizedHeading',
+      name: 'centralizedHeading',
+      type: 'CenteredHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection',
@@ -41,38 +27,20 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'Tiles_tiles',
-      type: 'TilesComponent',
-      title: 'tiles',
-      fieldset: 'tilesComponentWithHeading'
+      name: 'tilesWithHeading',
+      type: 'TilesWithHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'Tiles_heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'tilesComponentWithHeading'
-    },
-    {
-      name: 'Image',
+      name: 'image',
       type: 'image',
       title: 'Image',
       fieldset: 'imageSection',
     },
     {
-      name: 'slider_slides',
-      type: 'array',
-      of: [{
-        type: 'titleAndDescription',
-      }
-      ],
-      title: 'slides',
-      fieldset: 'slider',
-    },
-    {
-      name: 'slider_heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'slider'
+      name: 'slider',
+      type: 'Slider',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection2',
@@ -92,7 +60,7 @@ export default {
       fieldset: 'headerTitleDescriptionList',
     },
     {
-      name: 'Image2',
+      name: 'image2',
       type: 'image',
       title: 'Image',
       fieldset: 'imageSection2',
@@ -126,9 +94,8 @@ export default {
     },
     {
       name: 'centralizedHeading2',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'centralizedHeading2',
+      type: 'CenteredHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'caseStudies',
@@ -181,11 +148,6 @@ export default {
 
   fieldsets: [
     {
-      name: 'hero',
-      title: 'Hero',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
       name: 'imageSection',
       options: { collapsible: true, collapsed: true }
     },
@@ -194,32 +156,8 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'tiles',
-      title: 'Tiles',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'centralizedHeading',
-      title: 'Centralized Heading',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'centralizedHeading2',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
       name: 'headerTitleDescriptionList',
       title: 'Header Title Description List',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'tilesComponentWithHeading',
-      title: 'Tiles component with heading',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'slider',
-      title: 'Slider',
       options: { collapsible: true, collapsed: true }
     },
     {

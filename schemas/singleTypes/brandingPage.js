@@ -5,83 +5,57 @@ export default {
   icon: () => '🏷️',
   fields: [
     {
-      name: 'hero_Heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'hero',
-    },
-    {
-      name: 'hero_sideImage',
-      type: 'image',
-      title: 'Side Image',
-      fieldset: 'hero',
+      name: 'hero',
+      type: 'Hero',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection',
       type: 'TextComponent',
-      title: 'Text Section',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection',
       type: 'ctaSection',
-      title: 'Cta Section',
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'Tiles',
+      name: 'tiles',
       type: 'TilesComponent',
-      title: 'Tiles',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: 'Text Section 2',
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'iconTitleDescriptionGrid',
+      name: 'iconTitleBlocksList',
       type: 'array',
       of: [{type: 'IconTitleBlocks'}],
       title: 'List',
-      fieldset: 'iconTitleDescriptionGrid',
+      fieldset: 'iconTitleBlocksList',
     },
     {
-      name: 'centralizedHeading_Heading',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'centralizedHeading',
+      name: 'centralizedHeading',
+      type: 'CenteredHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'centralizedHeading_Cta',
-      type: 'cta',
-      title: 'Cta',
-      fieldset: 'centralizedHeading',
-    },
-    {
-      name: 'iconTitleDescriptionGrid2',
+      name: 'iconTitleBlocksList2',
       type: 'array',
       of: [{type: 'IconTitleBlocks'}],
       title: 'List',
-      fieldset: 'iconTitleDescriptionGrid2',
+      fieldset: 'iconTitleBlocksList2',
     },
     {
       name: 'centralizedHeading2',
-      type: 'markdown',
-      title: 'Heading',
-      fieldset: 'centralizedHeading2',
-    },
-    {
-      name: 'centralizedHeading_Cta2',
-      type: 'cta',
-      title: 'Cta',
-      fieldset: 'centralizedHeading2',
+      type: 'CenteredHeading',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: 'Text Section 3',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -98,7 +72,6 @@ export default {
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: 'Cta Section 2',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -129,36 +102,19 @@ export default {
   ],
   fieldsets: [
     {
-      name: 'hero',
-      title: 'Hero',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'iconTitleDescriptionGrid',
-      title: 'Icon Title Description Grid',
-      options: { collapsible: true, collapsed: true }
-    },
-    {
-      name: 'centralizedHeading',
-      title: 'Centralized Heading',
+      name: 'iconTitleBlocksList',
+      title: 'Icon Title Blocks List',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'headerTitleDescriptionList',
-      title: 'Header With Description List',
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'iconTitleDescriptionGrid2',
-      title: 'Icon Title Description Grid 2',
+      name: 'iconTitleBlocksList2',
+      title: 'Icon Title Blocks List 2',
       options: { collapsible: true, collapsed: true }
     },
-    {
-      name: 'centralizedHeading2',
-      title: 'Centralized Heading 2',
-      options: { collapsible: true, collapsed: true }
-    },
-
   ],
   groups: [
     {
