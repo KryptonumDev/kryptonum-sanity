@@ -81,8 +81,8 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'development',
-      type: 'Development',
+      name: 'headingBlocksCardGrid',
+      type: 'HeadingBlocksCardGrid',
       options: { collapsible: true, collapsed: true }
     },
     {

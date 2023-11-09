@@ -1,5 +1,5 @@
 export default {
-  name: 'Development',
+  name: 'HeadingBlocksCardGrid',
   type: 'object',
   fields: [
     {

@@ -131,7 +131,7 @@ import Hero from './components/Hero'
 import TilesWithHeading from './components/TilesWithHeading'
 import Slider from './components/Slider'
 import CardGridWithCentralizedHeading from './components/uxDesignPage/CardGridWithCentralizedHeading'
-import Development from './components/uxDesignPage/Development'
+import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -149,10 +149,10 @@ export const schemaTypes = [
   locationPage,
 
   Hero,
+  HeadingBlocksCardGrid,
   TilesWithHeading,
   Slider,
   CardGridWithCentralizedHeading,
-  Development,
   HeadingWithIconDescriptionList,
   Blocks_Array,
   IconTitleBlocks,
