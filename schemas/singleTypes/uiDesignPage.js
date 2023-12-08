@@ -84,7 +84,7 @@ export default {
       options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'process',
+      name: 'blocks',
       type: 'array',
       of:[{
         type: 'titleAndDescription',
