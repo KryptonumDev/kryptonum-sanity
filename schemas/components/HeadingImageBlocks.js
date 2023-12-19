@@ -1,6 +1,6 @@
 export default {
  name: 'HeadingImageBlocks',
- title: 'List',
+ title: 'Heading Image Blocks',
  type: 'object',
  fields: [
   {

@@ -21,6 +21,16 @@ export default {
       name: 'sideImage',
       title: 'SideImage (optional)',
       type: 'image'
+    },
+    {
+      name: 'imageDescription',
+      title: 'Image description (optional)',
+      type: 'markdown'
+    },
+    {
+      name: 'textComponent',
+      title: 'Text Component (optional)',
+      type: 'TextComponent'
     }
   ]
 }

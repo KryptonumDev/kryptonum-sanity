@@ -25,9 +25,6 @@ import uiDesignPage from './singleTypes/uiDesignPage'
 import uxDesignPage from './singleTypes/uxDesignPage'
 
 export const singleTypes = [
-  uiDesignPage,
-  uxDesignPage,
-  brandingPage,
   homepage,
   contact,
   brief,
@@ -45,6 +42,9 @@ export const singleTypes = [
   team,
   academy,
   blog,
+  uiDesignPage,
+  uxDesignPage,
+  brandingPage,
   notFound,
   sitemap,
   privacyPolicy,
@@ -61,6 +61,7 @@ import curiosity_categories from './collectionTypes/curiosity/categories'
 import caseStudy_entries from './collectionTypes/caseStudy/entries'
 import caseStudy_categories from './collectionTypes/caseStudy/categories'
 import locationPage from './collectionTypes/locationPage'
+import marketing360 from './collectionTypes/marketing360'
 
 // Components
 import cta from './components/cta'
@@ -132,6 +133,8 @@ import TilesWithHeading from './components/TilesWithHeading'
 import Slider from './components/Slider'
 import CardGridWithCentralizedHeading from './components/uxDesignPage/CardGridWithCentralizedHeading'
 import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
+import CtaSectionPill from './components/CtaSectionPill'
+import ProcessList, { ProcessList_array } from './components/ProcessList'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -146,9 +149,11 @@ export const schemaTypes = [
   caseStudy_categories,
   testimonails,
   technologies,
+  marketing360,
   locationPage,
 
   Hero,
+  ProcessList,
   HeadingBlocksCardGrid,
   TilesWithHeading,
   Slider,
@@ -205,6 +210,7 @@ export const schemaTypes = [
   ImageComponent,
   TilesComponent,
   TilesComponent_List,
+  ProcessList_array,
   CenteredHeading,
   TextColumnComponent,
   Process,
@@ -218,6 +224,7 @@ export const schemaTypes = [
   TabSection,
   TabSection_Array,
   DetailedGrid,
+  CtaSectionPill,
 
   caseStudy_Participated,
   caseStudy_Text,
