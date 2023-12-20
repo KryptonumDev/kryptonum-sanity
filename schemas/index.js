@@ -136,6 +136,7 @@ import CardGridWithCentralizedHeading from './components/uxDesignPage/CardGridWi
 import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 import CtaSectionPill from './components/CtaSectionPill'
 import ProcessList, { ProcessList_array } from './components/ProcessList'
+import LatestBlogEntries from './components/LatestBlogEntries'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -225,6 +226,7 @@ export const schemaTypes = [
   TabSection_Array,
   DetailedGrid,
   CtaSectionPill,
+  LatestBlogEntries,
 
   caseStudy_Participated,
   caseStudy_Text,

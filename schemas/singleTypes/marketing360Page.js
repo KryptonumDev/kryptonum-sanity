@@ -19,7 +19,8 @@ export default {
         { type: 'HeadingImageBlocks'},
         { type: 'ProcessList'},
         { type: 'simpleCtaSection'},
-        { type: 'CaseStudies'}
+        { type: 'CaseStudies'},
+        { type: 'LatestBlogEntries'},
       ]
     },
     {
