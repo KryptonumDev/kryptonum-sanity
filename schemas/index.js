@@ -23,7 +23,7 @@ import brief from './singleTypes/brief'
 import brandingPage from './singleTypes/brandingPage'
 import uiDesignPage from './singleTypes/uiDesignPage'
 import uxDesignPage from './singleTypes/uxDesignPage'
-import marketing360 from './collectionTypes/marketing360'
+import marketing360Page from './singleTypes/marketing360Page'
 
 export const singleTypes = [
   homepage,
@@ -46,7 +46,7 @@ export const singleTypes = [
   uiDesignPage,
   uxDesignPage,
   brandingPage,
-  marketing360,
+  marketing360Page,
   notFound,
   sitemap,
   privacyPolicy,

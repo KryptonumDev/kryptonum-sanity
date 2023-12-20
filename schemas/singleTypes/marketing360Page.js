@@ -1,5 +1,5 @@
 export default {
-  name: 'marketing360',
+  name: 'marketing360Page',
   title: 'Marketing 360',
   type: 'document',
   icon: () => '📈',

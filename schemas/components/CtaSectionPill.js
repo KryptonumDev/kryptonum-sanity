@@ -37,8 +37,6 @@ export default {
       return {
         title: removeMarkdown(title),
         subtitle: `'${subtitle.text}' linked to '${subtitle.href}'`,
-        media,
-        icon
       };
     }
   }
