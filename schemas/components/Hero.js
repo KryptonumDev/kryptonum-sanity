@@ -31,6 +31,11 @@ export default {
       name: 'textComponent',
       title: 'Text Component (optional)',
       type: 'TextComponent'
+    },
+    {
+      name: 'cta',
+      title: 'Call To Action (optional)',
+      type: 'cta'
     }
   ]
 }
