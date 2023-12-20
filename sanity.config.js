@@ -66,8 +66,6 @@ export default defineConfig({
             S.documentTypeListItem("testimonials"),
             S.divider(),
             S.documentTypeListItem("locationPage"),
-            S.divider(),
-            S.documentTypeListItem("marketing360"),
           ]),
     }),
     visionTool(),

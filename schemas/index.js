@@ -23,6 +23,7 @@ import brief from './singleTypes/brief'
 import brandingPage from './singleTypes/brandingPage'
 import uiDesignPage from './singleTypes/uiDesignPage'
 import uxDesignPage from './singleTypes/uxDesignPage'
+import marketing360 from './collectionTypes/marketing360'
 
 export const singleTypes = [
   homepage,
@@ -45,6 +46,7 @@ export const singleTypes = [
   uiDesignPage,
   uxDesignPage,
   brandingPage,
+  marketing360,
   notFound,
   sitemap,
   privacyPolicy,
@@ -61,7 +63,6 @@ import curiosity_categories from './collectionTypes/curiosity/categories'
 import caseStudy_entries from './collectionTypes/caseStudy/entries'
 import caseStudy_categories from './collectionTypes/caseStudy/categories'
 import locationPage from './collectionTypes/locationPage'
-import marketing360 from './collectionTypes/marketing360'
 
 // Components
 import cta from './components/cta'
@@ -149,7 +150,6 @@ export const schemaTypes = [
   caseStudy_categories,
   testimonails,
   technologies,
-  marketing360,
   locationPage,
 
   Hero,
