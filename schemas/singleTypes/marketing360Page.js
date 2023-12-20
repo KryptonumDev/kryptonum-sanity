@@ -1,6 +1,6 @@
 export default {
   name: 'marketing360Page',
-  title: 'Marketing 360',
+  title: '├ Marketing 360',
   type: 'document',
   icon: () => '📈',
   fields: [
