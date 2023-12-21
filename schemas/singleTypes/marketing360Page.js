@@ -24,6 +24,12 @@ export default {
       ]
     },
     {
+      name: 'scrollToNext',
+      type: 'scrollToNext',
+      title: 'Scroll To Next Section',
+      group: 'scrollToNext',
+    },
+    {
       name: 'seo',
       type: 'seo',
       title: 'SEO',
@@ -32,8 +38,12 @@ export default {
   ],
   groups: [
     {
+      name: 'scrollToNext',
+      title: 'Scroll To Next'
+    },
+    {
       name: 'seo',
       title: 'SEO'
-    },
+    }
   ]
 }
