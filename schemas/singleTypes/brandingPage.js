@@ -17,6 +17,7 @@ export default {
     {
       name: 'ctaSection',
       type: 'ctaSection',
+      title: 'call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -27,6 +28,7 @@ export default {
     {
       name: 'textSection2',
       type: 'TextComponent',
+      title: '2nd text component',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -51,11 +53,13 @@ export default {
     {
       name: 'centralizedHeading2',
       type: 'CenteredHeading',
+      title: '2nd centralized heading',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection3',
       type: 'TextComponent',
+      title: '3rd text section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -71,6 +75,7 @@ export default {
     },
     {
       name: 'ctaSection2',
+      title: '2nd call to action section',
       type: 'ctaSection',
       options: { collapsible: true, collapsed: true }
     },

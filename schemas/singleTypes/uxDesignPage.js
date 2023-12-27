@@ -43,13 +43,13 @@ export default {
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: 'Cta Section 2',
+      title: '2nd call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: 'Text Section 2',
+      title: '2nd text component',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -61,7 +61,7 @@ export default {
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: 'Text Section 3',
+      title: '3rd text section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -77,7 +77,7 @@ export default {
     {
       name: 'ctaSection3',
       type: 'ctaSection',
-      title: 'Cta Section 3',
+      title: '3rd call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -105,6 +105,7 @@ export default {
     {
       name: 'headingWithIconDescriptionList2',
       type: 'HeadingWithIconTitleDescriptionList',
+      title: '2nd heading with icon description list',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -116,7 +117,7 @@ export default {
     {
       name: 'ctaSection4',
       type: 'ctaSection',
-      title: 'Cta Section 4',
+      title: '4th call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {

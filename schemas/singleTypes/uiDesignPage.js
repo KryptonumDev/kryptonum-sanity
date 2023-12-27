@@ -7,7 +7,7 @@ export default {
     {
       name: 'hero',
       type: 'Hero',
-      options: { collapsible: true, collapsed: true }
+      options: { collapsible: true, collapsed: false }
     },
     {
       name: 'textSection',
@@ -23,7 +23,7 @@ export default {
     {
       name: 'ctaSection',
       type: 'ctaSection',
-      title: 'Cta Section',
+      title: 'call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -45,7 +45,7 @@ export default {
     {
       name: 'textSection2',
       type: 'TextComponent',
-      title: 'Text Section 2',
+      title: '2nd text section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -68,19 +68,19 @@ export default {
     {
       name: 'textSection3',
       type: 'TextComponent',
-      title: 'Text Section 3',
+      title: '3rd text section',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection2',
       type: 'ctaSection',
-      title: 'Cta Section 2',
+      title: '2nd call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
       name: 'textSection4',
       type: 'TextComponent',
-      title: 'Text Section 4',
+      title: '4th text section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -94,6 +94,7 @@ export default {
     },
     {
       name: 'centralizedHeading2',
+      title: '2nd centralized heading',
       type: 'CenteredHeading',
       options: { collapsible: true, collapsed: true }
     },
@@ -106,7 +107,7 @@ export default {
     {
       name: 'ctaSection3',
       type: 'ctaSection',
-      title: 'Cta Section 3',
+      title: '3rd call to action section',
       options: { collapsible: true, collapsed: true }
     },
     {
@@ -153,6 +154,7 @@ export default {
     },
     {
       name: 'imageSection2',
+      title: '2nd image section',
       options: { collapsible: true, collapsed: true }
     },
     {
