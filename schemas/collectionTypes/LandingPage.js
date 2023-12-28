@@ -1,8 +1,8 @@
 export default {
-  name: 'BoardPage',
-  title: "Samorządy",
+  name: 'LandingPage',
+  title: "Strony docelowe",
   type: 'document',
-  icon: () => '💼',
+  icon: () => '📜',
   fields: [
     {
       name: 'name',
@@ -40,6 +40,24 @@ export default {
         { type: 'ProcessList'},
         { type: 'quickForm'},
       ]
+    },
+    {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO',
+      group: 'seo'
+    }
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'slug.current'
+    }
+  },
+  groups: [
+    {
+      name: 'seo',
+      title: 'SEO'
     }
   ]
 }

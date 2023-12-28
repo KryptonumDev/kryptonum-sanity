@@ -67,7 +67,7 @@ export default defineConfig({
             S.divider(),
             S.documentTypeListItem("locationPage"),
             S.divider(),
-            S.documentTypeListItem("BoardPage"),
+            S.documentTypeListItem("LandingPage"),
           ]),
     }),
     visionTool(),

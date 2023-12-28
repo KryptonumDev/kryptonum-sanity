@@ -137,7 +137,6 @@ import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 import CtaSectionPill from './components/CtaSectionPill'
 import ProcessList, { ProcessList_array } from './components/ProcessList'
 import LatestBlogEntries from './components/LatestBlogEntries'
-import BoardPage from './collectionTypes/BoardPage'
 import WindowsShowcase from './components/WindowsShowcase'
 import ProsAndConsShowcase from './components/ProsAndConsShowcase'
 import ProsAndCons from './components/ProsAndCons'
@@ -145,6 +144,7 @@ import { ListOfProsAndCons } from './components/ProsAndCons'
 import HeadingWithTitleAndImgList from './components/HeadingWithTitleAndImgList'
 import HeadingWithIconDescriptionList from './components/HeadingWithIconDescriptionList'
 import HeadingDescriptionWithBlocksList from './components/HeadingDescriptionWithBlocksList'
+import LandingPage from './collectionTypes/LandingPage'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -160,7 +160,7 @@ export const schemaTypes = [
   testimonails,
   technologies,
   locationPage,
-  BoardPage,
+  LandingPage,
 
   Hero,
   ProcessList,
