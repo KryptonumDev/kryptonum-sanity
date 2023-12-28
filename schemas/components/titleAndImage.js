@@ -22,8 +22,7 @@ export default {
     },
     prepare({ title, media }){
       return {
-        title: removeMarkdown(title),
-        media
+        title: title ? title : media.asset._ref
       }
     }
   }

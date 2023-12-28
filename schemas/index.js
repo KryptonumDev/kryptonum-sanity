@@ -127,7 +127,7 @@ import DetailedGrid from './components/blog/DetailedGrid'
 import HeaderTitleDescriptionList from './components/HeaderTitleDescriptionList'
 import HeadingImageBlocks from './components/HeadingImageBlocks'
 import IconDescription from './components/IconDescription'
-import HeadingWithIconDescriptionList from './components/HeadingWithIconTitleDescriptionList'
+import HeadingWithIconTitleDescriptionList from './components/HeadingWithIconTitleDescriptionList'
 import IconTitleBlocks, {Blocks_Array} from './components/IconTitleBlocks'
 import Hero from './components/Hero'
 import TilesWithHeading from './components/TilesWithHeading'
@@ -137,6 +137,14 @@ import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 import CtaSectionPill from './components/CtaSectionPill'
 import ProcessList, { ProcessList_array } from './components/ProcessList'
 import LatestBlogEntries from './components/LatestBlogEntries'
+import BoardPage from './collectionTypes/BoardPage'
+import WindowsShowcase from './components/WindowsShowcase'
+import ProsAndConsShowcase from './components/ProsAndConsShowcase'
+import ProsAndCons from './components/ProsAndCons'
+import { ListOfProsAndCons } from './components/ProsAndCons'
+import HeadingWithTitleAndImgList from './components/HeadingWithTitleAndImgList'
+import HeadingWithIconDescriptionList from './components/HeadingWithIconDescriptionList'
+import HeadingDescriptionWithBlocksList from './components/HeadingDescriptionWithBlocksList'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -152,6 +160,7 @@ export const schemaTypes = [
   testimonails,
   technologies,
   locationPage,
+  BoardPage,
 
   Hero,
   ProcessList,
@@ -159,7 +168,7 @@ export const schemaTypes = [
   TilesWithHeading,
   Slider,
   CardGridWithCentralizedHeading,
-  HeadingWithIconDescriptionList,
+  HeadingWithIconTitleDescriptionList,
   Blocks_Array,
   IconTitleBlocks,
   HeaderTitleDescriptionList,
@@ -227,6 +236,13 @@ export const schemaTypes = [
   DetailedGrid,
   CtaSectionPill,
   LatestBlogEntries,
+  WindowsShowcase,
+  ProsAndConsShowcase,
+  ProsAndCons,
+  ListOfProsAndCons,
+  HeadingWithTitleAndImgList,
+  HeadingWithIconDescriptionList,
+  HeadingDescriptionWithBlocksList,
 
   caseStudy_Participated,
   caseStudy_Text,

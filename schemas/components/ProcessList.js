@@ -1,3 +1,5 @@
+import {removeMarkdown} from '../../utils/functions'
+
 export default {
   name: 'ProcessList',
   title: 'Process List',
@@ -8,11 +10,21 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'ProcessList_array'
-        }
-      ]
-    }
-  ]
+          type: 'ProcessList_array',
+        },
+      ],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'ProcessList',
+    },
+    prepare({title}) {
+      return {
+        title: `[ProcessList] - ${title.length} blocks`,
+      }
+    },
+  },
 }
 
 export const ProcessList_array = {
@@ -39,5 +51,15 @@ export const ProcessList_array = {
       type: 'image',
       title: 'Image',
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'heading',
+    },
+    prepare({title}) {
+      return {
+        title: removeMarkdown(title),
+      }
+    },
+  },
 }

@@ -1,3 +1,5 @@
+import { removeMarkdown } from "../../utils/functions";
+
 export default {
   name: 'Slider',
   type: 'object',
@@ -9,7 +11,19 @@ export default {
     {
       name: 'slides',
       type: 'array',
-      of: [{type: 'titleAndDescription'}]
+      of: [{type: 'titleDescriptionAndImg'}]
+    },
+  ],
+  preview: {
+    select: {
+      title: 'heading',
+      subtitle: 'slides',
+    },
+    prepare({ title, subtitle }) {
+      return {
+        title: `[Slider] ${removeMarkdown(title)}`,
+        subtitle: `${subtitle.length} slides`,
+      };
     }
-  ]
+  }
 }
