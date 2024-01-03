@@ -52,6 +52,7 @@ export default {
         {type: 'ImageComponent'},
         {type: 'ProcessList'},
         {type: 'quickForm'},
+        {type: 'HeadingWithIconTitleGrid'},
       ],
     },
     {
