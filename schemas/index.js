@@ -146,6 +146,7 @@ import HeadingWithIconDescriptionList from './components/HeadingWithIconDescript
 import HeadingDescriptionWithBlocksList from './components/HeadingDescriptionWithBlocksList'
 import LandingPage from './collectionTypes/LandingPage'
 import HeadingWithIconTitleGrid from './components/HeadingWithIconTitleGrid'
+import BlocksShowcase from './components/BlocksShowcase'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -245,6 +246,7 @@ export const schemaTypes = [
   HeadingWithIconDescriptionList,
   HeadingDescriptionWithBlocksList,
   HeadingWithIconTitleGrid,
+  BlocksShowcase,
 
   caseStudy_Participated,
   caseStudy_Text,

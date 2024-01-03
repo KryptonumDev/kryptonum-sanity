@@ -53,6 +53,7 @@ export default {
         {type: 'ProcessList'},
         {type: 'quickForm'},
         {type: 'HeadingWithIconTitleGrid'},
+        {type: 'BlocksShowcase'},
       ],
     },
     {
