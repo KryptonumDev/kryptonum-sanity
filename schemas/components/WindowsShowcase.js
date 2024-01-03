@@ -6,6 +6,11 @@ export default {
   type: 'object',
   fields: [
     {
+      name: 'isSign',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
       name: 'heading',
       type: 'markdown',
     },
