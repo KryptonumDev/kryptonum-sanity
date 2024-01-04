@@ -41,7 +41,7 @@ export default {
       of: [
         {type: 'Slider'},
         {type: 'CenteredHeading'},
-        {type: 'WindowsShowcase'},
+        {type: 'RevealableGrid'},
         {type: 'TextComponent'},
         {type: 'CaseStudies'},
         {type: 'ProsAndConsShowcase'},
@@ -54,6 +54,7 @@ export default {
         {type: 'quickForm'},
         {type: 'HeadingWithIconTitleGrid'},
         {type: 'BlocksShowcase'},
+        {type: 'CooperationGrid'},
       ],
     },
     {

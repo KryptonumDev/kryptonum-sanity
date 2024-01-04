@@ -1,15 +1,9 @@
 import { removeMarkdown } from "../../utils/functions"
 
 export default {
-  name: 'WindowsShowcase',
-  title: 'Windows showcase',
+  name: 'CooperationGrid',
   type: 'object',
   fields: [
-    {
-      name: 'isSign',
-      type: 'boolean',
-      initialValue: false,
-    },
     {
       name: 'heading',
       type: 'markdown',
@@ -24,10 +18,10 @@ export default {
       of: [{type: 'IconDescription'}],
     },
     {
-      name: 'windows',
-      title: 'Windows (from top left to bottom right)',
+      name: 'grid',
+      title: 'Grid (from top left to bottom right)',
       type: 'array',
-      of: [{type: 'titleAndImage'}],
+      of: [{type: 'titleDescriptionAndImg'}],
     },
   ],
   preview: {
@@ -36,7 +30,7 @@ export default {
     },
     prepare({ title}) {
       return {
-        title: `[WindowsShowcase] ${removeMarkdown(title)}`
+        title: `[CooperationGrid] ${removeMarkdown(title)}`
       }
     }
   }

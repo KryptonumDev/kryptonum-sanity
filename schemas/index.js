@@ -137,7 +137,6 @@ import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 import CtaSectionPill from './components/CtaSectionPill'
 import ProcessList, { ProcessList_array } from './components/ProcessList'
 import LatestBlogEntries from './components/LatestBlogEntries'
-import WindowsShowcase from './components/WindowsShowcase'
 import ProsAndConsShowcase from './components/ProsAndConsShowcase'
 import ProsAndCons from './components/ProsAndCons'
 import { ListOfProsAndCons } from './components/ProsAndCons'
@@ -147,6 +146,8 @@ import HeadingDescriptionWithBlocksList from './components/HeadingDescriptionWit
 import LandingPage from './collectionTypes/LandingPage'
 import HeadingWithIconTitleGrid from './components/HeadingWithIconTitleGrid'
 import BlocksShowcase from './components/BlocksShowcase'
+import RevealableGrid from './components/RevealableGrid'
+import CooperationGrid from './components/CooperationGrid'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -238,7 +239,7 @@ export const schemaTypes = [
   DetailedGrid,
   CtaSectionPill,
   LatestBlogEntries,
-  WindowsShowcase,
+  RevealableGrid,
   ProsAndConsShowcase,
   ProsAndCons,
   ListOfProsAndCons,
@@ -247,6 +248,7 @@ export const schemaTypes = [
   HeadingDescriptionWithBlocksList,
   HeadingWithIconTitleGrid,
   BlocksShowcase,
+  CooperationGrid,
 
   caseStudy_Participated,
   caseStudy_Text,
