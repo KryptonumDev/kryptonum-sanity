@@ -2,7 +2,7 @@ import { removeMarkdown } from "../../utils/functions";
 
 export default {
   name: "CaseStudies",
-  title: "Case Studies",
+  title: "Selectable Case Studies",
   type: "object",
   fields: [
     {
@@ -10,6 +10,18 @@ export default {
       type: 'markdown',
       title: 'Heading',
     },
+    {
+      name: 'caseStudies',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'caseStudy_entries' }],
+          options: { disableNew: true },
+        }
+      ],
+      validation: Rule => Rule.required().min(7).max(7), 
+    }
   ],
   preview: {
     select: {
@@ -17,7 +29,7 @@ export default {
     },
     prepare({ title }) {
       return {
-        title: `[Case Studies] ${removeMarkdown(title)}`,
+        title: `[Selectable Case Studies] ${removeMarkdown(title)}`,
       };
     }
   }
