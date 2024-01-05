@@ -100,9 +100,8 @@ export default {
     },
     {
       name: 'caseStudies',
-      type: 'cta',
-      title: 'Call to action',
-      fieldset: 'caseStudies',
+      type: 'CaseStudies',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'ctaSection3',

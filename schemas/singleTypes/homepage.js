@@ -30,6 +30,11 @@ export default {
       group: 'hero',
     },
     {
+      name: 'caseStudies',
+      type: 'CaseStudies',
+      group: 'caseStudies',
+    },
+    {
       name: 'GridFloatingImg',
       type: 'GridFloatingImg',
       title: 'Grid Floating Img',
@@ -170,6 +175,10 @@ export default {
     {
       name: 'hero',
       title: 'Hero',
+    },
+    {
+      name: 'caseStudies',
+      title: 'Case Studies',
     },
     {
       name: 'services',

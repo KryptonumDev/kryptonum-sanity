@@ -139,9 +139,8 @@ export default {
       group: 'flexibility',
     },
     {
-      name: 'caseStudies_Heading',
-      type: 'markdown',
-      title: 'Case Studies Heading',
+      name: 'caseStudies',
+      type: 'CaseStudies',
       group: 'caseStudies',
     },
     {

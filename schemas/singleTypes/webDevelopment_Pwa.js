@@ -151,9 +151,8 @@ export default {
       group: 'ctaSection',
     },
     {
-      name: 'caseStudies_Heading',
-      type: 'markdown',
-      title: 'Case Studies Heading',
+      name: 'caseStudies',
+      type: 'CaseStudies',
       group: 'caseStudies',
     },
     {

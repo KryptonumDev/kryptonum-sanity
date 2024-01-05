@@ -11,6 +11,11 @@ export default {
       title: 'Heading',
     },
     {
+      name: 'cta',
+      type: 'cta',
+      title: 'Call to action',
+    },
+    {
       name: 'caseStudies',
       type: 'array',
       of: [
@@ -20,7 +25,7 @@ export default {
           options: { disableNew: true },
         }
       ],
-      validation: Rule => Rule.required().min(7).max(7), 
+      validation: Rule => Rule.required().max(7), 
     }
   ],
   preview: {

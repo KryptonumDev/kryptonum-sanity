@@ -152,9 +152,8 @@ export default {
       group: 'simpleCtaSection3',
     },
     {
-      name: 'caseStudies_Heading',
-      type: 'markdown',
-      title: 'Case Studies Heading',
+      name: 'caseStudies',
+      type: 'CaseStudies',
       group: 'caseStudies',
     },
     {
