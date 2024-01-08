@@ -51,7 +51,7 @@ export default {
         {type: 'HeadingDescriptionWithBlocksList'},
         {type: 'ImageComponent'},
         {type: 'ProcessList'},
-        {type: 'quickForm'},
+        {type: 'consultationForm'},
         {type: 'HeadingWithIconTitleGrid'},
         {type: 'BlocksShowcase'},
         {type: 'CooperationGrid'},

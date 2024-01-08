@@ -148,6 +148,7 @@ import HeadingWithIconTitleGrid from './components/HeadingWithIconTitleGrid'
 import BlocksShowcase from './components/BlocksShowcase'
 import RevealableGrid from './components/RevealableGrid'
 import CooperationGrid from './components/CooperationGrid'
+import consultationForm from './components/consultationForm'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -258,4 +259,5 @@ export const schemaTypes = [
   caseStudy_Stylescape,
   caseStudy_Feautures,
   caseStudy_Slider,
+  consultationForm,
 ]
