@@ -56,14 +56,19 @@ export const ProcessList_array = {
       type: 'cta',
       title: 'Call to action',
     },
+    {
+      name: 'callToActionSectionPill',
+      type: 'ctaSectionPill',
+    }
   ],
   preview: {
     select: {
       title: 'heading',
+      ctaSection: 'callToActionSectionPill',
     },
-    prepare({title}) {
+    prepare({title, ctaSection}) {
       return {
-        title: removeMarkdown(title),
+        title: `[ Process ] ${ title ? removeMarkdown(title) : ctaSection.cta.text}`,
       }
     },
   },
