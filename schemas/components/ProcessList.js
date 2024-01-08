@@ -51,6 +51,11 @@ export const ProcessList_array = {
       type: 'image',
       title: 'Image',
     },
+    {
+      name: 'callToAction',
+      type: 'cta',
+      title: 'Call to action',
+    },
   ],
   preview: {
     select: {
