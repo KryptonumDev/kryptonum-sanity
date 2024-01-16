@@ -6,7 +6,7 @@ import webDevelopment_Ecom from './singleTypes/webDevelopment_Ecom'
 import webDevelopment_Site from './singleTypes/webDevelopment_Site'
 import notFound from './singleTypes/404'
 import privacyPolicy from './singleTypes/privacyPolicy'
-import global from './singleTypes/global'
+import global, { global_Seo } from './singleTypes/global'
 import workshop from './singleTypes/workshop'
 import agency from './singleTypes/agency'
 import graphicsDesign from './singleTypes/graphicsDesign'
@@ -82,7 +82,6 @@ import { faqSchemas } from './components/faq/faq'
 import simpleCtaSection from './components/simpleCtaSection'
 import linkWithImg from './components/linkWithImg'
 import seo from './components/seo'
-import globalSeo from './components/globalSeo'
 import contactPerson from './components/contactPerson'
 import PortableText from '../components/PortableText'
 import OrderedListArray from './components/blog/orderedListArray'
@@ -153,6 +152,7 @@ import consultationForm from './components/consultationForm'
 export const schemaTypes = [
   ...singleTypes,
   global,
+  global_Seo,
   
   teamMember,
   blog_entries,
@@ -195,7 +195,6 @@ export const schemaTypes = [
   simpleCtaSection,
   linkWithImg,
   seo,
-  globalSeo,
   contactPerson,
   PortableText,
   OrderedListArray,

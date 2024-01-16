@@ -5,92 +5,133 @@ export default {
   icon: () => '🌍',
   fields: [
     {
-      name: 'footer_OfficeCity',
+      name: 'address',
       type: 'string',
-      title: 'Footer Office City',
-      group: 'footer',
+      title: 'Address',
+      fieldset: 'footer',
+      validation: Rule => Rule.required()
     },
     {
-      name: 'footer_OfficeStreet',
-      type: 'string',
-      title: 'Footer Office Street',
-      group: 'footer',
-    },
-    {
-      name: 'footer_ContactName',
-      type: 'string',
-      title: 'Footer Contact Name',
-      group: 'footer',
-    },
-    {
-      name: 'footer_ContactTel',
-      type: 'string',
-      title: 'Footer Contact Tel',
-      group: 'footer',
-    },
-    {
-      name: 'footer_ContactEmail',
-      type: 'string',
-      title: 'Footer Contact Email',
-      group: 'footer',
-    },
-    {
-      name: 'footer_LegalLinks',
+      name: 'footer_Projects',
       type: 'array',
-      title: 'Foote Legal Links',
-      of: [{ type: 'link' }],
-      group: 'footer',
+      of: [{
+        type: 'reference',
+        to: [{
+          type: 'caseStudy_entries'
+        }],
+        options: {
+          disableNew: true
+        }
+      }],
+      title: 'Projects',
+      fieldset: 'footer',
+      validation: Rule => Rule.required().min(1).max(5),
     },
     {
-      name: 'footer_Socials',
-      type: 'array',
-      title: 'Footer Social Media',
-      of: [{ type: 'link' }],
-      group: 'footer',
+      name: 'footer_ContactPerson',
+      type: 'reference',
+      to: [{
+        type: 'teamMember'
+      }],
+      options: {
+        disableNew: true
+      },
+      title: 'Contact Person',
+      fieldset: 'footer',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'instagram',
+      type: 'url',
+      title: 'Instagram',
+      fieldset: 'socials',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'facebook',
+      type: 'url',
+      title: 'Facebook',
+      fieldset: 'socials',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'tiktok',
+      type: 'url',
+      title: 'TikTok',
+      fieldset: 'socials',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'linkedin',
+      type: 'url',
+      title: 'LinkedIn',
+      fieldset: 'socials',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'quickForm_Paragraph',
       type: 'string',
       title: 'Quick Form Paragraph',
-      group: 'quickForm',
+      fieldset: 'quickForm',
     },
     {
       name: 'quickForm_Person',
       type: 'reference',
-      to: [{ type: 'teamMember' }],
-      options: { disableNew: true },
+      to: [{
+        type: 'teamMember'
+      }],
+      options: {
+        disableNew: true
+      },
       title: 'Quick Form Person',
-      group: 'quickForm',
+      fieldset: 'quickForm',
     },
     {
       name: 'faq',
       type: 'faq',
       title: 'FAQ',
-      group: 'faq',
+      options: { collapsible: true, collapsed: true }
     },
     {
-      name: 'globalSeo',
-      type: 'globalSeo',
+      name: 'seo',
+      type: 'global_Seo',
       title: 'Global SEO',
-      group: 'globalSeo',
     },
   ],
-  groups: [
+  fieldsets: [
     {
       name: 'footer',
-      title: '🦶 Footer',
+      title: 'Footer',
+      options: { collapsible: true, collapsed: true }
+    },
+    {
+      name: 'socials',
+      title: 'Socials',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'quickForm',
       title: 'Quick Form',
-    },
-    {
-      name: 'faq',
-      title: 'FAQ',
+      options: { collapsible: true, collapsed: true }
     },
     {
       name: 'globalSeo',
       title: 'Global SEO',
+      options: { collapsible: true, collapsed: true }
     },
   ],
+}
+
+export const global_Seo = {
+  name: "global_Seo",
+  title: "Global SEO",
+  type: "object",
+  fields: [
+    {
+      name: 'og_Img',
+      type: 'image',
+      title: 'OG Image',
+      description: 'An image that is visible when sharing the page on social media. The dimensions of the photo should be 1200x630px'
+    },
+  ]
 }

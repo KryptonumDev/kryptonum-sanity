@@ -9,12 +9,6 @@ import { createClient } from '@sanity/client'
 import { markdownSchema } from 'sanity-plugin-markdown'
 import { CustomMarkdownInput } from './components/CustomInput'
 
-import {
-  dashboardTool,
-  projectUsersWidget,
-  projectInfoWidget,
-} from "@sanity/dashboard";
-
 import global from './schemas/singleTypes/global';
 
 const singletonTypes = new Set(singleTypes.map(type => type.name))
@@ -73,10 +67,6 @@ export default defineConfig({
     visionTool(),
     markdownSchema({input: CustomMarkdownInput}),
     media(),
-    dashboardTool({ widgets: [
-      projectInfoWidget(),
-      projectUsersWidget(),
-    ]})
   ],
 
   schema: {
