@@ -5,6 +5,52 @@ export default {
   icon: () => '🌍',
   fields: [
     {
+      name: 'nav_Projects',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{
+          type: 'caseStudy_entries'
+        }],
+        options: {
+          disableNew: true
+        }
+      }],
+      title: 'Projects',
+      fieldset: 'nav',
+      validation: Rule => Rule.required().max(8),
+    },
+    {
+      name: 'nav_BlogPost',
+      type: 'reference',
+      to: [{
+        type: 'blog_entries'
+      }],
+      options: {
+        disableNew: true
+      },
+      title: 'Blog Post',
+      description: 'The blog post that will be displayed in the navigation (if not provided, the latest blog post will be displayed)',
+      fieldset: 'nav',
+    },
+    {
+      name: 'nav_Curiousities',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{
+          type: 'curiosity_entries'
+        }],
+        options: {
+          disableNew: true
+        },
+      }],
+      title: 'Curiosity',
+      description: 'The curiosities that will be displayed in the navigation (if not provided, the latest curiosities will be displayed)',
+      fieldset: 'nav',
+      validation: Rule => Rule.max(2),
+    },
+    {
       name: 'address',
       type: 'string',
       title: 'Address',
@@ -99,6 +145,11 @@ export default {
     },
   ],
   fieldsets: [
+    {
+      name: 'nav',
+      title: 'Navigation',
+      options: { collapsible: true }
+    },
     {
       name: 'footer',
       title: 'Footer',

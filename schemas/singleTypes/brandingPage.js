@@ -34,7 +34,9 @@ export default {
     {
       name: 'iconTitleBlocksList',
       type: 'array',
-      of: [{type: 'IconTitleBlocks'}],
+      of: [{
+        type: 'IconTitleBlocks'
+      }],
       title: 'List',
       fieldset: 'iconTitleBlocksList',
     },
