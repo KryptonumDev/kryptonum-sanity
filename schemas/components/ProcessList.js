@@ -9,9 +9,11 @@ export default {
       name: 'ProcessList',
       type: 'array',
       of: [
-        {
-          type: 'ProcessList_array',
-        },
+        { type: 'ProcessList_array' },
+        { type: 'ProcessList_Showcase' },
+        { type: 'ctaSection' },
+        { type: 'ctaSectionPill' },
+        { type: 'TestimonialsSection' },
       ],
     },
   ],
@@ -35,40 +37,78 @@ export const ProcessList_array = {
       name: 'heading',
       type: 'markdown',
       title: 'Heading',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'subheading',
       type: 'markdown',
       title: 'Subheading',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'paragraph',
       type: 'markdown',
       title: 'Paragraph',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'img',
       type: 'image',
       title: 'Image',
+      validation: Rule => Rule.required(),
     },
-    {
-      name: 'callToAction',
-      type: 'cta',
-      title: 'Call to action',
-    },
-    {
-      name: 'callToActionSectionPill',
-      type: 'ctaSectionPill',
-    }
   ],
   preview: {
     select: {
-      title: 'heading',
-      ctaSection: 'callToActionSectionPill',
+      heading: 'heading',
+      subheading: 'subheading',
     },
-    prepare({title, ctaSection}) {
+    prepare({ heading, subheading }) {
       return {
-        title: `[ Process ] ${ title ? removeMarkdown(title) : ctaSection.cta.text}`,
+        title: `[Item] - ${removeMarkdown(heading)}`,
+        subtitle: removeMarkdown(subheading),
+      }
+    },
+  },
+}
+
+export const ProcessList_Showcase = {
+  name: 'ProcessList_Showcase',
+  type: 'object',
+  fields: [
+    {
+      name: 'img',
+      type: 'image',
+      title: 'Image',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'paragraph',
+      type: 'markdown',
+      title: 'Paragraph',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'ctas',
+      type: 'array',
+      of: [
+        { type: 'cta' }
+      ],
+      title: 'CTA',
+      validation: Rule => Rule.required().min(1).max(2),
+    },
+  ],
+  preview: {
+    select: {
+      media: 'img',
+      title: 'paragraph',
+      ctas: 'ctas',
+    },
+    prepare({ media, title, ctas }) {
+      return {
+        title: `[Showcase] - ${removeMarkdown(title)}`,
+        subtitle: `${ctas.length} CTAs`,
+        media,
       }
     },
   },

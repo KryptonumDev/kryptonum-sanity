@@ -29,7 +29,7 @@ export default {
     },
     prepare({ title, subtitle, media }) {
       return {
-        title: removeMarkdown(title),
+        title: `[CtaSection] - ${removeMarkdown(title)}`,
         subtitle: `'${subtitle.text}' linked to '${subtitle.href}'`,
         media
       };

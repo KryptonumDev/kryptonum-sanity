@@ -11,11 +11,6 @@ export default {
       title: 'Heading',
     },
     {
-      name: 'cta',
-      type: 'cta',
-      title: 'Call to action',
-    },
-    {
       name: 'caseStudies',
       type: 'array',
       of: [

@@ -134,7 +134,7 @@ import Slider from './components/Slider'
 import CardGridWithCentralizedHeading from './components/uxDesignPage/CardGridWithCentralizedHeading'
 import HeadingBlocksCardGrid from './components/HeadingBlocksCardGrid'
 import CtaSectionPill from './components/CtaSectionPill'
-import ProcessList, { ProcessList_array } from './components/ProcessList'
+import ProcessList, { ProcessList_Showcase, ProcessList_array } from './components/ProcessList'
 import LatestBlogEntries from './components/LatestBlogEntries'
 import ProsAndConsShowcase from './components/ProsAndConsShowcase'
 import ProsAndCons from './components/ProsAndCons'
@@ -148,6 +148,8 @@ import BlocksShowcase from './components/BlocksShowcase'
 import RevealableGrid from './components/RevealableGrid'
 import CooperationGrid from './components/CooperationGrid'
 import consultationForm from './components/consultationForm'
+import TestimonialsSection, { TestimonialsSection_Item } from './components/TestimonialsSection'
+import PeopleShowcase, { PeopleShowcase_Item } from './components/PeopleShowcase'
 
 export const schemaTypes = [
   ...singleTypes,
@@ -259,4 +261,9 @@ export const schemaTypes = [
   caseStudy_Feautures,
   caseStudy_Slider,
   consultationForm,
+  TestimonialsSection,
+  TestimonialsSection_Item,
+  ProcessList_Showcase,
+  PeopleShowcase,
+  PeopleShowcase_Item,
 ]

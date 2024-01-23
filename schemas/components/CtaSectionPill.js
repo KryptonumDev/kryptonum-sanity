@@ -30,13 +30,13 @@ export default {
     select: {
       title: 'heading',
       subtitle: 'cta',
-      media: 'img',
-      icon: 'icon'
+      img: 'img',
     },
-    prepare({ title, subtitle, media, icon}) {
+    prepare({ title, subtitle, img }) {
       return {
-        title: removeMarkdown(title),
+        title: `[CtaSectionPill] - ${removeMarkdown(title)}`,
         subtitle: `'${subtitle.text}' linked to '${subtitle.href}'`,
+        media: img
       };
     }
   }

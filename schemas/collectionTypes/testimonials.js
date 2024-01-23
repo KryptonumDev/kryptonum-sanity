@@ -18,7 +18,7 @@ export default {
     },
     {
       name: 'text',
-      type: 'text',
+      type: 'markdown',
       title: 'Text'
     },
     {

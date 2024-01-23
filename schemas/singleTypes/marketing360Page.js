@@ -21,6 +21,7 @@ export default {
         { type: 'simpleCtaSection'},
         { type: 'CaseStudies'},
         { type: 'LatestBlogEntries'},
+        { type: 'PeopleShowcase'},
       ]
     },
     {

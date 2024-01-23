@@ -46,4 +46,17 @@ export default {
       options: { columns: 2 },
     },
   ],
+  preview: {
+    select: {
+      title: 'text',
+      theme: 'theme',
+      href: 'href'
+    },
+    prepare({ title, theme, href }) {
+      return {
+        title: title,
+        subtitle: `'${theme}' button linked to '${href}'`,
+      }
+    }
+  }
 }
