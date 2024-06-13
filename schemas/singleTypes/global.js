@@ -1,9 +1,15 @@
 export default {
   name: 'global',
-	title: 'Globalne',
+  title: 'Globalne',
   type: 'document',
   icon: () => '🌍',
   fields: [
+    {
+      name: 'nav_Annotation',
+      type: 'markdown',
+      title: 'Annotacja',
+      fieldset: 'nav',
+    },
     {
       name: 'nav_Projects',
       type: 'array',
